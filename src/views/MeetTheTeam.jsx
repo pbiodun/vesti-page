@@ -14,7 +14,7 @@ const MeetTheTeam = () => {
           the future of legal migration and global migration.
         </p>
         <div className="pt-12 pb-24">
-          <div className="grid grid-cols-4 gap-14 pb-14">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 pb-14">
             <div className="flex flex-col items-center justify-between">
               <div>
                 <img src={TeamMember1} alt="team-member1" />

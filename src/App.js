@@ -8,6 +8,7 @@ import Footer from "./containers/Footer";
 import GlobalGengCard from "./pages/GlobalGengCard";
 import WalletsPage from "./pages/WalletsPage";
 import AboutUs from "./pages/AboutUs";
+import CareersPage from "./pages/CareersPage";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -24,6 +25,7 @@ function App() {
         <Route path="/globalgeng-card" element={<GlobalGengCard />} />
         <Route path="/wallets" element={<WalletsPage />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/careers" element={<CareersPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
