@@ -9,9 +9,9 @@ import {
 
 function Icon({ id, open }) {
   return id === open ? (
-    <img src={DashIcon} className="!w-[50px]" />
+    <img src={DashIcon} alt="minus" className="!w-[50px]" />
   ) : (
-    <img src={AddIcon} className="!w-[50px]" />
+    <img src={AddIcon} alt="plus" className="!w-[50px]" />
   );
 }
 

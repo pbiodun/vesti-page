@@ -7,7 +7,7 @@ import InstagramLogo from "../assets/logo-icons/instagram-logo.svg";
 const Footer = () => {
   return (
     <div className="bg-[#060E42] text-[#ffffff] border-none">
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-14">
         <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-12 pb-20">
           <div>
             <div className="pr-[40px]">

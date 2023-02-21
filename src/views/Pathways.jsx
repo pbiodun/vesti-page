@@ -1,4 +1,4 @@
-import { BsArrowUpRight } from "react-icons/bs";
+// import { BsArrowUpRight } from "react-icons/bs";
 import ActiveCard from "../components/ActiveCard";
 
 const Pathways = () => {

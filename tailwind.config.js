@@ -4,6 +4,7 @@ module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
+      xs: "414px",
       sm: "640px",
       md: "720px",
       lg: "1000px",

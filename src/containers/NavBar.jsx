@@ -2,13 +2,16 @@ import VestiLogo from "../assets/logo-icons/vesti-logo.png";
 import NigeriaFlag from "../assets/logo-icons/ng-flag.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div className="bg-[#060E42]  w-full py-5 lg:py-5 border-none fixed top-0 left-0 right-0 z-50 text-white">
       <div className="container flex mx-auto justify-between items-center">
         <div className="w-[70px] lg:w-[100px]">
-          <img src={VestiLogo} alt="Vesti-Logo" />
+          <Link to="/">
+            <img src={VestiLogo} alt="Vesti-Logo" />
+          </Link>
         </div>
         <div className="hidden lg:flex items-center">
           <div className="">
