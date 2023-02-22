@@ -9,6 +9,9 @@ import GlobalGengCard from "./pages/GlobalGengCard";
 import WalletsPage from "./pages/WalletsPage";
 import AboutUs from "./pages/AboutUs";
 import CareersPage from "./pages/CareersPage";
+import Disclosures from "./pages/Disclosures";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Aml from "./pages/Aml";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -26,6 +29,9 @@ function App() {
         <Route path="/wallets" element={<WalletsPage />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/tos" element={<Disclosures />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/aml" element={<Aml />} />
       </Routes>
       <Footer />
     </BrowserRouter>
