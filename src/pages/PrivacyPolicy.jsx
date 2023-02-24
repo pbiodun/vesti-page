@@ -1,4 +1,5 @@
 import VestiDocs from "../components/VestiDocs";
+import DownloadApp from "../views/DownloadApp";
 
 const PrivacyPolicy = () => {
   return (
@@ -6,6 +7,12 @@ const PrivacyPolicy = () => {
       <VestiDocs
         title="Privacy Policy"
         date="Last Updated: Sept 25, 2022"
+        link1="TERMS OF SERVICE"
+        link2="PRIVACY POLICY"
+        link3="AML"
+        path1="/tos"
+        path2="/privacy-policy"
+        path3="/aml"
         addStyle="border-b-8 border-[#67A948]"
         mainBody={
           <div className="text-justify text-[#14290A]">
@@ -379,6 +386,7 @@ const PrivacyPolicy = () => {
           </div>
         }
       />
+      <DownloadApp />
     </div>
   );
 };

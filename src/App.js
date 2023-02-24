@@ -12,6 +12,7 @@ import CareersPage from "./pages/CareersPage";
 import Disclosures from "./pages/Disclosures";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aml from "./pages/Aml";
+import MigrationFries from "./pages/MigrationFries";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -32,6 +33,7 @@ function App() {
         <Route path="/tos" element={<Disclosures />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/aml" element={<Aml />} />
+        <Route path="/migration-fries" element={<MigrationFries />} />
       </Routes>
       <Footer />
     </BrowserRouter>

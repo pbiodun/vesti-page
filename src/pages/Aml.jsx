@@ -1,4 +1,5 @@
 import VestiDocs from "../components/VestiDocs";
+import DownloadApp from "../views/DownloadApp";
 
 const Aml = () => {
   return (
@@ -6,6 +7,12 @@ const Aml = () => {
       <VestiDocs
         title="ANTI-MONEY LAUNDERING"
         date="Last Updated: Sept 25, 2022"
+        link1="TERMS OF SERVICE"
+        link2="PRIVACY POLICY"
+        link3="AML"
+        path1="/tos"
+        path2="/privacy-policy"
+        path3="/aml"
         mainBody={
           <div className="text-justify text-[#14290A]">
             <p className="">
@@ -55,6 +62,7 @@ const Aml = () => {
           </div>
         }
       />
+      <DownloadApp />
     </div>
   );
 };

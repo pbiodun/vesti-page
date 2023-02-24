@@ -1,19 +1,12 @@
 import Image1 from "../assets/images/Avatar1.png";
 
-const Testimonials = () => {
+const Testimonials = ({ title, link }) => {
   return (
     <div className="w-full pt-24">
-      <div className="container mx-auto">
-        <div className="">
-          <h1 className="text-3xl text-headcol font-semibold text-center">
-            What our users are <span className="text-vestigreen">saying</span>
-          </h1>
-          <p className="text-center text-[#2B5219] text-lg font-medium">
-            Think lifting a feather is effortless? Try payment with Vesti.
-          </p>
-        </div>
+      <div className="container mx-auto flex flex-col items-center">
+        <div className="">{title}</div>
         {/* Comments and Testimonies */}
-        <div className="pb-24 pt-12 grid lg:grid-cols-3 md:grid-cols-2 gap-7">
+        <div className="pt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-2 gap-7">
           <div className="border rounded-xl px-7 py-5">
             <div className="flex pb-3">
               <div>
@@ -147,6 +140,7 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
+        <div className="">{link}</div>
       </div>
     </div>
   );

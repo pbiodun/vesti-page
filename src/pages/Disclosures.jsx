@@ -1,4 +1,5 @@
 import VestiDocs from "../components/VestiDocs";
+import DownloadApp from "../views/DownloadApp";
 
 const Disclosures = () => {
   return (
@@ -7,6 +8,12 @@ const Disclosures = () => {
         title="Terms of Service"
         date="Last Updated: July 25, 2020"
         addStyle="border-b-8 border-[#67A948]"
+        link1="TERMS OF SERVICE"
+        link2="PRIVACY POLICY"
+        link3="AML"
+        path1="/tos"
+        path2="/privacy-policy"
+        path3="/aml"
         mainBody={
           <div className="text-justify text-[#14290A]">
             <h1 className="text-2xl font-semibold">
@@ -236,6 +243,7 @@ const Disclosures = () => {
           </div>
         }
       />
+      <DownloadApp />
     </div>
   );
 };
