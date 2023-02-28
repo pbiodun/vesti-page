@@ -1,8 +1,16 @@
-import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const DescriptionCard = ({ title, desc, link, classname, image }) => {
+const DescriptionCard = ({
+  title,
+  desc,
+  link,
+  classname,
+  textCol,
+  h1Col,
+  pCol,
+  image,
+}) => {
   return (
     <>
       <div
@@ -10,9 +18,13 @@ const DescriptionCard = ({ title, desc, link, classname, image }) => {
       >
         <div className="h-full flex flex-col mx-auto items-center justify-between">
           <div className="py-10 px-10 lg:px-20">
-            <h1 className="text-[#20082B] text-3xl font-semibold">{title}</h1>
-            <p className="text-base text-[#3F1951] font-extralight">{desc}</p>
-            <div className="mt-[20px] flex items-center text-[#57266E] text-xl">
+            <h1 className={`${h1Col} text-3xl font-fontReg`}>{title}</h1>
+            <p className={`text-base ${pCol} font-fontLight pt-3 w-[80%]`}>
+              {desc}
+            </p>
+            <div
+              className={`mt-[20px] flex items-center text-[${textCol}] text-xl font-fontReg hover:text-blue-gray-900`}
+            >
               <Link to={link}>Learn more</Link>
               <BsArrowUpRight />
             </div>

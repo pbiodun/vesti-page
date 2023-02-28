@@ -11,14 +11,13 @@ const ToCreateCard = ({
   desc2,
   head3,
   desc3,
-  buttonText,
   classname,
 }) => {
   return (
     <>
       <div className="container flex flex-col justify-center items-center">
         <div className={classname}>
-          <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-semibold">
+          <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-fontSemi w-[70%]">
             {title}
           </h1>
           <img src={DoubleStrip} alt="dashes" />
@@ -52,11 +51,11 @@ const ToCreateCard = ({
             </div>
           </div>
         </div>
-        <div className="pb-4 md:pb-10 sm:pb-20">
+        {/* <div className="pb-4 md:pb-10 sm:pb-20">
           <button className="bg-vestigreen text-white text-sm text-center px-11 py-3 rounded-[10px]">
             {buttonText}
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

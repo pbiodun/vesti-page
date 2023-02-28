@@ -19,25 +19,25 @@ const Home = () => {
       <CardAd
         leftSide={
           <div className="p-8 lg:pl-16">
-            <div className="rounded-[30px] bg-[#060E42] w-[171px]">
-              <p className="text-xs text-white font-medium text-center mb-4 p-1">
+            <div className="rounded-[30px] bg-[#060E42] w-[30%]">
+              <p className="text-xs text-white font-medium text-center p-1 font-fontReg">
                 AVAILABLE TO REQUEST
               </p>
             </div>
-            <h1 className="text-white text-4xl w-[360px]">
+            <h1 className="text-white text-4xl w-[60%] pt-6 font-fontSemi">
               Introducing the new Vesti GlobalGeng Mastercard.
             </h1>
-            <p className="text-base font-extralight text-white mt-6">
+            <p className="text-base font-extralight text-white pt-6 font-fontReg w-[60%]">
               Vesti gives humans the power to move overseas to 110 Countries.
             </p>
-            <div className="mt-[20px] flex items-center text-[#ffffff] text-xl">
+            <div className="pt-5 flex items-center text-[#ffffff] font-fontReg text-xl hover:text-headcol w-[22.5%]">
               <Link to="/globalgeng-card">Learn more</Link>
               <BsArrowUpRight />
             </div>
           </div>
         }
         image={VestiCard}
-        addStyle="flex flex-col lg:flex-row lg:justify-between bg-[#67A948] rounded-[30px]"
+        addStyle="flex flex-col lg:flex-row lg:justify-between items-center bg-[#67A948] rounded-[30px]"
       />
       <Pathways />
       <Offerings />

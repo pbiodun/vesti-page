@@ -4,19 +4,19 @@ const Testimonials = ({ title, link }) => {
   return (
     <div className="w-full pt-24">
       <div className="container mx-auto flex flex-col items-center">
-        <div className="">{title}</div>
+        <div className="font-fontSemi">{title}</div>
         {/* Comments and Testimonies */}
-        <div className="pt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-2 gap-7">
-          <div className="border rounded-xl px-7 py-5">
+        <div className="pt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-2 gap-7 font-fontLight">
+          <div className="border rounded-xl px-7 py-5 bg-[#F7FFF3]">
             <div className="flex pb-3">
               <div>
                 <img src={Image1} alt="person" />
               </div>
               <div className="px-3">
-                <p className="text-headcol text-lg font-medium">
+                <p className="text-headcol text-lg font-fontReg">
                   Joshua Shittabey
                 </p>
-                <p className="text-headcol text-xs font-extralight">
+                <p className="text-xs font-extralight text-[#4F4F4F]">
                   11 July, 2022
                 </p>
               </div>
@@ -29,7 +29,7 @@ const Testimonials = ({ title, link }) => {
               </p>
             </div>
           </div>
-          <div className="border rounded-xl px-7 py-5">
+          <div className="border rounded-xl px-7 py-5 bg-[#F6F7FF]">
             <div className="flex pb-3">
               <div>
                 <img src={Image1} alt="person" />
@@ -38,7 +38,7 @@ const Testimonials = ({ title, link }) => {
                 <p className="text-headcol text-lg font-medium">
                   Joshua Shittabey
                 </p>
-                <p className="text-headcol text-xs font-extralight">
+                <p className="text-[#4F4F4F] text-xs font-extralight">
                   11 July, 2022
                 </p>
               </div>
@@ -51,7 +51,7 @@ const Testimonials = ({ title, link }) => {
               </p>
             </div>
           </div>
-          <div className="border rounded-xl px-7 py-5">
+          <div className="border rounded-xl px-7 py-5 bg-[#FBF3FF]">
             <div className="flex pb-3">
               <div>
                 <img src={Image1} alt="person" />
@@ -60,7 +60,7 @@ const Testimonials = ({ title, link }) => {
                 <p className="text-headcol text-lg font-medium">
                   Joshua Shittabey
                 </p>
-                <p className="text-headcol text-xs font-extralight">
+                <p className="text-[#4F4F4F] text-xs font-extralight">
                   11 July, 2022
                 </p>
               </div>
@@ -73,7 +73,7 @@ const Testimonials = ({ title, link }) => {
               </p>
             </div>
           </div>
-          <div className="border rounded-xl px-7 py-5">
+          <div className="border rounded-xl px-7 py-5 bg-[#F6F7FF]">
             <div className="flex pb-3">
               <div>
                 <img src={Image1} alt="person" />
@@ -82,7 +82,7 @@ const Testimonials = ({ title, link }) => {
                 <p className="text-headcol text-lg font-medium">
                   Joshua Shittabey
                 </p>
-                <p className="text-headcol text-xs font-extralight">
+                <p className="text-[#4F4F4F] text-xs font-extralight">
                   11 July, 2022
                 </p>
               </div>
@@ -95,7 +95,7 @@ const Testimonials = ({ title, link }) => {
               </p>
             </div>
           </div>
-          <div className="border rounded-xl px-7 py-5">
+          <div className="border rounded-xl px-7 py-5 bg-[#FBF3FF]">
             <div className="flex pb-3">
               <div>
                 <img src={Image1} alt="person" />
@@ -104,7 +104,7 @@ const Testimonials = ({ title, link }) => {
                 <p className="text-headcol text-lg font-medium">
                   Joshua Shittabey
                 </p>
-                <p className="text-headcol text-xs font-extralight">
+                <p className="text-[#4F4F4F] text-xs font-extralight">
                   11 July, 2022
                 </p>
               </div>
@@ -117,7 +117,7 @@ const Testimonials = ({ title, link }) => {
               </p>
             </div>
           </div>
-          <div className="border rounded-xl px-7 py-5">
+          <div className="border rounded-xl px-7 py-5 bg-[#F7FFF3]">
             <div className="flex pb-3">
               <div>
                 <img src={Image1} alt="person" />
@@ -126,7 +126,7 @@ const Testimonials = ({ title, link }) => {
                 <p className="text-headcol text-lg font-medium">
                   Joshua Shittabey
                 </p>
-                <p className="text-headcol text-xs font-extralight">
+                <p className="text-[#4F4F4F] text-xs font-extralight">
                   11 July, 2022
                 </p>
               </div>

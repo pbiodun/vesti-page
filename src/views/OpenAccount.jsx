@@ -1,4 +1,5 @@
 import Vector from "../assets/logo-icons/Vector.png";
+import Button from "../components/Button";
 import ToCreateCard from "../components/ToCreateCard";
 
 const OpenAccount = () => {
@@ -10,12 +11,20 @@ const OpenAccount = () => {
           title="How to open a free Vesti account"
           head1="Register in minutes"
           desc1="Sign up online, or in our app with your email address"
-          head2="Register in minutes"
-          desc2="Sign up online, or in our app with your email address"
-          head3="Register in minutes"
-          desc3="Sign up online, or in our app with your email address"
-          buttonText="Get started in minutes"
+          head2="Complete KYC verification"
+          desc2="Verify your identity using your government-issued ID"
+          head3="Start Transacting"
+          desc3="We have one of the best rates that you can count on."
+          classname="flex flex-col justify-center items-center"
         />
+        <div className="pb-4 md:pb-10 sm:pb-20 flex flex-col justify-center items-center">
+          <Button
+            link=""
+            CTA="Get started in minutes"
+            width="30%"
+            styles="p-4 text-[#fff]"
+          />
+        </div>
         <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
       </div>
     </div>

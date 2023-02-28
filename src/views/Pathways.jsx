@@ -7,7 +7,7 @@ const Pathways = () => {
       <div className=" container relative mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
           <div className="col-span-1">
-            <h1 className="font-semibold lg:w-[75%] text-[#14290A] text-4xl mb-12">
+            <h1 className="font-fontSemi lg:w-[85%] text-[#14290A] text-4xl pb-12 ">
               Everything you need, less of what you don't.
             </h1>
             <div className="w-full">

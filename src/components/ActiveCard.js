@@ -1,5 +1,6 @@
 import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const ActiveCard = ({ title, desc, learnMore, click }) => {
   return (
@@ -10,8 +11,8 @@ const ActiveCard = ({ title, desc, learnMore, click }) => {
         <h1 className="text-[#14290A] text-xl mb-2">{title}</h1>
         <p className="text-[#2B5219] font-extralight text-sm">{desc}</p>
         {learnMore && (
-          <div className="mt-[20px] flex items-center text-[#67A948] text-xl">
-            <button>Learn more</button>
+          <div className="pt-[20px] flex items-center text-[#67A948] hover:text-headcol text-xl font-fontSemi w-[22%]">
+            <Link to="#">Learn more</Link>
             <BsArrowUpRight />
           </div>
         )}

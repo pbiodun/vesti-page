@@ -15,8 +15,12 @@ module.exports = withMT({
     },
     extend: {
       fontFamily: {
-        sans: ["Syne", "sans-serif"],
-        sansec: ["Poppins", "sans-serif"],
+        // sans: ["Syne", "sans-serif"],
+        // sansec: ["Poppins", "sans-serif"],
+        fontBold: ["Sohne-Bold"],
+        fontSemi: ["Sohne-SemiBold"],
+        fontReg: ["Sohne-Regular"],
+        fontLight: ["Sohne-Light"],
       },
       spacing: {
         sm: "8px",

@@ -7,7 +7,7 @@ import InstagramLogo from "../assets/logo-icons/instagram-logo.svg";
 const Footer = () => {
   return (
     <div className="bg-[#060E42] text-[#ffffff] border-none">
-      <div className="container mx-auto pt-14">
+      <div className="container mx-auto pt-14 font-fontLight">
         <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-12 pb-20">
           <div>
             <div className="pr-[40px]">
@@ -30,9 +30,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
+          <div className="">
             <ul>
-              <li className="text-base font-medium pb-3">PRODUCTS</li>
+              <li className="text-base font-medium pb-3 font-fontReg">
+                PRODUCTS
+              </li>
               <li className="text-sm font-light pb-2">Global Geng Card</li>
               <li className="text-sm font-light pb-2">Wallets</li>
               <li className="text-sm font-light pb-2">Founders' card</li>
@@ -41,14 +43,16 @@ const Footer = () => {
           </div>
           <div>
             <ul>
-              <li className="text-base font-medium pb-3">COMPANY</li>
+              <li className="text-base font-medium pb-3 font-fontReg">
+                COMPANY
+              </li>
               <li className="text-sm font-light pb-2">About Us</li>
               <li className="text-sm font-light">Careers</li>
             </ul>
           </div>
           <div>
             <ul>
-              <li className="text-base font-medium pb-3">LEGAL</li>
+              <li className="text-base font-medium pb-3 font-fontReg">LEGAL</li>
               <li className="text-sm font-light pb-2">AML</li>
               <li className="text-sm font-light pb-2">FAQ</li>
               <li className="text-sm font-light pb-2">Disclosures</li>
@@ -57,7 +61,9 @@ const Footer = () => {
           </div>
           <div>
             <ul>
-              <li className="text-base font-medium pb-3">CONTACT</li>
+              <li className="text-base font-medium pb-3 font-fontReg">
+                CONTACT
+              </li>
               <li className="text-sm font-light pb-2">help@wevesti.com</li>
               <li className="text-sm font-light pb-2">support@wevesti.com</li>
               <li className="text-sm font-light">info@wevesti.com</li>
@@ -65,11 +71,15 @@ const Footer = () => {
           </div>
           <div>
             <ul>
-              <li className="text-base font-medium pb-3">NIGERIA (LAGOS)</li>
+              <li className="text-base font-medium pb-3 font-fontReg">
+                NIGERIA (LAGOS)
+              </li>
               <li className="text-sm font-light pb-2">
                 30 Furo Ezimora street, Lekki Phase 1
               </li>
-              <li className="text-base font-medium py-4">DALLAS TEXAS (USA)</li>
+              <li className="text-base font-medium py-4 font-fontReg">
+                DALLAS TEXAS (USA)
+              </li>
               <li className="text-sm font-light">
                 1301, S Bowen rd, Ste 450, Arlington, Tx 76013.
               </li>

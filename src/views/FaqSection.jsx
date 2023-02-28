@@ -32,10 +32,10 @@ const FaqSection = () => {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-x-44 py-14">
           <div className="pt-3 col-span-1">
-            <h1 className="text-3xl font-medium lg:w-[70%]">
+            <h1 className="text-3xl font-medium lg:w-[70%] font-fontSemi">
               Some of the things you may want to know
             </h1>
-            <p className="text-lg font-light">
+            <p className="text-lg font-fontReg pt-3">
               We answered questions so you don’t have to ask them
             </p>
           </div>

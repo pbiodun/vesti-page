@@ -8,11 +8,11 @@ const Offerings = () => {
     <div className="w-full pb-24">
       <div className="container mx-auto lg:w-[80%]">
         <div className="text-center pb-10">
-          <h1 className="text-[#14290A] text-4xl">
+          <h1 className="text-[#14290A] text-4xl font-fontReg">
             International fee payments{" "}
             <span className="text-[#67A948]">simplified!</span>
           </h1>
-          <p className="text-[#2B5219] text-2xl">
+          <p className="text-[#2B5219] text-[22px] font-fontReg">
             Think lifting a feather is effortless? Try payment with Vesti.
           </p>
         </div>
@@ -24,10 +24,10 @@ const Offerings = () => {
               <img src={Convenient} alt="convenient" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1 ">
                 Convenient
               </h3>
-              <p className="text-[#2B5219] text-base">
+              <p className="text-[#2B5219] text-base font-fontReg">
                 You can easily make payments from the comfort of your home
               </p>
             </div>
@@ -37,10 +37,10 @@ const Offerings = () => {
               <img src={Speed} alt="speed" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1">
                 Speedy
               </h3>
-              <p className="text-[#2B5219] text-base">
+              <p className="text-[#2B5219] text-base font-fontReg">
                 Our payment channels and processes are swift and effective
               </p>
             </div>
@@ -50,10 +50,10 @@ const Offerings = () => {
               <img src={Rates} alt="rates" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1">
                 Fair Rates
               </h3>
-              <p className="text-[#2B5219] text-base">
+              <p className="text-[#2B5219] text-base font-fontReg">
                 We have one of the best rates that you can count on.
               </p>
             </div>
@@ -64,10 +64,10 @@ const Offerings = () => {
               <img src={Padlock} alt="lock" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1">
                 Secure
               </h3>
-              <p className="text-[#2B5219] text-base">
+              <p className="text-[#2B5219] text-base font-fontReg">
                 We use state-of-the-art data encryption when handling financial
                 details.
               </p>
