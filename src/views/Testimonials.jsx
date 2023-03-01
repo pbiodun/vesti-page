@@ -4,7 +4,7 @@ const Testimonials = ({ title, link }) => {
   return (
     <div className="w-full pt-24">
       <div className="container mx-auto flex flex-col items-center">
-        <div className="font-fontSemi">{title}</div>
+        <div className="font-fontSemi text-center">{title}</div>
         {/* Comments and Testimonies */}
         <div className="pt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-2 gap-7 font-fontLight">
           <div className="border rounded-xl px-7 py-5 bg-[#F7FFF3]">

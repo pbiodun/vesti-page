@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
         path3="/aml"
         addStyle="border-b-8 border-[#67A948]"
         mainBody={
-          <div className="text-justify text-[#14290A]">
+          <div className="text-justify text-[#14290A] font-fontReg">
             <h1 className="text-2xl font-semibold">1. Global Privacy Policy</h1>
             <p className="py-10">
               We are Vesti Technology Solutions inc., a Delaware corporation

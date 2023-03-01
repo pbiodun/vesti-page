@@ -16,11 +16,11 @@ const VestiDocs = ({
 }) => {
   return (
     <>
-      <div className="w-full bg-secondary mb-24">
+      <div className="w-full bg-secondary mb-24 font-fontReg">
         <div className="container mx-auto pt-14 text-center flex flex-col items-center">
           <div className="pt-[117.5px] pb-[116.5px] flex flex-col items-center">
             <h1 className="text-[#67A948] text-5xl pb-5 ">{title}</h1>
-            <p className="text-[#fff] text-xl lg:w-[65%]">{date}</p>
+            <p className="text-[#fff] text-xl lg:w-[80%]">{date}</p>
           </div>
           <div className="">
             <ul className="flex text-[#fff] text-lg font-medium">

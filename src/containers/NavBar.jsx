@@ -1,5 +1,6 @@
 import VestiLogo from "../assets/logo-icons/vesti-logo.png";
-import NigeriaFlag from "../assets/logo-icons/ng-flag.png";
+// import NigeriaFlag from "../assets/logo-icons/ng-flag.png";
+import GlobeIcon from "../assets/logo-icons/globe.svg";
 import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -16,19 +17,28 @@ const Nav = () => {
         </div>
         <div className="hidden lg:flex items-center">
           <div className="">
-            <ul className="flex items-center font-light">
+            <ul className="flex items-center font-fontLight">
               <li className="pr-1">Products</li>
               <IoIosArrowDown />
-              <li className="px-[30px]">Company</li>
-              <li className="">Migration Fries</li>
+              <Link to="/about-us" className="px-[30px] hover:text-vestigreen">
+                Company
+              </Link>
+              <Link to="/migration-fries" className="hover:text-vestigreen">
+                Migration Fries
+              </Link>
             </ul>
           </div>
           <div className="">
-            <ul className="flex items-center text-lg font-light">
-              <li className="pl-[50px]">Sign In</li>
+            <ul className="flex items-center text-lg font-fontLight">
+              <Link
+                to="https://app.wevesti.com/auth"
+                className="pl-[50px] hover:text-vestigreen"
+              >
+                Sign In
+              </Link>
               <li className="px-[50px]">
                 <Button
-                  link="#"
+                  link="https://app.wevesti.com/register"
                   width="100%"
                   styles="p-3"
                   CTA="Create an account"
@@ -37,8 +47,8 @@ const Nav = () => {
               <li>
                 <img
                   className="w-[40px] pr-2"
-                  src={NigeriaFlag}
-                  alt="nig-flag"
+                  src={GlobeIcon}
+                  alt="globe-icon"
                 />
               </li>
               <IoIosArrowDown />

@@ -10,7 +10,7 @@ import Featured from "../views/Featured";
 
 const MigrationFries = () => {
   return (
-    <div>
+    <div className="font-fontReg">
       <VestiDocs
         title="Migration Fries"
         date="Want to move overseas in 2022 ? easily see opportunities and read how to start your migration journey."
@@ -130,7 +130,7 @@ const MigrationFries = () => {
           </>
         }
         link={
-          <div className="flex items-center text-vestigreen font-semibold">
+          <div className="flex items-center text-vestigreen font-semibold hover:text-headcol">
             <Link to="#">Read more stories</Link>
             <BsArrowUpRight />
           </div>

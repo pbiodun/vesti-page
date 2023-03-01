@@ -6,15 +6,15 @@ const MeetTheTeam = () => {
   return (
     <div>
       <div className="container mx-auto lg:w-[90%] text-center">
-        <h1 className="text-[#14290A] font-semibold text-4xl pb-3">
+        <h1 className="text-[#14290A] font-semibold text-4xl pb-3 font-fontSemi">
           Meet the Team
         </h1>
-        <p className="text-[#2B5219] text-2xl leading-[35px] mx-auto lg:w-[65%]">
+        <p className="text-[#2B5219] text-2xl leading-[35px] mx-auto lg:w-[65%] font-fontReg">
           Vesti gives humans the power to move overseas to 110 Countries. We are
           the future of legal migration and global migration.
         </p>
         <div className="pt-12 pb-24">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 pb-14">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 pb-14 font-fontReg">
             <div className="flex flex-col items-center justify-between">
               <div>
                 <img src={TeamMember1} alt="team-member1" />
@@ -221,7 +221,9 @@ const MeetTheTeam = () => {
             </div>
           </div>
           <div>
-            <p className="text-[#67A948] text-2xl cursor-pointer">View more</p>
+            <p className="text-[#67A948] text-2xl cursor-pointer font-fontReg hover:text-headcol">
+              View more
+            </p>
           </div>
         </div>
       </div>

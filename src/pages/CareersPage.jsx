@@ -5,6 +5,7 @@ import Vector from "../assets/logo-icons/Vector.png";
 import VestiOffer from "../components/VestiOffer";
 import FaqSection from "../views/FaqSection";
 import DownloadApp from "../views/DownloadApp";
+import Button from "../components/Button";
 
 const CareersPage = () => {
   return (
@@ -14,7 +15,7 @@ const CareersPage = () => {
         <div className=" container relative mx-auto">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-52">
             <div className="col-span-1">
-              <h1 className="text-[#14290A] font-semibold text-4xl pb-10">
+              <h1 className="text-[#14290A] font-semibold text-4xl pb-10 font-fontSemi">
                 Life at Vesti
               </h1>
               <ActiveCard
@@ -59,21 +60,27 @@ const CareersPage = () => {
             head6="Paid Time Off"
             desc6="We have one of the best rates that you can count on."
             buttonText="See all Available Roles"
+            link="#"
           />
         </div>
         <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
       </div>
       <div className="w-full bg-secondary mb-24">
         <div className="container mx-auto text-center py-14 lg:w-[60%]">
-          <h1 className="text-[#7F8CE5] text-lg">COME WORK WITH US</h1>
-          <p className="text-[#ffffff] pt-2 pb-10 text-3xl leading-[40px]">
+          <h1 className="text-[#7F8CE5] text-lg font-fontSemi">
+            COME WORK WITH US
+          </h1>
+          <p className="text-[#ffffff] pt-2 pb-10 text-3xl leading-[40px] font-fontReg">
             Didn’t find a role that fits? We still want to hear from you. Send
             us an email at{" "}
             <span className="text-[#67A948]">wevestijobs@gmail.com</span>
           </p>
-          <button className="bg-vestigreen text-white text-lg text-center px-11 py-4 rounded-[10px] w-[40%]">
-            View open roles
-          </button>
+          <Button
+            link="#"
+            CTA="View open roles"
+            styles="p-4 mx-auto"
+            width="40%"
+          />
         </div>
       </div>
       <FaqSection />

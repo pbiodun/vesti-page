@@ -7,15 +7,17 @@ const GGBenefits = () => {
     <div className="w-full pb-24">
       <div className="container mx-auto lg:w-[80%] flex-wrap">
         <div className="text-center pb-10">
-          <h1 className="text-[#14290A] text-4xl">Global Geng Card Benefits</h1>
-          <p className="text-[#2B5219] text-2xl">
+          <h1 className="text-[#14290A] text-4xl font-fontSemi pb-4">
+            GlobalGeng Card Benefits
+          </h1>
+          <p className="text-[#2B5219] text-2xl font-fontReg">
             These are a few of the Vesti GlobalGeng Mastercard.
           </p>
         </div>
 
         {/* Offerings Listed in Cards */}
         <div className="grid gap-y-10 gap-x-10 xl:grid-cols-3 lg:grid-cols-2 lg:gap-y-10 lg:gap-x-10 md:grid-cols-2 md:gap-5 sm:grid-cols-2 sm:gap-5">
-          <div className="flex flex-col bg-[#F7FFF3] rounded-xl p-10">
+          <div className="flex flex-col bg-[#F7FFF3] rounded-xl p-10 font-fontReg">
             <div>
               <img src={Convenient} alt="convenient" />
             </div>

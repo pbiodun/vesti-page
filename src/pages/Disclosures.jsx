@@ -15,7 +15,7 @@ const Disclosures = () => {
         path2="/privacy-policy"
         path3="/aml"
         mainBody={
-          <div className="text-justify text-[#14290A]">
+          <div className="text-justify text-[#14290A] font-fontReg">
             <h1 className="text-2xl font-semibold">
               1. Introduction and Acceptance
             </h1>

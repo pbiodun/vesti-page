@@ -6,10 +6,10 @@ const VestiValues = () => {
   return (
     <div className="container mx-auto">
       <div>
-        <h1 className="text-[#14290A] font-semibold text-4xl pb-3">
+        <h1 className="text-[#14290A] font-fontSemi text-4xl pb-3">
           Vesti's Values
         </h1>
-        <p className="lg:w-[55%] text-[#2B5219] text-xl leading-[35px] pb-12">
+        <p className="lg:w-[55%] text-[#2B5219] text-xl leading-[35px] pb-12 font-fontReg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           inventore quae amet tempore dolore facilis.
         </p>
@@ -22,8 +22,10 @@ const VestiValues = () => {
             <img src={Convenient} alt="convenient" />
           </div>
           <div className="pt-5">
-            <h3 className="text-[#14290A] font-semibold text-lg pb-1">Trust</h3>
-            <p className="text-[#2B5219] text-base pb-4">
+            <h3 className="text-[#14290A] font-semibold text-lg pb-1 font-fontSemi">
+              Trust
+            </h3>
+            <p className="text-[#2B5219] text-base pb-4 font-fontReg">
               A physical card you can use in over 90 countries.
             </p>
           </div>
@@ -33,10 +35,10 @@ const VestiValues = () => {
             <img src={Speed} alt="speed" />
           </div>
           <div className="pt-5">
-            <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+            <h3 className="text-[#14290A] font-semibold text-lg pb-1 font-fontSemi">
               Transparency
             </h3>
-            <p className="text-[#2B5219] text-base pb-4">
+            <p className="text-[#2B5219] text-base pb-4 font-fontReg">
               Make trasanctions in both Naira and USD
             </p>
           </div>
@@ -46,10 +48,10 @@ const VestiValues = () => {
             <img src={Rates} alt="rates" />
           </div>
           <div className="pt-5">
-            <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+            <h3 className="text-[#14290A] font-semibold text-lg pb-1 font-fontSemi">
               Innovation
             </h3>
-            <p className="text-[#2B5219] text-base pb-4">
+            <p className="text-[#2B5219] text-base pb-4 font-fontReg">
               Our rates are really affordable to cater to everyone’s needs
             </p>
           </div>
@@ -59,10 +61,10 @@ const VestiValues = () => {
             <img src={Convenient} alt="convenient" />
           </div>
           <div className="pt-5">
-            <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+            <h3 className="text-[#14290A] font-semibold text-lg pb-1 font-fontSemi">
               Accountability
             </h3>
-            <p className="text-[#2B5219] text-base pb-4">
+            <p className="text-[#2B5219] text-base pb-4 font-fontReg">
               A physical card you can use in over 90 countries.
             </p>
           </div>
@@ -72,10 +74,10 @@ const VestiValues = () => {
             <img src={Speed} alt="speed" />
           </div>
           <div className="pt-5">
-            <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+            <h3 className="text-[#14290A] font-semibold text-lg pb-1 font-fontSemi">
               Security
             </h3>
-            <p className="text-[#2B5219] text-base pb-4">
+            <p className="text-[#2B5219] text-base pb-4 font-fontReg">
               Make trasanctions in both Naira and USD
             </p>
           </div>
@@ -85,10 +87,10 @@ const VestiValues = () => {
             <img src={Rates} alt="rates" />
           </div>
           <div className="pt-5">
-            <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+            <h3 className="text-[#14290A] font-semibold text-lg pb-1 font-fontSemi">
               Customer-based
             </h3>
-            <p className="text-[#2B5219] text-base pb-4">
+            <p className="text-[#2B5219] text-base pb-4 font-fontReg">
               Our rates are really affordable to cater to everyone’s needs
             </p>
           </div>

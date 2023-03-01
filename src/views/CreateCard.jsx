@@ -2,6 +2,7 @@ import DoubleStrip from "../assets/logo-icons/doublestrip.png";
 import Person from "../assets/logo-icons/person-icon.png";
 import Badge from "../assets/logo-icons/kycbadge-icon.svg";
 import Transact from "../assets/logo-icons/begintrans-icon.png";
+import Button from "../components/Button";
 
 const CreateCard = () => {
   return (
@@ -9,18 +10,18 @@ const CreateCard = () => {
       <div className="container mx-auto pb-24">
         <div className="container flex flex-col justify-center items-center">
           <div className="mx-auto w-[50%] lg:w-[30%]">
-            <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-semibold">
+            <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-fontSemi">
               Create Your Card
             </h1>
             <img src={DoubleStrip} alt="dashes" />
           </div>
-          <div className="grid lg:grid-cols-3 py-12 items-center justify-between">
+          <div className="grid lg:grid-cols-3 py-12 items-center justify-between font-fontReg">
             <div className="flex">
               <div>
                 <img src={Person} alt="person-icon" />
               </div>
               <div className="px-5">
-                <h1 className="text-headcol text-lg font-semibold">
+                <h1 className="text-headcol text-lg font-fontSemi">
                   Register in minutes
                 </h1>
                 <p className="text-[#2B5219] font-extralight text-sm">
@@ -33,7 +34,7 @@ const CreateCard = () => {
                 <img src={Badge} alt="person-icon" />
               </div>
               <div className="px-5">
-                <h1 className="text-headcol text-lg font-semibold">
+                <h1 className="text-headcol text-lg font-fontSemi">
                   Complete KYC verification
                 </h1>
                 <p className="text-[#2B5219] font-extralight text-sm">
@@ -46,7 +47,7 @@ const CreateCard = () => {
                 <img src={Transact} alt="person-icon" />
               </div>
               <div className="px-5">
-                <h1 className="text-headcol text-lg font-semibold">
+                <h1 className="text-headcol text-lg font-fontSemi">
                   Start Transacting
                 </h1>
                 <p className="text-[#2B5219] font-extralight text-sm">
@@ -55,10 +56,16 @@ const CreateCard = () => {
               </div>
             </div>
           </div>
+          <Button
+            link=""
+            CTA="Get started in minutes"
+            styles="p-5 text-white"
+            width="30%"
+          />
           <div className="">
-            <button className="bg-vestigreen text-white text-sm text-center px-11 py-3 rounded-[10px]">
+            {/* <button className="bg-vestigreen text-white text-sm text-center px-11 py-3 rounded-[10px]">
               Get started in minutes
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

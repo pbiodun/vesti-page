@@ -11,10 +11,10 @@ const About = () => {
             <img className="w-full" src={Woman} alt="woman-thinking" />
           </div>
           <div className="lg:w-[45%]">
-            <h1 className="text-[#14290A] font-semibold text-4xl pb-3">
+            <h1 className="text-[#14290A] font-semibold text-4xl pb-3 font-fontSemi">
               What is Vesti?
             </h1>
-            <p className="text-[#2B5219] text-xl">
+            <p className="text-[#2B5219] text-xl font-fontReg">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
               unde porro eos? Beatae facilis laudantium eaque ab atque a sit
               perferendis, reprehenderit cupiditate cumque dolores alias! Quos
@@ -25,10 +25,10 @@ const About = () => {
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center py-24">
           <div className="lg:w-[45%] pb-8 lg:pb-0">
-            <h1 className="text-[#14290A] font-semibold text-4xl pb-3">
+            <h1 className="text-[#14290A] font-semibold text-4xl pb-3 font-fontSemi">
               Our Mission
             </h1>
-            <p className="text-[#2B5219] text-xl">
+            <p className="text-[#2B5219] text-xl font-fontReg">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
               unde porro eos? Beatae facilis laudantium eaque ab atque a sit
               perferendis, reprehenderit cupiditate cumque dolores alias! Quos
@@ -45,10 +45,10 @@ const About = () => {
             <img className="w-full" src={Mentor} alt="woman-thinking" />
           </div>
           <div className="lg:w-[45%]">
-            <h1 className="text-[#14290A] font-semibold text-4xl pb-3">
+            <h1 className="text-[#14290A] font-semibold text-4xl pb-3 font-fontSemi">
               Our Vision
             </h1>
-            <p className="text-[#2B5219] text-xl">
+            <p className="text-[#2B5219] text-xl font-fontReg">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
               unde porro eos? Beatae facilis laudantium eaque ab atque a sit
               perferendis, reprehenderit cupiditate cumque dolores alias! Quos

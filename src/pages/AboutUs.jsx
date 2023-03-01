@@ -1,5 +1,5 @@
 import WebBanner from "../components/WebBanner";
-import Curly from "../assets/images/curlybgleft.png";
+import CurlyL from "../assets/images/curlybgleft.png";
 import CurlyR from "../assets/images/curlybgright.png";
 import About from "../views/About";
 import VestiValues from "../views/VestiValues";
@@ -12,18 +12,20 @@ const AboutUs = () => {
   return (
     <>
       <div className="bg-secondary pb-16 w-full pt-24 lg:pt-36 lg:pb-32 relative overflow-hidden">
-        <img src={Curly} alt="shape" className="absolute left-0" />
+        <img src={CurlyL} alt="shape" className="absolute left-0" />
         <img src={CurlyR} alt="shape" className="absolute right-0" />
-        <div className="z-40">
+
+        <div className="">
           <WebBanner
             title={
-              <p className="text-4xl lg:text-4xl xl:text-5xl font-bold pb-5 text-[#ffffff]">
+              <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 text-[#ffffff]">
                 We are <span className="text-[#67A948]">Vesti</span>
-              </p>
+              </h1>
             }
             details="Our goal is to accelerate and improve the movement and finances of people immigrating to the countries of their dreams"
             buttonText="Get started in minutes"
             image=""
+            imgWidth="45%"
           />
         </div>
       </div>

@@ -1,30 +1,44 @@
 import WebBanner from "../components/WebBanner";
-import HoldPhone from "../assets/images/holdphone.png";
+import WalletPhone from "../assets/images/walletsvcs.png";
 import WalletsBenefit from "../views/WalletsBenefit";
-import DescriptionCard from "../components/DescriptionCard";
-import WalletScreen from "../assets/images/wallet-screen.png";
+// import DescriptionCard from "../components/DescriptionCard";
+// import WalletScreen from "../assets/images/wallet-screen.png";
 import ToCreateCard from "../components/ToCreateCard";
 import Vector from "../assets/logo-icons/Vector.png";
-import AppsDownload from "../views/AppsDownload";
+// import AppsDownload from "../views/AppsDownload";
 import DownloadApp from "../views/DownloadApp";
+import CardAds from "../components/CardAds";
+import Phone from "../assets/images/phone-notif1.png";
 
 const WalletsPage = () => {
   return (
     <>
-      <div className="bg-secondary pb-16 w-full pt-32">
+      <div className="bg-secondary w-full pt-40">
         <WebBanner
           title={
-            <p className="text-4xl lg:text-4xl xl:text-5xl font-bold pb-5 text-[#ffffff]">
-              Vesti <span className="text-[#67A948]">Wallets</span>
+            <p className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 text-[#ffffff]">
+              Vesti's{" "}
+              <span className="text-[#67A948]">Multi-Currency Wallet</span>
             </p>
           }
           details="Talking about convenience? This is the card for you! It is a Physical Debit Card that can be used at anytime and anywhere in the world."
           buttonText="Get started in minutes"
-          image={HoldPhone}
+          link="#"
+          image={WalletPhone}
+          imgWidth="60%"
         />
       </div>
       <WalletsBenefit />
-      <div className="container grid lg:grid-cols-2 mx-auto gap-10 pb-24">
+      <div className="container pb-24 mx-auto ">
+        <CardAds
+          title="AVAILABLE TO REQUEST"
+          mainDesc="Your Comfort is Guaranteed With The Vesti GlobalGeng Card"
+          details="Vesti gives humans the power to move overseas to 110 Countries."
+          learnMore
+          image={Phone}
+        />
+      </div>
+      {/* <div className="container grid lg:grid-cols-2 mx-auto gap-10 pb-24">
         <DescriptionCard
           title="Naira Wallet"
           desc="You can easily view and manage all transactions made with your Virtual card right from the Vesti App"
@@ -38,12 +52,12 @@ const WalletsPage = () => {
           image={WalletScreen}
           //   link="/virtual-card"
         />
-      </div>
+      </div> */}
       <div className="w-full bg-[#F7FFF3] relative mb-24">
         <img src={Vector} alt="shape" className="absolute top-0 left-0" />
         <div className="container mx-auto py-24">
           <ToCreateCard
-            classname="mx-auto w-[50%] lg:w-[40%] flex flex-col"
+            classname="mx-auto w-[100%] lg:w-[40%] flex flex-col justify-center items-center"
             title="What Can You Do With Wallets"
             head1="Register in minutes"
             desc1="Sign up online, or in our app with your email address"
@@ -56,7 +70,7 @@ const WalletsPage = () => {
         </div>
         <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
       </div>
-      <AppsDownload />
+      {/* <AppsDownload /> */}
       <DownloadApp />
     </>
   );

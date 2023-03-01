@@ -19,7 +19,7 @@ const Showcase = () => {
             </p>
 
             <Button
-              link="#"
+              link="https://app.wevesti.com/auth"
               width="50%"
               styles="mb-[70px] p-4"
               CTA="Get started in minutes"

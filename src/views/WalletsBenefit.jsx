@@ -5,7 +5,7 @@ import Rates from "../assets/logo-icons/rates-icon.png";
 const WalletsBenefit = () => {
   return (
     <div className="w-full py-24">
-      <div className="container mx-auto lg:w-[80%]">
+      <div className="container mx-auto lg:w-[80%] font-fontReg">
         <div className="text-center pb-10">
           <h1 className="text-[#14290A] text-4xl">
             Get More Out of Vesti Wallets

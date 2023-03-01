@@ -1,4 +1,5 @@
 import CardBg from "../assets/images/card-bg.png";
+import Button from "../components/Button";
 
 const VirtualVisaCard = () => {
   return (
@@ -6,18 +7,16 @@ const VirtualVisaCard = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <div className="pt-16">
-            <p className="text-4xl lg:text-4xl xl:text-5xl font-bold mb-5 lg:w-[60%]">
+            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 lg:w-[70%]">
               The Vesti <span className="text-[#67A948]">Virtual</span>{" "}
               <span className="text-[#67A948]">Dollar</span> Card
-            </p>
-            <p className="text-lg font-light mb-12 lg:w-[80%]">
+            </h1>
+            <p className="text-lg pb-12 lg:w-[60%] font-fontReg">
               Talking about convenience? This is the card for you! It is a
               Physical Debit Card that can be used at anytime and anywhere in
               the world.
             </p>
-            <button className="bg-[#67A948] p-4 rounded-xl w-[35%]">
-              Create your card
-            </button>
+            <Button link="#" CTA="Create your card" styles="p-4" width="35%" />
           </div>
           <div className="">
             <img className="" src={CardBg} alt="featured" />

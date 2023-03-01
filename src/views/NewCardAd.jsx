@@ -11,6 +11,7 @@ const NewCardAd = () => {
           details="You can rest easy knowing that only you have access to your card information. To ensure that you have total control over them, we use high-level encryption services."
           learnMore
           image={PhoneNot}
+          link="#"
         />
       </div>
     </>

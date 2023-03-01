@@ -1,5 +1,5 @@
 // import { BsArrowUpRight } from "react-icons/bs";
-import WalletScreen from "../assets/images/wallet-screen.png";
+import FinServicsImg from "../assets/images/finsvcs1.png";
 import VirtualCard from "../assets/images/virtual-card.png";
 import DescriptionCard from "../components/DescriptionCard";
 
@@ -15,8 +15,8 @@ const WalletCard = () => {
             textCol="#57266E"
             h1Col="text-[#20082B]"
             pCol="text-[#3F1951]"
-            image={WalletScreen}
-            link="#"
+            image={FinServicsImg}
+            link="/"
           />
           <DescriptionCard
             title="Migration Services"
@@ -26,7 +26,7 @@ const WalletCard = () => {
             h1Col="text-[#060E42]"
             pCol="text-[#16216B]"
             image={VirtualCard}
-            link="/virtual-card"
+            link="/migration-services"
           />
         </div>
       </div>

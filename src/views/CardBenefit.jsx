@@ -6,7 +6,7 @@ import Rates from "../assets/logo-icons/rates-icon.png";
 const CardBenefit = () => {
   return (
     <div className="w-full py-24">
-      <div className="container mx-auto lg:w-[80%]">
+      <div className="container mx-auto lg:w-[80%] font-fontReg">
         <div className="text-center pb-10">
           <h1 className="text-[#14290A] text-4xl">
             Vesti Dollar Virtual Card Benefits
@@ -17,13 +17,13 @@ const CardBenefit = () => {
         </div>
 
         {/* Offerings Listed in Cards */}
-        <div className="grid lg:grid-cols-3 lg:gap-y-10 gap-7">
+        <div className="grid lg:grid-cols-3 lg:gap-y-10 lg:gap-x-[100px] gap-7">
           <div className="flex">
             <div>
               <img src={Convenient} alt="convenient" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1">
                 Widely Accepted
               </h3>
               <p className="text-[#2B5219] text-base">
@@ -36,11 +36,11 @@ const CardBenefit = () => {
               <img src={Speed} alt="speed" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1">
                 Fast Transactions
               </h3>
               <p className="text-[#2B5219] text-base">
-                You don't have to wait hours hours to confirm your transactions.
+                You don't have to wait hours to confirm your transactions.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const CardBenefit = () => {
               <img src={Rates} alt="rates" />
             </div>
             <div className="pl-5 md:pl-3">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontSemi text-lg pb-1">
                 Fair Rates
               </h3>
               <p className="text-[#2B5219] text-base">

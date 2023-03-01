@@ -19,7 +19,7 @@ const DescriptionCard = ({
         <div className="h-full flex flex-col mx-auto items-center justify-between">
           <div className="py-10 px-10 lg:px-20">
             <h1 className={`${h1Col} text-3xl font-fontReg`}>{title}</h1>
-            <p className={`text-base ${pCol} font-fontLight pt-3 w-[80%]`}>
+            <p className={`text-base ${pCol} font-fontReg pt-3 w-[80%]`}>
               {desc}
             </p>
             <div
@@ -29,8 +29,8 @@ const DescriptionCard = ({
               <BsArrowUpRight />
             </div>
           </div>
-          <div className="w-[75%] lg:w-[50%]">
-            <img src={image} alt="phone-screen" />
+          <div className="w-[75%] lg:w-[60%]">
+            <img className="w-full" src={image} alt="phone-screen" />
           </div>
         </div>
       </div>

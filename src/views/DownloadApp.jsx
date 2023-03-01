@@ -11,21 +11,20 @@ const DownloadApp = () => {
             Also available to download on both
           </h1>
           <div className="grid grid-cols-2 gap-4 p-5">
-            <Link to="#">
+            <Link to="https://play.google.com/store/apps/details?id=com.vesti.app&pli=1">
               <img
                 className="cursor-pointer"
                 src={PlayStore}
                 alt="play-store"
               />
             </Link>
-            <Link to="#">
+            <Link to="https://apps.apple.com/ca/app/vesti-app/id1564444402">
               <img
                 className="cursor-pointer"
                 src={AppleStore}
                 alt="apple-store"
               />
             </Link>
-            {/* <img src={AppleStore} alt="apple-store" /> */}
           </div>
         </div>
       </div>
