@@ -11,23 +11,37 @@ const Footer = () => {
       <div className="container mx-auto pt-14 font-fontLight">
         <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 pb-20">
           <div>
-            <div className="pr-[40px]">
-              <img className="w-[150px]" src={VestiLogo} alt="vesti-logo" />
+            <div className="pr-[40px] cursor-pointer">
+              <Link to="/" onClick={() => (window.location.href = `/`)}>
+                <img className="w-[150px]" src={VestiLogo} alt="vesti-logo" />
+              </Link>
             </div>
             <div className="pt-5">
               <ul className="flex">
-                <li className="pl-4">
+                <Link
+                  to="https://www.twitter.com/Vestiofficial"
+                  className="pl-4"
+                >
                   <img src={TwitterLogo} alt="twitter-icon" />
-                </li>
-                <li className="pl-4">
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/company/vestiofficial"
+                  className="pl-4"
+                >
                   <img src={LinkedinLogo} alt="linkedin-icon" />
-                </li>
-                <li className="pl-4">
+                </Link>
+                <Link
+                  to="https://www.facebook.com/profile.php?id=100088055724008&mibextid=ZbWKwL"
+                  className="pl-4"
+                >
                   <img src={FacebookLogo} alt="facebook-icon" />
-                </li>
-                <li className="pl-4">
+                </Link>
+                <Link
+                  to="https://www.instagram.com/Vestiofficial"
+                  className="pl-4"
+                >
                   <img src={InstagramLogo} alt="instagram-icon" />
-                </li>
+                </Link>
               </ul>
             </div>
           </div>
@@ -36,28 +50,32 @@ const Footer = () => {
               <li className="text-base font-fontSemi pb-3">PRODUCTS</li>
               <Link
                 to="/globalgeng-card"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/globalgeng-card`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 GlobalGeng Card
               </Link>
 
               <Link
                 to="/wallets"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/wallets`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Wallets
               </Link>
 
               <Link
                 to="/virtual-card"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/virtual-card`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Founders' card
               </Link>
 
               <Link
                 to="#"
-                className="text-sm font-fontLight hover:text-vestigreen"
+                onClick={() => (window.location.href = `/#`)}
+                className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Pathways
               </Link>
@@ -68,19 +86,22 @@ const Footer = () => {
               <li className="text-base font-fontSemi pb-3">COMPANY</li>
               <Link
                 to="/about-us"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/about-us`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 About Us
               </Link>
               <Link
                 to="/careers"
-                className="text-sm pb-2 font-fontLight hover:text-vestigreen"
+                onClick={() => (window.location.href = `/careers`)}
+                className="text-sm pb-2 font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Careers
               </Link>
               <Link
                 to="/#"
-                className="text-sm font-fontLight hover:text-vestigreen"
+                onClick={() => (window.location.href = `/#`)}
+                className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Vesti Blog
               </Link>
@@ -93,25 +114,29 @@ const Footer = () => {
               </li>
               <Link
                 to="/aml"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/aml`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 AML
               </Link>
               <Link
                 to="#"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/#`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 FAQ
               </Link>
               <Link
                 to="/tos"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/tos`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Disclosures
               </Link>
               <Link
                 to="/privacy-policy"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen"
+                onClick={() => (window.location.href = `/privacy-policy`)}
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Privacy Policy
               </Link>

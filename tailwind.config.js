@@ -14,9 +14,12 @@ module.exports = withMT({
       "3xl": "1441px",
     },
     extend: {
+      backgroundImage: {
+        ImageName: "url('')",
+      },
       fontFamily: {
-        // sans: ["Syne", "sans-serif"],
-        // sansec: ["Poppins", "sans-serif"],
+        sans: ["Syne", "sans-serif"],
+        sansec: ["Poppins", "sans-serif"],
         fontBold: ["Sohne-Bold"],
         fontSemi: ["Sohne-SemiBold"],
         fontReg: ["Sohne-Regular"],

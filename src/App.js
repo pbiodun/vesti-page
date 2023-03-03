@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { useTranslation } from "react-i18next";
 import Home from "./pages/Home";
 import VirtualCard from "./pages/VirtualCard";
-import Nav from "./containers/NavBar";
 import Footer from "./containers/Footer";
 import GlobalGengCard from "./pages/GlobalGengCard";
 import WalletsPage from "./pages/WalletsPage";
@@ -14,6 +13,10 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aml from "./pages/Aml";
 import MigrationFries from "./pages/MigrationFries";
 import MigrationServices from "./pages/MigrationServices";
+import ZambiaHome from "./pages/ZM/ZambiaHome";
+import GhanaHome from "./pages/GH/GhanaHome";
+import MexicoHome from "./pages/MX/MexicoHome";
+import NavBar from "./containers/NavBar";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -23,7 +26,7 @@ import MigrationServices from "./pages/MigrationServices";
 function App() {
   return (
     <BrowserRouter>
-      <Nav />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/virtual-card" element={<VirtualCard />} />
@@ -36,6 +39,9 @@ function App() {
         <Route path="/aml" element={<Aml />} />
         <Route path="/migration-fries" element={<MigrationFries />} />
         <Route path="/migration-services" element={<MigrationServices />} />
+        <Route path="/zm" element={<ZambiaHome />} />
+        <Route path="/gh" element={<GhanaHome />} />
+        <Route path="/mx" element={<MexicoHome />} />
       </Routes>
       <Footer />
     </BrowserRouter>

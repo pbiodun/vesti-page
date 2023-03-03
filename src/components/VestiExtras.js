@@ -1,15 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 
-const VestiDocs = ({
+const VestiExtras = ({
   title,
   date,
   link1,
   link2,
   link3,
+  link4,
   mainBody,
   path1,
   path2,
   path3,
+  path4,
 }) => {
   const location = useLocation();
   //destructuring pathname from location
@@ -24,14 +26,16 @@ const VestiDocs = ({
         <div className="container mx-auto pt-14 text-center flex flex-col items-center">
           <div className="pt-[117.5px] pb-[116.5px] flex flex-col items-center">
             <h1 className="text-[#67A948] text-5xl pb-5 ">{title}</h1>
-            <p className="text-[#fff] text-xl font-fontLight">{date}</p>
+            <p className="text-[#fff] text-lg font-fontLight lg:w-[62.5%]">
+              {date}
+            </p>
           </div>
           <div className="">
             <ul className="flex text-[#fff] text-lg">
               <Link
                 to={path1}
                 className={`pb-3 ${
-                  splitLocation[1] === "tos"
+                  splitLocation[1] === "migration-fries"
                     ? `border-b-8 border-[#67A948]`
                     : "text-white"
                 }`}
@@ -40,8 +44,8 @@ const VestiDocs = ({
               </Link>
               <Link
                 to={path2}
-                className={`mx-5 pb-3 ${
-                  splitLocation[1] === "privacy-policy"
+                className={`mx-10 pb-3 ${
+                  splitLocation[1] === "jobs"
                     ? `border-b-8 border-[#67A948]`
                     : "text-white"
                 }`}
@@ -51,12 +55,22 @@ const VestiDocs = ({
               <Link
                 to={path3}
                 className={`pb-3 ${
-                  splitLocation[1] === "aml"
+                  splitLocation[1] === "news"
                     ? `border-b-8 border-[#67A948]`
                     : "text-white"
                 }`}
               >
                 {link3}
+              </Link>
+              <Link
+                to={path4}
+                className={`pb-3 ml-10 ${
+                  splitLocation[1] === "scholarships"
+                    ? `border-b-8 border-[#67A948]`
+                    : "text-white"
+                }`}
+              >
+                {link4}
               </Link>
             </ul>
           </div>
@@ -67,4 +81,4 @@ const VestiDocs = ({
   );
 };
 
-export default VestiDocs;
+export default VestiExtras;

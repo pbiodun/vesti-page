@@ -1,7 +1,7 @@
 import CardAd from "../views/CardAd";
 import Mfries from "../components/Mfries";
 import MigrationCard from "../components/MigrationCard";
-import VestiDocs from "../components/VestiDocs";
+import VestiExtras from "../components/VestiExtras";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Phones from "../assets/images/phones.png";
@@ -11,7 +11,7 @@ import Featured from "../views/Featured";
 const MigrationFries = () => {
   return (
     <div className="font-fontReg">
-      <VestiDocs
+      <VestiExtras
         title="Migration Fries"
         date="Want to move overseas in 2022 ? easily see opportunities and read how to start your migration journey."
         addStyle="border-b-8 border-[#67A948]"

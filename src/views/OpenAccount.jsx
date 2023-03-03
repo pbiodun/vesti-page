@@ -1,4 +1,5 @@
 import Vector from "../assets/logo-icons/Vector.png";
+import Vector1 from "../assets/logo-icons/Vector1.png";
 import Button from "../components/Button";
 import ToCreateCard from "../components/ToCreateCard";
 
@@ -19,13 +20,13 @@ const OpenAccount = () => {
         />
         <div className="pb-4 md:pb-10 sm:pb-20 flex flex-col justify-center items-center">
           <Button
-            link=""
+            link="https://app.wevesti.com/register"
             CTA="Get started in minutes"
             width="30%"
             styles="p-4 text-[#fff]"
           />
         </div>
-        <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
+        <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />
       </div>
     </div>
   );

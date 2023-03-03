@@ -5,6 +5,7 @@ import WalletsBenefit from "../views/WalletsBenefit";
 // import WalletScreen from "../assets/images/wallet-screen.png";
 import ToCreateCard from "../components/ToCreateCard";
 import Vector from "../assets/logo-icons/Vector.png";
+import Vector1 from "../assets/logo-icons/Vector1.png";
 // import AppsDownload from "../views/AppsDownload";
 import DownloadApp from "../views/DownloadApp";
 import CardAds from "../components/CardAds";
@@ -68,7 +69,7 @@ const WalletsPage = () => {
             buttonText="Get started in minutes"
           />
         </div>
-        <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
+        <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />
       </div>
       {/* <AppsDownload /> */}
       <DownloadApp />

@@ -7,7 +7,6 @@ const Disclosures = () => {
       <VestiDocs
         title="Terms of Service"
         date="Last Updated: July 25, 2020"
-        addStyle="border-b-8 border-[#67A948]"
         link1="TERMS OF SERVICE"
         link2="PRIVACY POLICY"
         link3="AML"

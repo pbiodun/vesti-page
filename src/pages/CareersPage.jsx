@@ -2,6 +2,7 @@ import CareersBanner from "../views/CareersBanner";
 import ActiveCard from "../components/ActiveCard";
 import VestiValues from "../views/VestiValues";
 import Vector from "../assets/logo-icons/Vector.png";
+import Vector1 from "../assets/logo-icons/Vector1.png";
 import VestiOffer from "../components/VestiOffer";
 import FaqSection from "../views/FaqSection";
 import DownloadApp from "../views/DownloadApp";
@@ -63,7 +64,7 @@ const CareersPage = () => {
             link="#"
           />
         </div>
-        <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
+        <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />
       </div>
       <div className="w-full bg-secondary mb-24">
         <div className="container mx-auto text-center py-14 lg:w-[60%]">
