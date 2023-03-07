@@ -1,5 +1,5 @@
 import WebBanner from "../../components/WebBanner";
-import HoldPhone from "../../assets/images/holdphone.png";
+import GhanaPhone from "../../assets/images/ghana-image.png";
 import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
 import DescriptionCard from "../../components/DescriptionCard";
 import FinServicsImg from "../../assets/images/finsvcs1.png";
@@ -24,7 +24,7 @@ const GhanaHome = () => {
           details="Millions of people moving to new countries use Vesti for accessing financial services like bank accounts, debit and credit cards."
           buttonText="Get started in minutes"
           link="#"
-          image={HoldPhone}
+          image={GhanaPhone}
           imgWidth="50%"
           featured={
             <div>

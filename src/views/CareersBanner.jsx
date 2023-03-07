@@ -1,6 +1,7 @@
 import Techstars1 from "../assets/logo-icons/techstars1.svg";
 import Techcity1 from "../assets/logo-icons/techcity1.svg";
 import Bloomberg1 from "../assets/logo-icons/bloomberg1.svg";
+import CareerImage from "../assets/images/career-image.png";
 import Button from "../components/Button";
 
 const CareersBanner = () => {
@@ -8,10 +9,7 @@ const CareersBanner = () => {
     <div className="w-full bg-secondary">
       <div className="py-32 container mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center">
         <div className="lg:w-[45%]">
-          <img
-            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
-            alt="dummy"
-          />
+          <img src={CareerImage} alt="career-pics" />
         </div>
         <div className="lg:w-[45%]">
           <h1 className="text-[#ffffff] font-semibold text-5xl pb-4 font-fontSemi">

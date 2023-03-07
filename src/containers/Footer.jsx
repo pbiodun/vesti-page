@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 pb-20">
           <div>
             <div className="pr-[40px] cursor-pointer">
-              <Link to="/" onClick={() => (window.location.href = `/`)}>
+              <Link to="/">
                 <img className="w-[150px]" src={VestiLogo} alt="vesti-logo" />
               </Link>
             </div>
@@ -50,7 +50,6 @@ const Footer = () => {
               <li className="text-base font-fontSemi pb-3">PRODUCTS</li>
               <Link
                 to="/globalgeng-card"
-                onClick={() => (window.location.href = `/globalgeng-card`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 GlobalGeng Card
@@ -58,7 +57,6 @@ const Footer = () => {
 
               <Link
                 to="/wallets"
-                onClick={() => (window.location.href = `/wallets`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Wallets
@@ -66,7 +64,6 @@ const Footer = () => {
 
               <Link
                 to="/virtual-card"
-                onClick={() => (window.location.href = `/virtual-card`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Founders' card
@@ -74,7 +71,6 @@ const Footer = () => {
 
               <Link
                 to="#"
-                onClick={() => (window.location.href = `/#`)}
                 className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Pathways
@@ -86,21 +82,18 @@ const Footer = () => {
               <li className="text-base font-fontSemi pb-3">COMPANY</li>
               <Link
                 to="/about-us"
-                onClick={() => (window.location.href = `/about-us`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 About Us
               </Link>
               <Link
                 to="/careers"
-                onClick={() => (window.location.href = `/careers`)}
                 className="text-sm pb-2 font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Careers
               </Link>
               <Link
                 to="/#"
-                onClick={() => (window.location.href = `/#`)}
                 className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Vesti Blog
@@ -114,28 +107,24 @@ const Footer = () => {
               </li>
               <Link
                 to="/aml"
-                onClick={() => (window.location.href = `/aml`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 AML
               </Link>
               <Link
                 to="#"
-                onClick={() => (window.location.href = `/#`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 FAQ
               </Link>
               <Link
                 to="/tos"
-                onClick={() => (window.location.href = `/tos`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Disclosures
               </Link>
               <Link
                 to="/privacy-policy"
-                onClick={() => (window.location.href = `/privacy-policy`)}
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Privacy Policy

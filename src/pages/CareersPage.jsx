@@ -3,6 +3,7 @@ import ActiveCard from "../components/ActiveCard";
 import VestiValues from "../views/VestiValues";
 import Vector from "../assets/logo-icons/Vector.png";
 import Vector1 from "../assets/logo-icons/Vector1.png";
+import VestiLife from "../assets/images/vesti-life.png";
 import VestiOffer from "../components/VestiOffer";
 import FaqSection from "../views/FaqSection";
 import DownloadApp from "../views/DownloadApp";
@@ -24,19 +25,22 @@ const CareersPage = () => {
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
                 click="hover:border-l-4 hover:border-l-lime-700"
               />
+
               <ActiveCard
                 title="Cards"
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
                 click="hover:border-l-4 hover:border-l-lime-700"
+                addStyles="py-16"
               />
+
               <ActiveCard
                 title="Pathways to other countries"
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
                 click="hover:border-l-4 hover:border-l-lime-700"
               />
             </div>
-            <div className="bg-[#EAEAEA] col-span-1 h-full rounded-[20px] flex justify-center items-end">
-              {/* <div className="bg-[#16216B] h-full rounded-[20px]"></div> */}
+            <div className="col-span-1 rounded-[20px] flex justify-center items-end">
+              <img className="w-full h-full" src={VestiLife} alt="vesti-life" />
             </div>
           </div>
         </div>

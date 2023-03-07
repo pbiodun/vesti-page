@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // import { Suspense } from "react";
 // import { useTranslation } from "react-i18next";
 import Home from "./pages/Home";
@@ -17,6 +17,8 @@ import ZambiaHome from "./pages/ZM/ZambiaHome";
 import GhanaHome from "./pages/GH/GhanaHome";
 import MexicoHome from "./pages/MX/MexicoHome";
 import NavBar from "./containers/NavBar";
+import ScrollToTop from "./components/ScrollToTop";
+import ErrorPage from "./pages/ErrorPage";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -25,7 +27,8 @@ import NavBar from "./containers/NavBar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,9 +45,12 @@ function App() {
         <Route path="/zm" element={<ZambiaHome />} />
         <Route path="/gh" element={<GhanaHome />} />
         <Route path="/mx" element={<MexicoHome />} />
+        <Route path="/not-found" element={<ErrorPage />} />
+
+        {/* <Route path="/zm" element={<ZambiaHome />} /> */}
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 

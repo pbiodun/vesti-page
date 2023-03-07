@@ -30,10 +30,7 @@ const Home = () => {
             <p className="text-base font-extralight text-white pt-6 font-fontReg w-[60%]">
               Vesti gives humans the power to move overseas to 110 Countries.
             </p>
-            <div
-              className="pt-5 flex items-center text-[#ffffff] font-fontReg text-xl hover:text-headcol w-[22.5%]"
-              onClick={() => (window.location.href = `/globalgeng-card`)}
-            >
+            <div className="pt-5 flex items-center text-[#ffffff] font-fontReg text-xl hover:text-headcol w-[22.5%]">
               <Link to="/globalgeng-card">Learn more</Link>
               <BsArrowUpRight />
             </div>

@@ -1,7 +1,7 @@
 import VestiLogo from "../assets/logo-icons/vesti-logo.png";
-// import NigeriaFlag from "../assets/logo-icons/ng-flag.png";
 import GlobeIcon from "../assets/logo-icons/globe.svg";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+// import {  } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
@@ -9,26 +9,33 @@ import Button from "../components/Button";
 import { useState } from "react";
 import NavLinks from "../components/NavLinks";
 import MobileNav from "../components/MobileNav";
+import CountryDropdown from "../components/CountryDropdown";
+import { useApp } from "../hooks/useApp";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const { country } = useApp();
+
+  const [showCountry, setShowCountry] = useState(false);
+
+  const toggleCountry = () => {
+    setShowCountry(!showCountry);
+  };
+
   return (
     <>
       <nav className="bg-[#060E42] w-full py-7 lg:py-5 fixed top-0 left-0 right-0 z-50 text-white font-fontReg">
         <div className="container flex mx-auto justify-between items-center">
-          <div
-            className="w-[70px] lg:w-[100px]"
-            onClick={() => (window.location.href = `/`)}
-          >
+          <div className="w-[70px] lg:w-[100px]">
             <Link to="/">
               <img src={VestiLogo} alt="Vesti-Logo" />
             </Link>
           </div>
-          <div className="hidden lg:flex items-center lg:gap-16">
+          <div className="hidden lg:flex items-center lg:gap-10">
             {/* NavLinks */}
             <NavLinks addStyle="flex" />
             <div className="">
-              <ul className="flex items-center text-lg font-fontLight lg:gap-8">
+              <ul className="flex items-center text-base font-fontReg lg:gap-10">
                 <li>
                   <Link
                     to="https://app.wevesti.com/auth"
@@ -37,22 +44,29 @@ const NavBar = () => {
                     Sign In
                   </Link>
                 </li>
-                <li className="">
+                <li>
                   <Button
                     link="https://app.wevesti.com/register"
                     width="100%"
-                    styles="p-3"
+                    styles="p-3 px-8"
                     CTA="Create an account"
                   />
                 </li>
                 <li>
-                  <div className="flex items-center">
+                  <div
+                    className="flex items-center relative"
+                    onClick={toggleCountry}
+                  >
                     <img
                       className="w-[40px] pr-1"
-                      src={GlobeIcon}
+                      src={`${!country.img ? GlobeIcon : country.img}`}
                       alt="globe-icon"
                     />
-                    <IoIosArrowDown />
+                    {/* <p>{country.title}</p> */}
+                    {showCountry ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    {showCountry ? (
+                      <CountryDropdown hide={() => setShowCountry(false)} />
+                    ) : null}
                   </div>
                 </li>
               </ul>

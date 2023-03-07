@@ -37,6 +37,7 @@ const MobileNav = () => {
             link="https://app.wevesti.com/auth"
             CTA="Create an account"
             styles="p-2 mt-5 mx-auto text-sm"
+            width="50%"
           />
         </div>
       </div>
