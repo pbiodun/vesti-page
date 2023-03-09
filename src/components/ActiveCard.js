@@ -6,7 +6,7 @@ const ActiveCard = ({ title, desc, learnMore, click, addStyles }) => {
   return (
     <>
       <div
-        className={`${addStyles} py-5 border-[#67A948]-500 cursor-pointer pl-4 ${click} border-l-4 `}
+        className={`${addStyles} py-5 border-[#67A948]-500 cursor-pointer pl-4 ${click} border-l-4`}
       >
         <h1 className="text-[#14290A] text-xl mb-2 font-fontSemi">{title}</h1>
         <p className="text-[#2B5219] font-fontLight text-sm">{desc}</p>

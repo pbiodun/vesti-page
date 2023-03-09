@@ -14,28 +14,23 @@ const Pathways = () => {
               <ActiveCard
                 title="Pathways software for global migration"
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
-                click="hover:border-l-4 hover:border-l-lime-700"
+                click="hover:border-l-4 hover:border-l-lime-700 hover:opacity-100"
                 learnMore
               />
               <ActiveCard
-                title="Pathways software for global migration"
+                title="Card"
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
-                click="hover:border-l-4 hover:border-l-lime-700"
+                click="hover:border-l-4 hover:border-l-lime-700 opacity-50 hover:opacity-100"
               />
               <ActiveCard
-                title="Pathways software for global migration"
+                title="Wallets"
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
-                click="hover:border-l-4 hover:border-l-lime-700"
+                click="hover:border-l-4 hover:border-l-lime-700 opacity-50 hover:opacity-100"
               />
               <ActiveCard
-                title="Pathways software for global migration"
+                title="Bill Payment"
                 desc="Vesti gives humans the power to move overseas to 110 Countries."
-                click="hover:border-l-4 hover:border-l-lime-700"
-              />
-              <ActiveCard
-                title="Pathways software for global migration"
-                desc="Vesti gives humans the power to move overseas to 110 Countries."
-                click="hover:border-l-4 hover:border-l-lime-700"
+                click="hover:border-l-4 hover:border-l-lime-700 opacity-50 hover:opacity-100"
               />
             </div>
           </div>
