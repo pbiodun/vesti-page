@@ -2,22 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Sohne-Bold";
-  src: url("./assets/fonts/Söhne-Dreiviertelfett.otf");
+  src: url("./assets/fonts/Söhne-Dreiviertelfett.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sohne-SemiBold";
-  src: url("./assets/fonts/Söhne-Halbfett.otf");
+  src: url("./assets/fonts/Söhne-Halbfett.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sohne-Regular";
-  src: url("./assets/fonts/Söhne-Kräftig.otf");
+  src: url("./assets/fonts/Söhne-Kräftig.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Sohne-Light";
-  src: url("./assets/fonts/Söhne-Leicht.otf");
+  src: url("./assets/fonts/Söhne-Leicht.otf") format("opentype");
+} */
+
+@font-face {
+  font-family: "shnebold";
+  src: url("./assets/webfontkit/sohne-dreiviertelfett-webfont.woff2")
+      format("woff2"),
+    url("./assets/webfontkit/sohne-dreiviertelfett-webfont.woff") format("woff");
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: "shnehalbfett";
+  src: url("./assets/webfontkit/sohne-halbfett-webfont.woff2") format("woff2"),
+    url("./assets/webfontkit/sohne-halbfett-webfont.woff") format("woff");
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: "shnekrftig";
+  src: url("./assets/webfontkit/sohne-kraftig-webfont.woff2") format("woff2"),
+    url("./assets/webfontkit/sohne-kraftig-webfont.woff") format("woff");
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: "shneleicht";
+  src: url("./assets/webfontkit/sohne-leicht-webfont.woff2") format("woff2"),
+    url("./assets/webfontkit/sohne-leicht-webfont.woff") format("woff");
+  /* font-weight: normal;
+  font-style: normal; */
 }

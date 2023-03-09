@@ -20,10 +20,10 @@ module.exports = withMT({
       fontFamily: {
         sans: ["Syne", "sans-serif"],
         sansec: ["Poppins", "sans-serif"],
-        fontBold: ["Sohne-Bold"],
-        fontSemi: ["Sohne-SemiBold"],
-        fontReg: ["Sohne-Regular"],
-        fontLight: ["Sohne-Light"],
+        fontBold: ["shnebold"],
+        fontSemi: ["shnehalbfett"],
+        fontReg: ["shnekrftig"],
+        fontLight: ["shneleicht"],
       },
       spacing: {
         sm: "8px",
