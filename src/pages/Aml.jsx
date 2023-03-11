@@ -14,7 +14,7 @@ const Aml = () => {
         path2="/privacy-policy"
         path3="/aml"
         mainBody={
-          <div className="text-justify text-[#14290A] font-fontReg">
+          <div className="text-justify text-[#14290A] font-fontLight">
             <p className="">
               It is the Policy of Vesti Technology Solutions Inc (Vesti) to
               actively prohibits and prevents money laundering and the funding

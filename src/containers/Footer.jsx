@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="bg-[#060E42] text-[#ffffff] border-none">
       <div className="container mx-auto pt-14 font-fontLight">
-        <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 pb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-8 pb-20">
           <div>
             <div className="pr-[40px] cursor-pointer">
               <Link to="/">

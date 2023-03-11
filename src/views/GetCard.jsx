@@ -5,7 +5,7 @@ const GetCard = () => {
     <div className="bg-[#060E42] text-[#ffffff]">
       <div className="container mx-auto">
         <div className="flex flex-col items-center py-14">
-          <h1 className="text-5xl text-center lg:w-[30%] leading-[60px] pb-8 font-fontSemi">
+          <h1 className="text-4xl lg:text-5xl text-center w-[90%] sm:w-[50%] lg:w-[40%] pb-8 font-fontSemi">
             Get your Vesti Virtual Card
           </h1>
           <Button

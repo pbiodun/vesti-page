@@ -19,6 +19,7 @@ import MexicoHome from "./pages/MX/MexicoHome";
 import NavBar from "./containers/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorPage from "./pages/ErrorPage";
+import MigrationPost from "./pages/MigrationPost";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -45,6 +46,7 @@ function App() {
         <Route path="/zm" element={<ZambiaHome />} />
         <Route path="/gh" element={<GhanaHome />} />
         <Route path="/mx" element={<MexicoHome />} />
+        <Route path="/migration-post/:postId" element={<MigrationPost />} />
         <Route path="/not-found" element={<ErrorPage />} />
 
         {/* <Route path="/zm" element={<ZambiaHome />} /> */}

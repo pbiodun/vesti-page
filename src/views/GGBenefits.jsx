@@ -7,10 +7,10 @@ const GGBenefits = () => {
     <div className="w-full pb-24">
       <div className="container mx-auto lg:w-[80%] flex-wrap">
         <div className="text-center pb-10">
-          <h1 className="text-[#14290A] text-4xl font-fontSemi pb-4">
+          <h1 className="text-[#14290A] text-4xl font-fontReg pb-4">
             GlobalGeng Card Benefits
           </h1>
-          <p className="text-[#2B5219] text-2xl font-fontReg">
+          <p className="text-[#2B5219] text-2xl font-fontLight">
             These are a few of the Vesti GlobalGeng Mastercard.
           </p>
         </div>
@@ -22,10 +22,10 @@ const GGBenefits = () => {
               <img src={Convenient} alt="convenient" />
             </div>
             <div className="pt-5">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
                 Globally Accepted
               </h3>
-              <p className="text-[#2B5219] text-base pb-4">
+              <p className="text-[#2B5219] font-fontLight text-base pb-4">
                 A physical card you can use in over 90 countries.
               </p>
             </div>
@@ -35,10 +35,10 @@ const GGBenefits = () => {
               <img src={Speed} alt="speed" />
             </div>
             <div className="pt-5">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
                 Multiple Currencies
               </h3>
-              <p className="text-[#2B5219] text-base pb-4">
+              <p className="text-[#2B5219] font-fontLight text-base pb-4">
                 Make trasanctions in both Naira and USD
               </p>
             </div>
@@ -48,10 +48,10 @@ const GGBenefits = () => {
               <img src={Rates} alt="rates" />
             </div>
             <div className="pt-5">
-              <h3 className="text-[#14290A] font-semibold text-lg pb-1">
+              <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
                 Fair Rates
               </h3>
-              <p className="text-[#2B5219] text-base pb-4">
+              <p className="text-[#2B5219] font-fontLight text-base pb-4">
                 Our rates are really affordable to cater to everyone’s needs
               </p>
             </div>

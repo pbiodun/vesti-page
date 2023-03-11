@@ -6,7 +6,7 @@ const CardAds = ({ title, mainDesc, details, learnMore, image, link }) => {
     <>
       <div className="flex flex-col lg:flex-row lg:justify-between items-center bg-[#67A948] rounded-[30px]">
         <div className="lg:w-[50%] p-8 lg:pl-16">
-          <div className="rounded-[30px] bg-[#060E42] w-[50%] lg:w-[30%] md:w-[30%] sm:w-[35%] p-2">
+          <div className="rounded-[30px] bg-[#060E42] w-[60%] lg:w-[50%] md:w-[30%] sm:w-[35%] p-2">
             <p className="text-xs text-white font-fontReg text-center">
               {title}
             </p>
@@ -26,7 +26,7 @@ const CardAds = ({ title, mainDesc, details, learnMore, image, link }) => {
             )}
           </div>
         </div>
-        <div className="lg:pt-20 lg:pr-20 mx-auto md:mx-auto sm:mx-auto">
+        <div className="lg:pt-20 lg:pr-20 mx-auto md:mx-auto sm:mx-auto px-8">
           <img src={image} alt="vesti" />
         </div>
       </div>

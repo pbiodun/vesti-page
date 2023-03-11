@@ -62,7 +62,7 @@ const VestiDocs = ({
           </div>
         </div>
       </div>
-      <div className="container mx-auto w-[70%]">{mainBody}</div>
+      <div className="container mx-auto lg:w-[70%]">{mainBody}</div>
     </>
   );
 };

@@ -5,7 +5,7 @@ const GlobalGCard = () => {
   return (
     <div className="relative bg-secondary py-24 lg:pt-36 text-white">
       <div className="container mx-auto">
-        <div className="flex flex-col justify-between items-center lg:flex-row">
+        <div className="flex flex-col gap-20 justify-between items-center lg:flex-row">
           <div className="lg:w-[45%]">
             <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 lg:w-[100%]">
               The Vesti <span className="text-[#67A948]">GlobalGeng</span>{" "}
@@ -18,7 +18,7 @@ const GlobalGCard = () => {
             </p>
             <Button link="#" CTA="Create your card" styles="p-4" width="50%" />
           </div>
-          <div className="lg:w-[70%]">
+          <div className="lg:w-[60%]">
             <img className="w-full" src={GGCard} alt="featured" />
           </div>
         </div>

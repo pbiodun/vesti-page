@@ -15,9 +15,9 @@ const PrivacyPolicy = () => {
         path3="/aml"
         addStyle="border-b-8 border-[#67A948]"
         mainBody={
-          <div className="text-justify text-[#14290A] font-fontReg">
-            <h1 className="text-2xl font-semibold">1. Global Privacy Policy</h1>
-            <p className="py-10">
+          <div className="text-justify text-[#14290A]">
+            <h1 className="text-2xl font-fontReg">1. Global Privacy Policy</h1>
+            <p className="py-10 font-fontLight">
               We are Vesti Technology Solutions inc., a Delaware corporation
               with office at 1301, S Bowen Rd, Ste 450, Arlington, Tx, 76013.
               For any access request, questions, or inquiries about how we use
@@ -27,8 +27,8 @@ const PrivacyPolicy = () => {
               your Personal Information which we collect, why we collect it, and
               what we do with it.
             </p>
-            <h1 className="text-2xl font-semibold">2. Overview</h1>
-            <p className="py-10">
+            <h1 className="text-2xl font-fontReg">2. Overview</h1>
+            <p className="py-10 font-fontLight">
               This Privacy Policy describes your privacy rights regarding how
               and when we collect, use, store, share and protect your
               information across our website, payment platforms (“Platforms”),
@@ -43,8 +43,8 @@ const PrivacyPolicy = () => {
               in this privacy statement means the Vesti entity that is
               responsible for processing your personal information.
             </p>
-            <h1 className="text-2xl font-semibold">3. Definition</h1>
-            <p className="py-10">
+            <h1 className="text-2xl font-fontReg">3. Definition</h1>
+            <p className="py-10 font-fontLight">
               Account: means a Vesti Account Cookies: A cookie is a small data
               file that is transferred to your computer or mobile device. It
               enables us to remember your account log-in information, IP
@@ -68,8 +68,8 @@ const PrivacyPolicy = () => {
               membership, information about your health and genetic and
               biometric data.
             </p>
-            <h1 className="text-2xl font-semibold">4. Objective</h1>
-            <p className="py-10">
+            <h1 className="text-2xl font-fontReg">4. Objective</h1>
+            <p className="py-10 font-fontLight">
               This privacy policy statement is to provide all persons and
               organizations whose personal data we hold with description of the
               types of Personal Information we collect, the purposes for which
@@ -102,10 +102,10 @@ const PrivacyPolicy = () => {
               have measures in place to prevent collecting and storing personal
               data beyond what we need.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               5. Personal Information We May Collect About You
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               We may collect, use, process, store, or transfer personal
               information such as:, We may also collect, store, use and transfer
               non-personal information or anonymized data such as statistical or
@@ -166,10 +166,10 @@ const PrivacyPolicy = () => {
               responsible for their privacy statements. Please consult such
               third parties’ privacy statements.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               6. How we get your Personal Information and why we have it
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               The Personal Information we have about you is directly made
               available to us when you: Sign up for a Vesti Account; Use any of
               our services; Contact our customer support team; Fill our online
@@ -184,10 +184,10 @@ const PrivacyPolicy = () => {
               Information. We protect against fraud by checking your identity
               with your Personal Information.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               7. How We May Use Your Personal Information
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               Create and manage any accounts you may have with us, verify your
               identity, provide our services, and respond to your inquiries;
               Process your payment transactions (including authorization,
@@ -211,10 +211,10 @@ const PrivacyPolicy = () => {
               experiences. For other purposes for which we provide specific
               notice at the time of collection.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               8. Data Security and Retention
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               The security of your Personal Information is important to Vesti.
               We are committed to protecting the information we collect. We
               maintain administrative, technical and physical controls designed
@@ -241,10 +241,10 @@ const PrivacyPolicy = () => {
               prevention. Where we retain your Personal Data, we do so in
               compliance with limitation periods under the applicable law.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               9. Disclosing Your Personal Information
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               We may disclose or share your Personal Information with third
               parties which include our affiliates, employees, officers, service
               providers, agents, suppliers, subcontractors as may be reasonably
@@ -277,8 +277,8 @@ const PrivacyPolicy = () => {
               will provide notice before personal information is transferred and
               becomes subject to a different privacy policy
             </p>
-            <h1 className="text-2xl font-semibold">10. Marketing</h1>
-            <p className="py-10">
+            <h1 className="text-2xl font-fontReg">10. Marketing</h1>
+            <p className="py-10 font-fontLight">
               We may process your Personal Information in order to contact you
               or send you marketing content and communication about our
               products, services or surveys. You may exercise your right to
@@ -335,8 +335,8 @@ const PrivacyPolicy = () => {
               identity, we might ask you for proof of your identity for security
               reasons before dealing your request.
             </p>
-            <h1 className="text-2xl font-semibold">11. Cookies</h1>
-            <p className="py-10">
+            <h1 className="text-2xl font-fontReg">11. Cookies</h1>
+            <p className="py-10 font-fontLight">
               Like many other websites, we use cookies to distinguish you from
               other users and to customize and improve our services. Some
               browsers may automatically accept cookies while some can be
@@ -346,8 +346,8 @@ const PrivacyPolicy = () => {
               detailed information on the cookies and how we use them see our
               Cookie Policy
             </p>
-            <h1 className="text-2xl font-semibold">12. Minor</h1>
-            <p className="py-10">
+            <h1 className="text-2xl font-fontReg">12. Minor</h1>
+            <p className="py-10 font-fontLight">
               Vesti’s website and applications are not directed at persons under
               the age of eighteen (18) and we do not collect any Personal
               Information knowingly or directly from minors who fall within this
@@ -356,10 +356,10 @@ const PrivacyPolicy = () => {
               using the information provided under the Contact Us section to
               enable investigate and restrict such data.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               13. International Data Transfers
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               Our business is global with affiliates and service providers
               located around the world. As such, Personal Information may be
               stored and processed in any country where we have operations.
@@ -371,10 +371,10 @@ const PrivacyPolicy = () => {
               Information is handled securely in line with the applicable data
               protection laws and standard contractual clauses.
             </p>
-            <h1 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-fontReg">
               14. Updates to our privacy policy
             </h1>
-            <p className="py-10">
+            <p className="py-10 font-fontLight">
               From time to time, we may change, amend, or review this Privacy
               Policy from time to time to reflect new services or changes in our
               Privacy Policy and place any updates on this page. All changes

@@ -5,8 +5,8 @@ const CardAd = (props) => {
         <div className={props.addStyle}>
           {props.leftSide}
 
-          <div className="pt-16 pr-20">
-            <img className="w-full" src={props.image} alt="vesti-mastercard" />
+          <div className="w-full">
+            <img className="" src={props.image} alt="vesti-mastercard" />
           </div>
         </div>
       </div>

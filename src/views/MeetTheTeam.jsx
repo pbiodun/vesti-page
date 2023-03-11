@@ -6,10 +6,10 @@ const MeetTheTeam = () => {
   return (
     <div>
       <div className="container mx-auto lg:w-[90%] text-center">
-        <h1 className="text-[#14290A] font-semibold text-4xl pb-3 font-fontSemi">
+        <h1 className="text-[#14290A] text-4xl pb-3 font-fontReg">
           Meet the Team
         </h1>
-        <p className="text-[#2B5219] text-2xl leading-[35px] mx-auto lg:w-[65%] font-fontReg">
+        <p className="text-[#2B5219] text-2xl leading-[35px] mx-auto lg:w-[65%] font-fontLight">
           Vesti gives humans the power to move overseas to 110 Countries. We are
           the future of legal migration and global migration.
         </p>
@@ -20,10 +20,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -37,10 +37,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -54,10 +54,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -71,10 +71,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -88,10 +88,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -105,10 +105,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -122,10 +122,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -139,10 +139,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -156,10 +156,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -173,10 +173,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -190,10 +190,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -207,10 +207,10 @@ const MeetTheTeam = () => {
                 <img src={TeamMember1} alt="team-member1" />
               </div>
               <div className="pb-3">
-                <h3 className="text-[#14290A] font-medium text-xl">
+                <h3 className="text-[#14290A] font-fontReg text-xl">
                   Olusola Amusan
                 </h3>
-                <p className="text-[#14290A] font-light text-sm">
+                <p className="text-[#14290A] font-fontLight text-sm">
                   CEO/Co-Founder
                 </p>
               </div>
@@ -221,7 +221,7 @@ const MeetTheTeam = () => {
             </div>
           </div>
           <div>
-            <p className="text-[#67A948] text-2xl cursor-pointer font-fontReg hover:text-headcol">
+            <p className="text-[#67A948] text-xl cursor-pointer font-fontReg hover:text-headcol">
               View more
             </p>
           </div>

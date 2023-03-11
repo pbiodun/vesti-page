@@ -10,19 +10,19 @@ const VestiGCard = () => {
           <img className="" src={Lady} alt="techstars" />
         </div>
         <div className="lg:w-[45%] lg:pt-0 pt-10">
-          <h1 className="text-[#14290A] text-3xl pb-12 font-fontSemi lg:w-[90%]">
+          <h1 className="text-[#14290A] text-3xl pb-12 font-fontReg lg:w-[90%]">
             What is the{" "}
             <span className="text-[#67A948]">Vesti GlobalGeng Mastercard</span>{" "}
             and who is it for?
           </h1>
-          <p className="text-base font-extralight text-[#2B5219] pb-8 lg:w-[90%] font-fontLight">
+          <p className="text-base text-[#2B5219] pb-8 lg:w-[90%] font-fontLight">
             We Introduced the Vesti Card to cater to the need of migrants
             everywhere. Commercial banking prioritizes mainstream services like
             grocery shopping, auto loans, and known merchants, using advanced
             analytics and data mining, Vesti Cards are positioned to serve
             migrants in transit and those already settled.{" "}
           </p>
-          <div className="flex items-center text-[#67A948] text-xl font-fontSemi ">
+          <div className="flex items-center text-[#67A948] text-xl font-fontReg ">
             <Link>Request for card</Link>
             <BsArrowUpRight />
           </div>

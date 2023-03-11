@@ -16,14 +16,14 @@ const OpenAccount = () => {
           desc2="Verify your identity using your government-issued ID"
           head3="Start Transacting"
           desc3="We have one of the best rates that you can count on."
-          classname="flex flex-col justify-center items-center"
+          classname="flex flex-col justify-center items-center pt-10"
         />
         <div className="pb-4 md:pb-10 sm:pb-20 flex flex-col justify-center items-center">
           <Button
             link="https://app.wevesti.com/register"
             CTA="Get started in minutes"
             width="30%"
-            styles="p-4 text-[#fff]"
+            styles="p-4 text-[#fff] mb-5"
           />
         </div>
         <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />

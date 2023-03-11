@@ -25,12 +25,12 @@ module.exports = withMT({
         fontReg: ["shnekrftig"],
         fontLight: ["shneleicht"],
       },
-      spacing: {
-        sm: "8px",
-        md: "12px",
-        lg: "16px",
-        xl: "24px",
-      },
+      // spacing: {
+      //   sm: "8px",
+      //   md: "12px",
+      //   lg: "16px",
+      //   xl: "24px",
+      // },
       colors: {
         transparent: "transparent",
         current: "currentColor",
@@ -65,5 +65,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 });

@@ -14,7 +14,8 @@ const WalletCard = () => {
             classname="bg-[#D9D9D9]"
             textCol="#57266E"
             h1Col="text-[#20082B]"
-            pCol="text-[#3F1951]"
+            pCol="text-[#20082B]"
+            // #3F1951
             image={FinServicsImg}
             link="/"
           />

@@ -1,14 +1,37 @@
+import axios from "axios";
 import CardAd from "../views/CardAd";
 import Mfries from "../components/Mfries";
-import MigrationCard from "../components/MigrationCard";
+// import MigrationCard from "../components/MigrationCard";
 import VestiExtras from "../components/VestiExtras";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Phones from "../assets/images/phones.png";
 import Testimonials from "../views/Testimonials";
 import Featured from "../views/Featured";
+import { useEffect, useState } from "react";
+import MigrationCard from "../components/MigrationCard";
 
 const MigrationFries = () => {
+  const [posts, setPosts] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  async function getTutorial() {
+    try {
+      const data = (await axios.get("https://wevesti.com/wp-json/wp/v2/posts"))
+        .data;
+      setPosts(data);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    // call function to fetvh all fries
+    getTutorial();
+  }, []);
+
   return (
     <div className="font-fontReg">
       <VestiExtras
@@ -34,64 +57,25 @@ const MigrationFries = () => {
           }
           heading="Think lifting a feather is effortless? Try payment with Vesti."
         />
+        {loading && <div className="hidden">loading...</div>}
       </div>
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12 pb-8">
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-      Ornare a pretium placerat ut platea. Purus blandit
-      integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
-        <MigrationCard
-          date="January 26, 2021"
-          title="How to Migrate to the United States through Education."
-          desc="Lorem ipsum dolor sit amet, consectetur adipiscing.
-        Ornare a pretium placerat ut platea. Purus blandit
-        integer sagittis massa vel est hac..."
-        />
+        {posts &&
+          posts.map((post) => {
+            // console.log(post);
+            const { date, title, excerpt, id } = post;
+            const { rendered: renderedTitle } = title;
+            const { rendered: renderedExcerpt } = excerpt;
+
+            return (
+              <MigrationCard
+                date={date.split("T")[0]}
+                title={renderedTitle}
+                desc={renderedExcerpt.split("\n")[0]}
+                link={`/migration-post/${id}`}
+              />
+            );
+          })}
       </div>
 
       <CardAd

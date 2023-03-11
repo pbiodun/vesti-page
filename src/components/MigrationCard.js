@@ -2,18 +2,21 @@ import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 
-const MigrationCard = ({ date, title, desc }) => {
+const MigrationCard = ({ date, title, desc, link }) => {
   return (
     <div className="bg-[#F7F8FA] py-5 px-7 w-full rounded-[20px] border border-[#4F4F4F]">
       <div className="flex items-center text-[#4F4F4F] text-sm">
-        <h1 className="text-[#67A948]">MIGRATION</h1>
+        <h1 className="text-[#67A948] font-fontReg">MIGRATION</h1>
         <GoPrimitiveDot />
-        <p>{date}</p>
+        <p className="font-fontReg">{date}</p>
       </div>
-      <h1 className="text-[#14290A] text-xl py-3 font-semibold">{title}</h1>
-      <p className="text-[#2B5219] text-sm">{desc}</p>
-      <div className="flex items-center text-[#67A948] text-base font-semibold pt-4">
-        <Link to="">Continue reading </Link>
+      <h1 className="text-[#14290A] text-base py-3 font-fontReg">{title}</h1>
+      <div
+        className="text-[#2B5219] text-sm font-fontLight"
+        dangerouslySetInnerHTML={{ __html: desc }}
+      />
+      <div className="flex items-center text-[#67A948] text-base font-fontReg pt-4">
+        <Link to={link}>Continue reading </Link>
         <BsArrowUpRight />
       </div>
     </div>

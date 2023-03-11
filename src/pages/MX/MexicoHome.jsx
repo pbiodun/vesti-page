@@ -4,11 +4,12 @@ import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
 import DescriptionCard from "../../components/DescriptionCard";
 import FinServicsImg from "../../assets/images/finsvcs1.png";
 import VirtualCard from "../../assets/images/virtual-card.png";
-import Pathways from "../../views/Pathways";
+// import Pathways from "../../views/Pathways";
 import OpenAccount from "../../views/OpenAccount";
 import Offerings from "../../views/Offerings";
 import FaqSection from "../../views/FaqSection";
 import DownloadApp from "../../views/DownloadApp";
+import PathwaySlides from "../../views/PathwaySlides";
 
 const MexicoHome = () => {
   return (
@@ -16,7 +17,7 @@ const MexicoHome = () => {
       <div className="bg-secondary w-full pt-28">
         <WebBanner
           title={
-            <h1 className="text-[#fff] font-fontSemi text-5xl w-[100%] pb-5">
+            <h1 className="text-[#fff] font-fontSemi text-5xl w-[100%] pb-5 !leading-[60px]">
               El Neobanco para <span className="text-[#67A948]">Mexicanos</span>{" "}
               que se mudan a los{" "}
               <span className="text-[#67A948]">UEstados Unidos</span>
@@ -58,7 +59,8 @@ const MexicoHome = () => {
           />
         </div>
       </div>
-      <Pathways />
+      {/* <Pathways /> */}
+      <PathwaySlides />
       <div className="pb-24">
         <OpenAccount />
       </div>

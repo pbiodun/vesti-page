@@ -4,11 +4,12 @@ import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
 import DescriptionCard from "../../components/DescriptionCard";
 import FinServicsImg from "../../assets/images/finsvcs1.png";
 import VirtualCard from "../../assets/images/virtual-card.png";
-import Pathways from "../../views/Pathways";
+// import Pathways from "../../views/Pathways";
 import OpenAccount from "../../views/OpenAccount";
 import Offerings from "../../views/Offerings";
 import FaqSection from "../../views/FaqSection";
 import DownloadApp from "../../views/DownloadApp";
+import PathwaySlides from "../../views/PathwaySlides";
 
 const ZambiaHome = () => {
   return (
@@ -16,7 +17,7 @@ const ZambiaHome = () => {
       <div className="bg-secondary w-full pt-28">
         <WebBanner
           title={
-            <h1 className="text-[#fff] font-fontSemi text-5xl w-[77%] pb-5">
+            <h1 className="text-[#fff] font-fontSemi text-5xl w-[77%] pb-5 !leading-[60px]">
               The Neobank for <span className="text-[#67A948]">Zambians</span>{" "}
               moving to the <span className="text-[#67A948]">USA</span>
             </h1>
@@ -57,7 +58,7 @@ const ZambiaHome = () => {
           />
         </div>
       </div>
-      <Pathways />
+      <PathwaySlides />
       <div className="pb-24">
         <OpenAccount />
       </div>

@@ -32,7 +32,7 @@ const GlobalGengCard = () => {
           head3="Order Your Card"
           desc3="We have one of the best rates that you can count on."
           buttonText="Get started in minutes"
-          classname="mx-auto w-[50%] lg:w-[30%] flex flex-col justify-center items-center"
+          classname="mx-auto w-[70%] lg:w-[30%] flex flex-col justify-center items-center"
         />
       </div>
       <Featured />
