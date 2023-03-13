@@ -17,7 +17,7 @@ const WalletsPage = () => {
       <div className="bg-secondary w-full pt-40">
         <WebBanner
           title={
-            <p className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 text-[#ffffff]">
+            <p className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 text-[#ffffff] !leading-[60px]">
               Vesti's{" "}
               <span className="text-[#67A948]">Multi-Currency Wallet</span>
             </p>

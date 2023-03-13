@@ -7,7 +7,7 @@ const VirtualVisaCard = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <div className="pt-16">
-            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 lg:w-[70%]">
+            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 lg:w-[70%] !leading-[60px]">
               The Vesti <span className="text-[#67A948]">Virtual</span>{" "}
               <span className="text-[#67A948]">Dollar</span> Card
             </h1>

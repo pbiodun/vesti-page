@@ -7,7 +7,7 @@ const GlobalGCard = () => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-20 justify-between items-center lg:flex-row">
           <div className="lg:w-[45%]">
-            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 lg:w-[100%]">
+            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 lg:w-[100%] !leading-[60px]">
               The Vesti <span className="text-[#67A948]">GlobalGeng</span>{" "}
               Mastercard
             </h1>

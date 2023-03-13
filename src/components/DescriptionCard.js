@@ -23,7 +23,7 @@ const DescriptionCard = ({
               {desc}
             </p>
             <div
-              className={`mt-[20px] flex items-center text-[${textCol}] text-xl font-fontReg hover:text-blue-gray-900`}
+              className={`mt-[20px] flex items-center text-[${textCol}] text-lg font-fontReg hover:text-blue-gray-900`}
             >
               <Link to={link}>Learn more</Link>
               <BsArrowUpRight />

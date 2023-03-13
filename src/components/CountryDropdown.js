@@ -2,9 +2,11 @@ import NigeriaFlag from "../assets/logo-icons/ng-flag.png";
 import ZambiaFlag from "../assets/logo-icons/zm-flag.png";
 import MexicoFlag from "../assets/logo-icons/mx-flag.png";
 import GhanaFlag from "../assets/logo-icons/gh-flag.png";
+import Globe from "../assets/logo-icons/globe.svg";
 import { useApp } from "../hooks/useApp";
 
 const DATA = [
+  { title: "GL", img: Globe },
   { title: "NG", img: NigeriaFlag },
   { title: "ZM", img: ZambiaFlag },
   { title: "MX", img: MexicoFlag },

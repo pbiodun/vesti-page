@@ -10,21 +10,21 @@ const CreateCard = () => {
       <div className="container mx-auto pb-24">
         <div className="container flex flex-col justify-center items-center">
           <div className="mx-auto w-[50%] lg:w-[30%]">
-            <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-fontSemi">
+            <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-fontReg">
               Create Your Card
             </h1>
             <img src={DoubleStrip} alt="dashes" />
           </div>
-          <div className="grid lg:grid-cols-3 py-12 items-center justify-between font-fontReg">
+          <div className="grid lg:grid-cols-3 py-12 items-center justify-between">
             <div className="flex">
               <div>
                 <img src={Person} alt="person-icon" />
               </div>
               <div className="px-5">
-                <h1 className="text-headcol text-lg font-fontSemi">
+                <h1 className="text-headcol text-lg font-fontReg">
                   Register in minutes
                 </h1>
-                <p className="text-[#2B5219] font-extralight text-sm">
+                <p className="text-[#2B5219] font-fontLight text-sm">
                   Sign up online, or in our app with your email address
                 </p>
               </div>
@@ -34,10 +34,10 @@ const CreateCard = () => {
                 <img src={Badge} alt="person-icon" />
               </div>
               <div className="px-5">
-                <h1 className="text-headcol text-lg font-fontSemi">
+                <h1 className="text-headcol text-lg font-fontReg">
                   Complete KYC verification
                 </h1>
-                <p className="text-[#2B5219] font-extralight text-sm">
+                <p className="text-[#2B5219] font-fontLight text-sm">
                   Verify your identity using your government-issued ID
                 </p>
               </div>
@@ -47,10 +47,10 @@ const CreateCard = () => {
                 <img src={Transact} alt="person-icon" />
               </div>
               <div className="px-5">
-                <h1 className="text-headcol text-lg font-fontSemi">
+                <h1 className="text-headcol text-lg font-fontReg">
                   Start Transacting
                 </h1>
-                <p className="text-[#2B5219] font-extralight text-sm">
+                <p className="text-[#2B5219] font-fontLight text-sm">
                   We have one of the best rates that you can count on.
                 </p>
               </div>

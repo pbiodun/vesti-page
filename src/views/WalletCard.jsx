@@ -11,11 +11,10 @@ const WalletCard = () => {
           <DescriptionCard
             title="Financial Services"
             desc="Vesti gives humans the power to move overseas to 110 Countries."
-            classname="bg-[#D9D9D9]"
+            classname="bg-[#FBF3FF]"
             textCol="#57266E"
             h1Col="text-[#20082B]"
-            pCol="text-[#20082B]"
-            // #3F1951
+            pCol="text-[#3F1951]"
             image={FinServicsImg}
             link="/"
           />

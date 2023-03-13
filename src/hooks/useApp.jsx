@@ -11,7 +11,7 @@ export const useApp = () => {
     setCountry(country);
     localStorage.setItem("country", JSON.stringify(country));
 
-    if (country.title === COUNTRY.NG) {
+    if (country.title === COUNTRY.NG || country.title === COUNTRY.GL) {
       navigate("/");
     } else {
       navigate(`/${country.title.toLowerCase()}`);

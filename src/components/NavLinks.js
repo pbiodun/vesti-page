@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import ProductsDropdown from "./ProductsDropdown";
 
 const NavLinks = ({ addStyle }) => {
@@ -11,6 +11,13 @@ const NavLinks = ({ addStyle }) => {
     setShowDropdown(!showDropdown);
   };
 
+  const location = useLocation();
+  //destructuring pathname from location
+  const { pathname } = location;
+
+  //Javascript split method to get the name of the path in array
+  const splitLocation = pathname.split("/");
+
   return (
     <>
       <ul className={`${addStyle} lg:gap-10 font-fontReg text-base`}>
@@ -20,7 +27,7 @@ const NavLinks = ({ addStyle }) => {
             setOpen(!open);
           }}
         >
-          <div
+          <NavLink
             className="flex items-center relative cursor-pointer hover:text-vestigreen"
             // onClick={toggleDropdown}
             onMouseOverCapture={toggleDropdown}
@@ -30,25 +37,33 @@ const NavLinks = ({ addStyle }) => {
             <p className="pr-1">Products</p>
             <IoIosArrowDown />
             {/* {showDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />} */}
-          </div>
+          </NavLink>
           {showDropdown ? <ProductsDropdown /> : null}
           {/* {showDropdown && <ProductsDropdown />} */}
         </li>
         <li>
-          <Link
+          <NavLink
             to="/about-us"
-            className="hover:text-vestigreen hover:font-fontSemi"
+            className={`pb-7 hover:text-vestigreen hover:font-fontSemi ${
+              splitLocation[1] === "about-us" &&
+              `border-b-[6px] border-[#67A948]`
+            }`}
+            // className="hover:text-vestigreen hover:font-fontSemi"
           >
             Company
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link
+          <NavLink
             to="/migration-fries"
-            className="hover:text-vestigreen hover:font-fontSemi"
+            className={`pb-7 hover:text-vestigreen hover:font-fontSemi ${
+              splitLocation[1] === "migration-fries" &&
+              `border-b-[6px] border-[#67A948]`
+            }`}
+            // className="hover:text-vestigreen hover:font-fontSemi"
           >
             Migration Fries
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </>

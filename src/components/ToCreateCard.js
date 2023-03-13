@@ -29,7 +29,7 @@ const ToCreateCard = ({
             </div>
             <div className="px-5">
               <h1 className="text-headcol text-lg font-fontReg">{head1}</h1>
-              <p className="text-[#2B5219] font-extralight text-sm">{desc1}</p>
+              <p className="text-[#2B5219] font-fontLight text-sm">{desc1}</p>
             </div>
           </div>
           <div className="flex">
