@@ -6,6 +6,7 @@ import Phone from "../assets/images/phone-notif1.png";
 import ToCreateCard from "../components/ToCreateCard";
 import Featured from "../views/Featured";
 import GetCard from "../views/GetCard";
+import Button from "../components/Button";
 
 const GlobalGengCard = () => {
   return (
@@ -31,8 +32,13 @@ const GlobalGengCard = () => {
           desc2="Verify your identity using your government-issued ID"
           head3="Order Your Card"
           desc3="We have one of the best rates that you can count on."
-          buttonText="Get started in minutes"
           classname="mx-auto w-[70%] lg:w-[30%] flex flex-col justify-center items-center"
+        />
+        <Button
+          CTA="Get started in minutes"
+          link="https://app.wevesti.com/register"
+          styles="p-3 mx-auto mb-10"
+          width="30%"
         />
       </div>
       <Featured />

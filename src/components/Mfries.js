@@ -3,7 +3,7 @@ const Mfries = (props) => {
     <div className="container mx-auto text-center">
       <div className="">
         {props.title}
-        <p className="text-[#2B5219] text-xl">{props.heading}</p>
+        <p className="text-[#2B5219] font-fontLight text-xl">{props.heading}</p>
       </div>
     </div>
   );

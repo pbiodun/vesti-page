@@ -46,8 +46,8 @@ const PathwaySlides = () => {
                   index={index}
                   desc={item.desc}
                   onClick={(id) => setActiveTrx(index)}
-                  click="hover:border-l-4 hover:border-l-lime-700 hover:opacity-100"
-                  addStyles="opacity-50 hover:opacity-100"
+                  click={`border-l-lime-700`}
+                  addStyles=""
                   learnMore={item.learnMore}
                 />
               ))}

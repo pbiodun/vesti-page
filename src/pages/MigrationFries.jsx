@@ -6,6 +6,7 @@ import VestiExtras from "../components/VestiExtras";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Phones from "../assets/images/phones.png";
+import Loader from "../assets/logo-icons/loader.svg";
 import Testimonials from "../views/Testimonials";
 import Featured from "../views/Featured";
 import { useEffect, useState } from "react";
@@ -28,7 +29,7 @@ const MigrationFries = () => {
   }
 
   useEffect(() => {
-    // call function to fetvh all fries
+    // call function to fetch all fries
     getTutorial();
   }, []);
 
@@ -45,19 +46,29 @@ const MigrationFries = () => {
         path1="/migration-fries"
         path2="#"
         path3="#"
-        path4="#"
+        path4="/scholarships"
       />
 
       <div>
         <Mfries
           title={
-            <h1 className="text-[#14290A] text-2xl font-semibold pb-2">
+            <h1 className="text-[#14290A] text-2xl font-fontReg pb-2">
               Migration Fries <span className="text-[#67A948]">All</span>
             </h1>
           }
           heading="Think lifting a feather is effortless? Try payment with Vesti."
         />
-        {loading && <div className="hidden">loading...</div>}
+        {loading && (
+          <div className="text-center pt-10 text-[#4e984e] flex justify-center items-center">
+            <img
+              class="animate-spin h-5 w-5 mr-3"
+              viewBox="0 0 24 24"
+              src={Loader}
+              alt="loading"
+            />
+            <p className="font-fontLight">loading your fries...</p>
+          </div>
+        )}
       </div>
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12 pb-8">
         {posts &&
@@ -71,7 +82,8 @@ const MigrationFries = () => {
               <MigrationCard
                 date={date.split("T")[0]}
                 title={renderedTitle}
-                desc={renderedExcerpt.split("\n")[0]}
+                // desc={renderedExcerpt.split("\n")[0]}
+                desc={renderedExcerpt.substring(0, 200) + "..."}
                 link={`/migration-post/${id}`}
               />
             );
@@ -108,7 +120,7 @@ const MigrationFries = () => {
             <h1 className="text-3xl text-headcol font-semibold text-center">
               Read japa <span className="text-vestigreen">stories</span>
             </h1>
-            <p className="text-center text-[#2B5219] text-lg font-medium">
+            <p className="text-center text-[#2B5219] text-lg font-fontLight">
               Read japa stories and testimonials from our selected users
             </p>
           </>

@@ -20,6 +20,7 @@ import NavBar from "./containers/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import ErrorPage from "./pages/ErrorPage";
 import MigrationPost from "./pages/MigrationPost";
+import Scholarships from "./pages/Scholarships";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -42,6 +43,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/aml" element={<Aml />} />
         <Route path="/migration-fries" element={<MigrationFries />} />
+        <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/migration-services" element={<MigrationServices />} />
         <Route path="/zm" element={<ZambiaHome />} />
         <Route path="/gh" element={<GhanaHome />} />

@@ -10,6 +10,7 @@ import Offerings from "../../views/Offerings";
 import FaqSection from "../../views/FaqSection";
 import DownloadApp from "../../views/DownloadApp";
 import PathwaySlides from "../../views/PathwaySlides";
+import Typed from "react-typed";
 
 const ZambiaHome = () => {
   return (
@@ -19,7 +20,15 @@ const ZambiaHome = () => {
           title={
             <h1 className="text-[#fff] font-fontSemi text-5xl w-[77%] pb-5 !leading-[60px]">
               The Neobank for <span className="text-[#67A948]">Zambians</span>{" "}
-              moving to the <span className="text-[#67A948]">USA</span>
+              moving to the{" "}
+              <span className="text-[#67A948]">
+                <Typed
+                  strings={["USA", "UK", "Canada"]}
+                  typeSpeed={100}
+                  backSpeed={100}
+                  loop
+                />
+              </span>
             </h1>
           }
           details="Millions of people moving to new countries use Vesti for accessing financial services like bank accounts, debit and credit cards."

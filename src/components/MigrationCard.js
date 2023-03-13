@@ -4,7 +4,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 
 const MigrationCard = ({ date, title, desc, link }) => {
   return (
-    <div className="bg-[#F7F8FA] py-5 px-7 w-full rounded-[20px] border border-[#4F4F4F]">
+    <div className="bg-[#F7F8FA] py-5 px-7 w-full rounded-[20px] border border-[#c3bebe]">
       <div className="flex items-center text-[#4F4F4F] text-sm">
         <h1 className="text-[#67A948] font-fontReg">MIGRATION</h1>
         <GoPrimitiveDot />
