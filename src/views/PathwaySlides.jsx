@@ -6,20 +6,20 @@ import ActiveCard from "../components/ActiveCard";
 
 const GetStartedDescription = [
   {
-    id: 1,
+    id: 0,
     title: "Pathways software for global migration",
     desc: "Vesti gives humans the power to move overseas to 110 Countries.",
     image: PathwayImage,
     learnMore: "/",
   },
   {
-    id: 2,
+    id: 1,
     title: "GlobalGeng Virtual & Physical Cards",
     desc: "Vesti gives humans the power to move overseas to 110 Countries.",
     image: CardImage,
   },
   {
-    id: 3,
+    id: 2,
     title: "Multi-Currency Wallet & Virtual Accounts",
     desc: "Invest and sit back. You can follow your investment status at any time and invest in limited time special offers",
     image: WalletImage,
@@ -36,19 +36,14 @@ const PathwaySlides = () => {
           <h3 className="text-headcol font-fontReg text-3xl pb-10">
             Everything you need, less of what you don't
           </h3>
-          <div
-            className=""
-            key={`${GetStartedDescription.index} ? border-l-red : border-l-black`}
-          >
-            {/* click={(id: any) => setActiveTrx(id)} */}
-
+          <div className="">
             {GetStartedDescription.map((item, index) => (
               <ActiveCard
                 title={item.title}
                 index={index}
                 desc={item.desc}
-                onClick={(id) => setActiveTrx(index)}
-                click=""
+                activeTrx={activeTrx}
+                onClick={() => setActiveTrx(index)}
                 learnMore={item.learnMore}
               />
             ))}
