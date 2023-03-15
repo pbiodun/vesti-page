@@ -36,7 +36,10 @@ const PathwaySlides = () => {
           <h3 className="text-headcol font-fontReg text-3xl pb-10">
             Everything you need, less of what you don't
           </h3>
-          <div className="">
+          <div
+            className=""
+            key={`${GetStartedDescription.index} ? border-l-red : border-l-black`}
+          >
             {/* click={(id: any) => setActiveTrx(id)} */}
 
             {GetStartedDescription.map((item, index) => (

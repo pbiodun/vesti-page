@@ -82,7 +82,7 @@ const NavBar = () => {
 
         {/* Mobile nav */}
         <div
-          className={`lg:hidden transition delay-150 duration-300 ease-linear ${
+          className={`lg:hidden relative mt-10 transition delay-150 duration-300 ease-linear ${
             open ? "visible" : "hidden"
           }`}
         >

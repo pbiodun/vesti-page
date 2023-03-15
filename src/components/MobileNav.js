@@ -7,8 +7,8 @@ import { IoIosArrowDown } from "react-icons/io";
 const MobileNav = () => {
   return (
     <>
-      <div className="w-full bg-white">
-        <div className="container text-secondary font-fontReg mx-auto h-[50vh] py-10">
+      <div className="w-full bg-white mx-auto">
+        <div className="text-secondary font-fontReg py-10">
           <ul className="flex flex-col gap-y-5 items-center justify-center">
             <li className="">
               <div className="flex items-center">
