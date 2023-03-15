@@ -20,7 +20,7 @@ const VirtualCard = () => {
           <DescriptionCard
             title="Transactions"
             desc="You can easily view and manage all transactions made with your Virtual card right from the Vesti App."
-            classname="bg-[#D9D9D9]"
+            classname="bg-[#FBF3FF]"
             textCol="#57266E"
             h1Col="text-[#20082B]"
             pCol="text-[#3F1951]"

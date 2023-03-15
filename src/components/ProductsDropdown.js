@@ -11,7 +11,7 @@ const SERVICE = { FINANCIAL: "Financial", MIGRATION: "Migration" };
 const ProductsDropdown = () => {
   const [service, setService] = useState(SERVICE.FINANCIAL);
   return (
-    <div className="relative">
+    <div className="relative -z-10 p-10">
       <div className="absolute left-[48%] top-4 bg-[#F6F8FF] w-4 h-4 rotate-45 rounded-sm"></div>
       <div className="bg-[#F6F8FF] lg:w-[700px] min-h-[45vh] absolute top-[20px] left-0 rounded-lg p-[10px] flex flex-col lg:flex-row gap-2">
         {/* <!----> */}

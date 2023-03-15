@@ -13,7 +13,7 @@ const ActiveCard = ({
   return (
     <>
       <div
-        className={`${addStyles} py-5 border-[#67A948]-500 cursor-pointer pl-4 ${click} border-l-4`}
+        className={`${addStyles} py-5  cursor-pointer pl-4 ${click} border-l-4`}
         onClick={() => onClick(index)}
       >
         <h1 className="text-[#14290A] text-xl mb-2 font-fontReg">{title}</h1>

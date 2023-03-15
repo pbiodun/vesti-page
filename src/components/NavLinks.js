@@ -1,16 +1,8 @@
-import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, useLocation } from "react-router-dom";
 import ProductsDropdown from "./ProductsDropdown";
 
 const NavLinks = ({ addStyle }) => {
-  const [open, setOpen] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
-
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
-  };
-
   const location = useLocation();
   //destructuring pathname from location
   const { pathname } = location;
@@ -21,25 +13,14 @@ const NavLinks = ({ addStyle }) => {
   return (
     <>
       <ul className={`${addStyle} lg:gap-10 font-fontReg text-base`}>
-        <li
-          className=""
-          onClick={() => {
-            setOpen(!open);
-          }}
-        >
-          <NavLink
-            className="flex items-center relative cursor-pointer hover:text-vestigreen"
-            // onClick={toggleDropdown}
-            onMouseOverCapture={toggleDropdown}
-            // onMouseEnter={() => setShowDropdown(true)}
-            // onMouseLeave={() => setShowDropdown(false)}
-          >
+        <li className="group">
+          <NavLink className="flex items-center relative cursor-pointer hover:text-vestigreen">
             <p className="pr-1">Products</p>
             <IoIosArrowDown />
-            {/* {showDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />} */}
           </NavLink>
-          {showDropdown ? <ProductsDropdown /> : null}
-          {/* {showDropdown && <ProductsDropdown />} */}
+          <div className="hidden group-hover:block absolute">
+            <ProductsDropdown />
+          </div>
         </li>
         <li>
           <NavLink
