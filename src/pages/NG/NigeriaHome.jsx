@@ -1,25 +1,24 @@
-import WebBanner from "../../components/WebBanner";
-import ZambiaPhone from "../../assets/images/zambia-image.png";
-import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
 import DescriptionCard from "../../components/DescriptionCard";
-import FinServicsImg from "../../assets/images/zambia-image1.png";
-import VirtualCard from "../../assets/images/virtual-card.png";
-// import Pathways from "../../views/Pathways";
-import OpenAccount from "../../views/OpenAccount";
-import Offerings from "../../views/Offerings";
-import FaqSection from "../../views/FaqSection";
+import WebBanner from "../../components/WebBanner";
 import DownloadApp from "../../views/DownloadApp";
+import FaqSection from "../../views/FaqSection";
+import Offerings from "../../views/Offerings";
+import OpenAccount from "../../views/OpenAccount";
 import PathwaySlides from "../../views/PathwaySlides";
+import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
+import FinServicsImg from "../../assets/images/ghana-image1.png";
+import VirtualCard from "../../assets/images/virtual-card.png";
+import NigeriaImage from "../../assets/images/gpphone.png";
 import Typed from "react-typed";
 
-const ZambiaHome = () => {
+const NigeriaHome = () => {
   return (
     <>
       <div className="bg-secondary w-full pt-28">
         <WebBanner
           title={
             <h1 className="text-[#fff] font-fontSemi text-5xl w-[77%] pb-5 !leading-[60px]">
-              The Neobank for <span className="text-[#67A948]">Zambians</span>{" "}
+              The Neobank for <span className="text-[#67A948]">Nigerians</span>{" "}
               moving to the{" "}
               <span className="text-[#67A948]">
                 <Typed
@@ -34,7 +33,7 @@ const ZambiaHome = () => {
           details="Millions of people moving to new countries use Vesti for accessing legal and financial services like bank accounts, debit and credit cards."
           buttonText="Get started in minutes"
           link="#"
-          image={ZambiaPhone}
+          image={NigeriaImage}
           imgWidth="50%"
           featured={
             <div>
@@ -67,6 +66,7 @@ const ZambiaHome = () => {
           />
         </div>
       </div>
+      {/* <Pathways /> */}
       <PathwaySlides />
       <div className="pb-24">
         <OpenAccount />
@@ -78,4 +78,4 @@ const ZambiaHome = () => {
   );
 };
 
-export default ZambiaHome;
+export default NigeriaHome;

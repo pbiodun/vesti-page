@@ -12,6 +12,7 @@ const VestiExtras = ({
   path2,
   path3,
   path4,
+  postFunc,
 }) => {
   const location = useLocation();
   //destructuring pathname from location
@@ -63,6 +64,7 @@ const VestiExtras = ({
                 {link3}
               </Link>
               <Link
+                onClick={postFunc}
                 to={path4}
                 className={`pb-3 ml-10 ${
                   splitLocation[1] === "scholarships"

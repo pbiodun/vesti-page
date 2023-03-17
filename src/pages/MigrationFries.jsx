@@ -37,7 +37,7 @@ const MigrationFries = () => {
     <div className="font-fontReg">
       <VestiExtras
         title="Migration Fries"
-        date="Want to move overseas in 2022 ? easily see opportunities and read how to start your migration journey."
+        date="Want to move overseas in 2023 ? easily see opportunities and read how to start your migration journey."
         addStyle="border-b-8 border-[#67A948]"
         link1="ALL"
         link2="JOBS"

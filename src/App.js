@@ -13,14 +13,15 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Aml from "./pages/Aml";
 import MigrationFries from "./pages/MigrationFries";
 import MigrationServices from "./pages/MigrationServices";
+import NigeriaHome from "./pages/NG/NigeriaHome";
 import ZambiaHome from "./pages/ZM/ZambiaHome";
 import GhanaHome from "./pages/GH/GhanaHome";
 import MexicoHome from "./pages/MX/MexicoHome";
 import NavBar from "./containers/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
-import ErrorPage from "./pages/ErrorPage";
 import MigrationPost from "./pages/MigrationPost";
 import Scholarships from "./pages/Scholarships";
+import ErrorPage from "./pages/ErrorPage";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -45,8 +46,9 @@ function App() {
         <Route path="/migration-fries" element={<MigrationFries />} />
         <Route path="/scholarships" element={<Scholarships />} />
         <Route path="/migration-services" element={<MigrationServices />} />
-        <Route path="/zm" element={<ZambiaHome />} />
+        <Route path="/ng" element={<NigeriaHome />} />
         <Route path="/gh" element={<GhanaHome />} />
+        <Route path="/zm" element={<ZambiaHome />} />
         <Route path="/mx" element={<MexicoHome />} />
         <Route path="/migration-post/:postId" element={<MigrationPost />} />
         <Route path="/not-found" element={<ErrorPage />} />

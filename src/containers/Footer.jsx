@@ -94,9 +94,15 @@ const Footer = () => {
               </Link>
               <Link
                 to="/#"
-                className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 Vesti Blog
+              </Link>
+              <Link
+                to="/#"
+                className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
+              >
+                Team
               </Link>
             </ul>
           </div>
@@ -137,15 +143,11 @@ const Footer = () => {
                 CONTACT
               </li>
               <li className="text-sm font-fontLight pb-2">help@wevesti.com</li>
-              <li className="text-sm font-fontLight pb-2">
-                support@wevesti.com
-              </li>
-              <li className="text-sm font-fontLight">info@wevesti.com</li>
             </ul>
           </div>
           <div>
             <ul className="flex flex-col">
-              <li className="text-base pb-3 font-fontSemi">NIGERIA (LAGOS)</li>
+              <li className="text-base pb-3 font-fontSemi">LAGOS, (NIGERIA)</li>
               <li className="text-sm font-light pb-2">
                 30 Furo Ezimora street, Lekki Phase 1
               </li>

@@ -8,9 +8,9 @@ import { useApp } from "../hooks/useApp";
 const DATA = [
   { title: "GL", img: Globe },
   { title: "NG", img: NigeriaFlag },
+  { title: "GH", img: GhanaFlag },
   { title: "ZM", img: ZambiaFlag },
   { title: "MX", img: MexicoFlag },
-  { title: "GH", img: GhanaFlag },
 ];
 
 const CountryDropdown = ({ hide }) => {

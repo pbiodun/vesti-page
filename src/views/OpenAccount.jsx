@@ -12,10 +12,10 @@ const OpenAccount = () => {
           title="How to open a free Vesti account"
           head1="Register in minutes"
           desc1="Sign up online, or in our app with your email address"
-          head2="Complete KYC verification"
+          head2="Complete Identity Verification"
           desc2="Verify your identity using your government-issued ID"
-          head3="Start Transacting"
-          desc3="We have one of the best rates that you can count on."
+          head3="Choose destination"
+          desc3="Choose any country and move with Vesti"
           classname="flex flex-col justify-center items-center pt-10"
         />
         <div className="pb-4 md:pb-10 sm:pb-20 flex flex-col justify-center items-center">

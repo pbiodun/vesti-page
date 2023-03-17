@@ -2,31 +2,30 @@ import Mfries from "../components/Mfries";
 import VestiExtras from "../components/VestiExtras";
 import AppsDownload from "../views/AppsDownload";
 import Featured from "../views/Featured";
-// import Loader from "../assets/logo-icons/loader.svg";
-// import { useState, useEffect } from "react";
-// import axios from "axios";
-// import MigrationCard from "../components/MigrationCard";
+import Loader from "../assets/logo-icons/loader.svg";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import MigrationCard from "../components/MigrationCard";
 
 const Scholarships = () => {
-  //   const [posts, setPosts] = useState(null);
-  //   const [loading, setLoading] = useState(true);
-  //   const [clicked, setClicked] = useState([]);
+  const [posts, setPosts] = useState(null);
+  const [loading, setLoading] = useState(null);
+  const getPosts = (name, value) => {
+    setLoading(true);
 
-  //   var getPosts = (name, value) => {
-  //     setLoading(true);
+    axios
+      .get(`https://wevesti.com/wp-json/wp/v2/posts/?categories=${value}`)
+      .then((response) => {
+        console.log(response.data);
+        // setClicked(name);
+        setPosts(response.data);
+        setLoading(false);
+      });
+  };
 
-  //     axios
-  //       .get(`https://wevesti.com/wp-json/wp/v2/posts/?categories=${value}`)
-  //       .then((response) => {
-  //         setClicked(name);
-  //         setPosts(response.data);
-  //         setLoading(false);
-  //       });
-  //   };
-
-  //   useEffect(() => {
-  //     getPosts();
-  //   }, []);
+  useEffect(() => {
+    getPosts();
+  }, [getPosts]);
 
   return (
     <div>
@@ -42,6 +41,7 @@ const Scholarships = () => {
         path2="#"
         path3="#"
         path4="/scholarships"
+        postFunc={getPosts("", 17)}
       />
       <Mfries
         title={
@@ -50,7 +50,7 @@ const Scholarships = () => {
           </h1>
         }
       />
-      {/* {loading && (
+      {loading && (
         <div className="text-center pt-10 text-[#4e984e] flex justify-center items-center">
           <img
             class="animate-spin h-5 w-5 mr-3"
@@ -60,24 +60,24 @@ const Scholarships = () => {
           />
           <p className="font-fontLight">loading available scholarships...</p>
         </div>
-      )} */}
+      )}
 
-      {/* {posts &&
+      {posts &&
         posts.map((post) => {
-          console.log(post);
-          const { date, title, excerpt, id } = post;
-          const { rendered: renderedTitle } = title;
-          const { rendered: renderedExcerpt } = excerpt;
+          console.log("only posts objects", post);
+          //   const { date, title, excerpt, id } = post;
+          //   const { rendered: renderedTitle } = title;
+          //   const { rendered: renderedExcerpt } = excerpt;
 
           return (
             <MigrationCard
-              date={date.split("T")[0]}
-              title={renderedTitle}
-              desc={renderedExcerpt.substring(0, 200) + "..."}
-              //   link={`/migration-post/${}`}
+            //   date={date.split("T")[0]}
+            //   title={renderedTitle}
+            //   desc={renderedExcerpt.substring(0, 200) + "..."}
+            //   link={`/migration-post/${}`}
             />
           );
-        })} */}
+        })}
 
       <AppsDownload />
       <Featured />

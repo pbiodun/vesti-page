@@ -14,19 +14,16 @@ export const useApp = () => {
     setCountry(country);
     localStorage.setItem("country", JSON.stringify(country));
 
-    if (country.title === COUNTRY.NG || country.title === COUNTRY.GL) {
+    if (country.title === COUNTRY.GL) {
       navigate("/");
     }
     // else {
     //   navigate(`/${country.title.toLowerCase()}`);
     // }
-    else if (geoLocation && geoLocation.country === country.title) {
-      setTimeout(
-        selectCountry,
-        100,
-        navigate(`/${country.title.toLowerCase()}`)
-      );
-    } else {
+    // else if (geoLocation && geoLocation.country === country.title) {
+    //   setTimeout(selectCountry, navigate(`/${country.title.toLowerCase()}`));
+    // }
+    else {
       navigate(`/${country.title.toLowerCase()}`);
     }
   };
@@ -36,3 +33,5 @@ export const useApp = () => {
     setCountry: selectCountry,
   };
 };
+
+// country.title === COUNTRY.NG ||

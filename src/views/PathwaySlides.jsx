@@ -20,8 +20,8 @@ const GetStartedDescription = [
   },
   {
     id: 2,
-    title: "Multi-Currency Wallet & Virtual Accounts",
-    desc: "Invest and sit back. You can follow your investment status at any time and invest in limited time special offers",
+    title: "Multi-Currency Wallet & Bank Accounts",
+    desc: "Get the wallet and bank accounts you need as you move to a new country.",
     image: WalletImage,
   },
 ];
@@ -34,7 +34,7 @@ const PathwaySlides = () => {
       <div className="container mx-auto py-20 grid grid-rows-2 gap-10 lg:grid-cols-2 lg:grid-rows-1 lg:gap-44 ">
         <div className="col-span-1">
           <h3 className="text-headcol font-fontReg text-3xl pb-10">
-            Everything you need, less of what you don't
+            Simplify your legal and financial journey as an immigrant
           </h3>
           <div className="">
             {GetStartedDescription.map((item, index) => (

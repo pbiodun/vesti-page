@@ -23,7 +23,7 @@ const MexicoHome = () => {
               <span className="text-[#67A948]">UEstados Unidos</span>
             </h1>
           }
-          details="Millions of people moving to new countries use Vesti for accessing financial services like bank accounts, debit and credit cards."
+          details="Millions of people moving to new countries use Vesti for accessing legal and financial services like bank accounts, debit and credit cards."
           buttonText="Get started in minutes"
           link="#"
           image={HoldPhone}
