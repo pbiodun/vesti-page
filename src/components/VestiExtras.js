@@ -1,25 +1,13 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
-const VestiExtras = ({
-  title,
-  date,
-  link1,
-  link2,
-  link3,
-  link4,
-  mainBody,
-  path1,
-  path2,
-  path3,
-  path4,
-  postFunc,
-}) => {
-  const location = useLocation();
-  //destructuring pathname from location
-  const { pathname } = location;
+const VestiExtras = (props) => {
+  const { title, date, categories = [] } = props;
+  const [params] = useSearchParams();
+  const category = params.get("category") || "ALL";
 
-  //Javascript split method to get the name of the path in array
-  const splitLocation = pathname.split("/");
+  const isActive = (cat) => {
+    return cat === category ? "border-b-8 border-[#67A948]" : "";
+  };
 
   return (
     <>
@@ -32,53 +20,21 @@ const VestiExtras = ({
             </p>
           </div>
           <div className="">
-            <ul className="flex text-[#fff] text-lg">
-              <Link
-                to={path1}
-                className={`pb-3 ${
-                  splitLocation[1] === "migration-fries"
-                    ? `border-b-8 border-[#67A948]`
-                    : "text-white"
-                }`}
-              >
-                {link1}
-              </Link>
-              <Link
-                to={path2}
-                className={`mx-10 pb-3 ${
-                  splitLocation[1] === "jobs"
-                    ? `border-b-8 border-[#67A948]`
-                    : "text-white"
-                }`}
-              >
-                {link2}
-              </Link>
-              <Link
-                to={path3}
-                className={`pb-3 ${
-                  splitLocation[1] === "news"
-                    ? `border-b-8 border-[#67A948]`
-                    : "text-white"
-                }`}
-              >
-                {link3}
-              </Link>
-              <Link
-                onClick={postFunc}
-                to={path4}
-                className={`pb-3 ml-10 ${
-                  splitLocation[1] === "scholarships"
-                    ? `border-b-8 border-[#67A948]`
-                    : "text-white"
-                }`}
-              >
-                {link4}
-              </Link>
+            <ul className="flex text-[#fff] text-lg gap-x-[10px]">
+              {categories.map((category) => (
+                <Link
+                  key={category}
+                  to={`?category=${category}`}
+                  className={`pb-3 text-white ${isActive(category)}`}
+                >
+                  {category}
+                </Link>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-      <div className="container mx-auto w-[70%]">{mainBody}</div>
+      {/* <div className="container mx-auto w-[70%]">{mainBody}</div> */}
     </>
   );
 };

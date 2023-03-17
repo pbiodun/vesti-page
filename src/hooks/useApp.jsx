@@ -2,13 +2,13 @@ import { useContext } from "react";
 import { AppContext } from "../context";
 import { useNavigate } from "react-router-dom";
 import { COUNTRY } from "../constant";
-import useGeoLocation from "react-ipgeolocation";
+// import useGeoLocation from "react-ipgeolocation";
 
 export const useApp = () => {
   const { country, setCountry } = useContext(AppContext);
   const navigate = useNavigate();
 
-  const geoLocation = useGeoLocation();
+  // const geoLocation = useGeoLocation();
 
   const selectCountry = (country) => {
     setCountry(country);

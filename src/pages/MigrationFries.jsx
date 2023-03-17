@@ -4,33 +4,53 @@ import Mfries from "../components/Mfries";
 // import MigrationCard from "../components/MigrationCard";
 import VestiExtras from "../components/VestiExtras";
 import { BsArrowUpRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import Phones from "../assets/images/phones.png";
 import Loader from "../assets/logo-icons/loader.svg";
 import Testimonials from "../views/Testimonials";
 import Featured from "../views/Featured";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import MigrationCard from "../components/MigrationCard";
 
+const categoryLookup = {
+  SCHOLARSHIPS: [6, 17],
+  JOBS: [6, 18],
+  NEWS: [6, 13],
+};
+
 const MigrationFries = () => {
-  const [posts, setPosts] = useState(null);
+  const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  async function getTutorial() {
-    try {
-      const data = (await axios.get("https://wevesti.com/wp-json/wp/v2/posts"))
-        .data;
-      setPosts(data);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
+  const [params] = useSearchParams();
+  const category = params.get("category") || "ALL";
+
+  const filteredPosts = useMemo(() => {
+    if (category === "ALL") {
+      return posts;
     }
-  }
+
+    return posts.filter((post) =>
+      post.categories.every((item) => categoryLookup[category].includes(item))
+    );
+  }, [posts, category]);
+
+  // const siteTitle = () => {
+  //   return category === "JOBS"
+  //     ? "All jobs"
+  //     : category === "NEWS"
+  //     ? "All news"
+  //     : category === "SCHOLARSHIPS"
+  //     ? "All scholarships"
+  //     : "Migration Fries";
+  // };
 
   useEffect(() => {
-    // call function to fetch all fries
-    getTutorial();
+    axios
+      .get("https://wevesti.com/wp-json/wp/v2/posts")
+      .then(({ data = [] }) => setPosts(data))
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false));
   }, []);
 
   return (
@@ -38,15 +58,7 @@ const MigrationFries = () => {
       <VestiExtras
         title="Migration Fries"
         date="Want to move overseas in 2023 ? easily see opportunities and read how to start your migration journey."
-        addStyle="border-b-8 border-[#67A948]"
-        link1="ALL"
-        link2="JOBS"
-        link3="NEWS"
-        link4="SCHOLARSHIPS"
-        path1="/migration-fries"
-        path2="#"
-        path3="#"
-        path4="/scholarships"
+        categories={["ALL", "JOBS", "NEWS", "SCHOLARSHIPS"]}
       />
 
       <div>
@@ -70,24 +82,24 @@ const MigrationFries = () => {
           </div>
         )}
       </div>
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12 pb-8">
-        {posts &&
-          posts.map((post) => {
-            // console.log(post);
-            const { date, title, excerpt, id } = post;
-            const { rendered: renderedTitle } = title;
-            const { rendered: renderedExcerpt } = excerpt;
 
-            return (
-              <MigrationCard
-                date={date.split("T")[0]}
-                title={renderedTitle}
-                // desc={renderedExcerpt.split("\n")[0]}
-                desc={renderedExcerpt.substring(0, 200) + "..."}
-                link={`/migration-post/${id}`}
-              />
-            );
-          })}
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12 pb-8 justify-items-center">
+        {filteredPosts.map((post) => {
+          // console.log(post);
+          const { date, title, excerpt, id } = post;
+          const { rendered: renderedTitle } = title;
+          const { rendered: renderedExcerpt } = excerpt;
+
+          return (
+            <MigrationCard
+              key={id}
+              date={date.split("T")[0]}
+              title={renderedTitle}
+              desc={renderedExcerpt.substring(0, 200) + "..."}
+              link={`/migration-post/${id}`}
+            />
+          );
+        })}
       </div>
 
       <CardAd
