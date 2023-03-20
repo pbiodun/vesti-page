@@ -20,7 +20,7 @@ const VestiExtras = (props) => {
             </p>
           </div>
           <div className="">
-            <ul className="flex text-[#fff] text-lg gap-x-[10px]">
+            <ul className="flex text-[#fff] text-lg gap-x-10">
               {categories.map((category) => (
                 <Link
                   key={category}

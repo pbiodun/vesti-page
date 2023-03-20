@@ -3,9 +3,17 @@ import TwitterLogo from "../assets/logo-icons/twitter-logo.svg";
 import LinkedinLogo from "../assets/logo-icons/linkedin-logo.svg";
 import FacebookLogo from "../assets/logo-icons/facebook-logo.svg";
 import InstagramLogo from "../assets/logo-icons/instagram-logo.svg";
+import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Footer = () => {
+  const [show, setShow] = useState({ value: false, name: "" });
+
+  const toggleShow = (name) => {
+    setShow({ value: !show.value, name: name === show.name ? "" : name });
+  };
+
   return (
     <div className="bg-[#060E42] text-[#ffffff] border-none">
       <div className="container mx-auto pt-14 font-fontLight">
@@ -48,7 +56,69 @@ const Footer = () => {
           <div className="">
             <ul className="flex flex-col">
               <li className="text-base font-fontSemi pb-3">PRODUCTS</li>
-              <Link
+              {/* <RiArrowDropUpLine /> */}
+              <div>
+                <div
+                  className="text-sm font-fontLight pb-1 hover:font-fontSemi flex items-center cursor-pointer"
+                  onClick={() => toggleShow("financial")}
+                >
+                  <li>Financial Services</li>
+                  {show.value && show.name === "financial" ? (
+                    <RiArrowDropUpLine className="text-2xl" />
+                  ) : (
+                    <RiArrowDropDownLine className="text-2xl" />
+                  )}
+                </div>
+                <div
+                  className={`text-xs pl-2 ${
+                    show.name !== "financial" && "hidden"
+                  }`}
+                >
+                  <ul className="flex flex-col gap-y-1">
+                    <li className="hover:text-vestigreen hover:font-fontSemi">
+                      Vesti Cards
+                    </li>
+                    <li className="hover:text-vestigreen hover:font-fontSemi">
+                      Vesti Wallets
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div
+                  className="text-sm font-fontLight pb-1 hover:font-fontSemi flex items-center cursor-pointer"
+                  onClick={() => toggleShow("migration")}
+                >
+                  <li>Migration Services</li>
+                  {show.value && show.name === "migration" ? (
+                    <RiArrowDropUpLine className="text-2xl" />
+                  ) : (
+                    <RiArrowDropDownLine className="text-2xl" />
+                  )}
+                </div>
+                <div
+                  className={`text-xs pl-2 ${
+                    show.name !== "migration" && "hidden"
+                  }`}
+                >
+                  <ul className="flex flex-col gap-y-1">
+                    <li className="hover:text-vestigreen hover:font-fontSemi">
+                      Migration Pathways
+                    </li>
+                    <li className="hover:text-vestigreen hover:font-fontSemi">
+                      Migration Fees
+                    </li>
+                    <li className="hover:text-vestigreen hover:font-fontSemi">
+                      Migration Loans
+                    </li>
+                    <li className="hover:text-vestigreen hover:font-fontSemi">
+                      Credit Score
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* <Link
                 to="/globalgeng-card"
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
@@ -74,7 +144,7 @@ const Footer = () => {
                 className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Pathways
-              </Link>
+              </Link> */}
             </ul>
           </div>
           <div>

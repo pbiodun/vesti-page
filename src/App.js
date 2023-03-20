@@ -49,7 +49,7 @@ function App() {
         <Route path="/zm" element={<ZambiaHome />} />
         <Route path="/mx" element={<MexicoHome />} />
         <Route path="/migration-post/:postId" element={<MigrationPost />} />
-        <Route path="/not-found" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </>

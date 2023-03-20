@@ -107,14 +107,14 @@ const MigrationFries = () => {
         leftSide={
           <div className="p-8 lg:pl-16">
             <div className="rounded-[30px] bg-[#060E42] w-[171px]">
-              <p className="text-xs text-white font-medium text-center mb-4 p-1">
+              <p className="text-xs text-white font-fontReg text-center mb-4 p-1">
                 AVAILABLE TO REQUEST
               </p>
             </div>
             <h1 className="text-white text-4xl w-[360px]">
               Your Comfort is Guaranteed With The Vesti GlobalGeng Card
             </h1>
-            <p className="text-base font-extralight text-white pt-6 w-[90%]">
+            <p className="text-base font-fontLight text-white pt-6 w-[90%]">
               Vesti gives humans the power to move overseas to 110 Countries.
             </p>
             <div className="pt-[20px] flex items-center text-[#ffffff] text-xl">
@@ -138,7 +138,7 @@ const MigrationFries = () => {
           </>
         }
         link={
-          <div className="flex items-center text-vestigreen font-semibold hover:text-headcol">
+          <div className="flex items-center text-vestigreen font-fontReg hover:text-headcol">
             <Link to="#">Read more stories</Link>
             <BsArrowUpRight />
           </div>

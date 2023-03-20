@@ -3,7 +3,7 @@ import HoldPhone from "../../assets/images/mexico-image.png";
 import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
 import DescriptionCard from "../../components/DescriptionCard";
 import FinServicsImg from "../../assets/images/mexico-image1.png";
-import VirtualCard from "../../assets/images/virtual-card.png";
+import VirtualCard from "../../assets/images/virtual-card-mx.png";
 // import Pathways from "../../views/Pathways";
 import OpenAccount from "../../views/OpenAccount";
 import Offerings from "../../views/Offerings";
