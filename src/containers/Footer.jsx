@@ -62,7 +62,7 @@ const Footer = () => {
                   className="text-sm font-fontLight pb-1 hover:font-fontSemi flex items-center cursor-pointer"
                   onClick={() => toggleShow("financial")}
                 >
-                  <li>Financial Services</li>
+                  <p>Financial Services</p>
                   {show.value && show.name === "financial" ? (
                     <RiArrowDropUpLine className="text-2xl" />
                   ) : (
@@ -74,12 +74,30 @@ const Footer = () => {
                     show.name !== "financial" && "hidden"
                   }`}
                 >
-                  <ul className="flex flex-col gap-y-1">
-                    <li className="hover:text-vestigreen hover:font-fontSemi">
-                      Vesti Cards
+                  <ul className="flex flex-col gap-y-2">
+                    <li>
+                      <Link
+                        to="/globalgeng-card"
+                        className="text-xs font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                      >
+                        GlobalGeng Card
+                      </Link>
                     </li>
-                    <li className="hover:text-vestigreen hover:font-fontSemi">
-                      Vesti Wallets
+                    <li>
+                      <Link
+                        to="/virtual-card"
+                        className="text-xs font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                      >
+                        Virtual Dollar Card
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/wallets"
+                        className="text-xs font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                      >
+                        Vesti Wallets
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -89,7 +107,7 @@ const Footer = () => {
                   className="text-sm font-fontLight pb-1 hover:font-fontSemi flex items-center cursor-pointer"
                   onClick={() => toggleShow("migration")}
                 >
-                  <li>Migration Services</li>
+                  <p>Migration Services</p>
                   {show.value && show.name === "migration" ? (
                     <RiArrowDropUpLine className="text-2xl" />
                   ) : (
@@ -101,7 +119,7 @@ const Footer = () => {
                     show.name !== "migration" && "hidden"
                   }`}
                 >
-                  <ul className="flex flex-col gap-y-1">
+                  <ul className="flex flex-col gap-y-2">
                     <li className="hover:text-vestigreen hover:font-fontSemi">
                       Migration Pathways
                     </li>
@@ -117,34 +135,6 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-
-              {/* <Link
-                to="/globalgeng-card"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
-              >
-                GlobalGeng Card
-              </Link>
-
-              <Link
-                to="/wallets"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
-              >
-                Wallets
-              </Link>
-
-              <Link
-                to="/virtual-card"
-                className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
-              >
-                Founders' card
-              </Link>
-
-              <Link
-                to="#"
-                className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
-              >
-                Pathways
-              </Link> */}
             </ul>
           </div>
           <div>

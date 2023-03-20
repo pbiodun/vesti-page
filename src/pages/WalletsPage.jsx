@@ -6,8 +6,8 @@ import WalletsBenefit from "../views/WalletsBenefit";
 import ToCreateCard from "../components/ToCreateCard";
 import Vector from "../assets/logo-icons/Vector.png";
 import Vector1 from "../assets/logo-icons/Vector1.png";
-// import AppsDownload from "../views/AppsDownload";
-import DownloadApp from "../views/DownloadApp";
+import AppsDownload from "../views/AppsDownload";
+
 import CardAds from "../components/CardAds";
 import Phone from "../assets/images/phone-notif1.png";
 
@@ -71,8 +71,7 @@ const WalletsPage = () => {
         </div>
         <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />
       </div>
-      {/* <AppsDownload /> */}
-      <DownloadApp />
+      <AppsDownload />
     </>
   );
 };
