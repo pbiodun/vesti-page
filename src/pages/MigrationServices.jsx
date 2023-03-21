@@ -1,8 +1,6 @@
-import WebBanner from "../components/WebBanner";
-import GlobalPic from "../assets/images/globe-mig.png";
-import BgPattern from "../assets/images/pattern-bg.svg";
 import ToCreateCard from "../components/ToCreateCard";
 import Vector from "../assets/logo-icons/Vector.png";
+import Vector1 from "../assets/logo-icons/Vector1.png";
 import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
 import Button from "../components/Button";
@@ -10,43 +8,31 @@ import DownloadApp from "../views/DownloadApp";
 import CardAds from "../components/CardAds";
 import Phones from "../assets/images/phones.png";
 import Testimonials from "../views/Testimonials";
+import MigrationServiceHero from "../views/MigrationServiceHero";
 
 const MigrationServices = () => {
   return (
     <>
-      <div className="bg-secondary w-full pt-10 relative">
-        <img src={BgPattern} alt="pattern" className="absolute top-0 right-0" />
-        <WebBanner
-          title={
-            <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 text-[#ffffff]">
-              Vesti <span className="text-[#67A948]">Migration Services</span>
-            </h1>
-          }
-          details="Vesti empowers immigrants to take control of their financial lives and achieve financial independence. From migration loans to migration advice, we have the tools and resources to help ease the burden of the migration process."
-          buttonText="Get started in minutes"
-          link="#"
-          image={GlobalPic}
-        />
-      </div>
+      <MigrationServiceHero />
       <div className="container py-20 mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16">
         <div className="col-span-1">
           <h1 className="font-fontSemi lg:w-[85%] text-[#14290A] text-4xl pb-4 ">
             Our Offerings
           </h1>
-          <p className="pb-12 text-2xl text-[#2B5219] font-fontReg">
+          <p className="pb-12 text-2xl text-[#2B5219] font-fontLight">
             The migration services we offer
           </p>
 
           <h1 className="font-fontSemi lg:w-[85%] text-[#14290A] text-xl pb-4 ">
             Migration Pathways
           </h1>
-          <p className="pb-6 text-lg text-[#2B5219] font-fontReg">
+          <p className="pb-6 text-lg text-[#2B5219] font-fontLight">
             Our team of experts have the knowledge and experience to help you
             understand the different pathways to migration, such as student
             visa, work visa, and permanent residency.
           </p>
           <div className="flex items-center pb-12 font-fontReg text-[#67A948] text-xl">
-            <Link to="#" className="pr-2">
+            <Link to="https://app.wevesti.com/register" className="pr-2">
               Get Started
             </Link>
             <BsArrowUpRight />
@@ -54,7 +40,7 @@ const MigrationServices = () => {
           <h1 className="font-fontSemi lg:w-[85%] text-[#14290A] text-xl pb-4 ">
             Migration Fees
           </h1>
-          <p className="pb-6 text-lg text-[#2B5219] font-fontReg">
+          <p className="pb-6 text-lg text-[#2B5219] font-fontLight">
             We offer comprehensive support to help you navigate and pay for fees
             such as WES, SEVIS and other immigration-related expenses.
           </p>
@@ -67,7 +53,7 @@ const MigrationServices = () => {
           <h1 className="font-fontSemi lg:w-[85%] text-[#14290A] text-xl pb-4 ">
             Migration Loans
           </h1>
-          <p className="pb-6 text-lg text-[#2B5219] font-fontReg">
+          <p className="pb-6 text-lg text-[#2B5219] font-fontLight">
             We offer loans to help cover the cost of migration-related expenses
             such as visa fees, travel expenses, and legal fees.
           </p>
@@ -117,7 +103,7 @@ const MigrationServices = () => {
             styles="p-4 mx-auto"
           />
         </div>
-        <img src={Vector} alt="shape" className="absolute bottom-0 right-0" />
+        <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />
       </div>
       <div className="container pb-24 mx-auto ">
         <CardAds

@@ -18,12 +18,12 @@ const Offerings = () => {
         </div>
 
         {/* Offerings Listed in Cards */}
-        <div className="grid lg:grid-cols-3 lg:grid-rows-2 gap-10 md:grid-cols-2 md:grid-rows-2 md:gap-5">
+        <div className="grid lg:grid-cols-4 gap-20 md:grid-cols-2 md:grid-rows-2 md:gap-5">
           <div className="flex ">
             <div>
               <img src={Convenient} alt="convenient" />
             </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
+            <div className="pl-5 md:pl-3 w-[70%]">
               <h3 className="text-[#14290A] font-fontReg text-lg pb-1 ">
                 Convenient
               </h3>
@@ -36,7 +36,7 @@ const Offerings = () => {
             <div>
               <img src={Speed} alt="speed" />
             </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
+            <div className="pl-5 md:pl-3 w-[70%]">
               <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
                 Speedy
               </h3>
@@ -49,7 +49,7 @@ const Offerings = () => {
             <div>
               <img src={Rates} alt="rates" />
             </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
+            <div className="pl-5 md:pl-3 w-[70%]">
               <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
                 Fair Rates
               </h3>
@@ -58,12 +58,11 @@ const Offerings = () => {
               </p>
             </div>
           </div>
-          <div className="hidden lg:block w-[90%]"></div>
           <div className="flex">
             <div>
               <img src={Padlock} alt="lock" />
             </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
+            <div className="pl-5 md:pl-3 w-[70%]">
               <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
                 Secure
               </h3>
@@ -73,6 +72,7 @@ const Offerings = () => {
               </p>
             </div>
           </div>
+          {/* <div className="hidden lg:block w-[90%]"></div> */}
         </div>
       </div>
     </div>

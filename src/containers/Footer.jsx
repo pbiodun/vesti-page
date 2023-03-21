@@ -102,7 +102,10 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div>
+              <li className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi pt-2">
+                <Link to="/migration-services">Migration Services</Link>
+              </li>
+              {/* <div>
                 <div
                   className="text-sm font-fontLight pb-1 hover:font-fontSemi flex items-center cursor-pointer"
                   onClick={() => toggleShow("migration")}
@@ -134,7 +137,7 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </ul>
           </div>
           <div>

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import PathwayImage from "../assets/images/pathway-image.png";
+import PathwayImageZM from "../assets/images/pathway-img-zm.png";
+import PathwayImageGH from "../assets/images/pathway-img-gh.png";
+import PathwayImageMX from "../assets/images/pathway-img-mx.png";
 import CardImage from "../assets/images/mycards-image.png";
 import WalletImage from "../assets/images/wallets-image.png";
 import ActiveCard from "../components/ActiveCard";
@@ -10,6 +13,7 @@ const GetStartedDescription = [
     title: "Pathways software for global migration",
     desc: "Vesti gives humans the power to move overseas to 110 Countries.",
     image: PathwayImage,
+    // image: [PathwayImage, PathwayImageZM, PathwayImageGH, PathwayImageMX],
     learnMore: "/",
   },
   {

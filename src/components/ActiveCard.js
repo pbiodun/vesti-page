@@ -17,7 +17,7 @@ const ActiveCard = ({
         className={`${addStyles} ${
           activeTrx === index &&
           "transition duration-300 ease-in-out border-l-vestigreen opacity-100"
-        } opacity-50 py-5  cursor-pointer pl-4 ${click} border-l-4`}
+        } opacity-50 py-8 cursor-pointer pl-4 ${click} border-l-4`}
         onClick={() => onClick()}
       >
         <h1 className="text-[#14290A] text-xl mb-2 font-fontReg">{title}</h1>
