@@ -181,7 +181,7 @@ const Footer = () => {
                 AML
               </Link>
               <Link
-                to="#"
+                to="/faqs"
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
                 FAQ

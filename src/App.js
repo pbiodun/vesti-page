@@ -21,6 +21,7 @@ import NavBar from "./containers/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import MigrationPost from "./pages/MigrationPost";
 import ErrorPage from "./pages/ErrorPage";
+import Faqs from "./pages/Faqs";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -44,6 +45,7 @@ function App() {
         <Route path="/aml" element={<Aml />} />
         <Route path="/migration-fries" element={<MigrationFries />} />
         <Route path="/migration-services" element={<MigrationServices />} />
+        <Route path="/faqs" element={<Faqs />} />
         <Route path="/ng" element={<NigeriaHome />} />
         <Route path="/gh" element={<GhanaHome />} />
         <Route path="/zm" element={<ZambiaHome />} />

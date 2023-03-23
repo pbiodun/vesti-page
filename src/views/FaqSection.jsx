@@ -32,7 +32,7 @@ const FaqSection = () => {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-x-44 py-14">
           <div className="pt-3 col-span-1">
-            <h1 className="text-3xl font-medium lg:w-[70%] font-fontSemi">
+            <h1 className="text-3xl lg:w-[70%] font-fontSemi">
               Some of the things you may want to know
             </h1>
             <p className="text-lg font-fontReg pt-3">
@@ -46,12 +46,12 @@ const FaqSection = () => {
                 icon={<Icon id={1} open={open} animate={customAnimation} />}
               >
                 <AccordionHeader
-                  className="text-[#ffffff]"
+                  className="text-[#ffffff] hover:text-vestigreen fontReg"
                   onClick={() => handleOpen(1)}
                 >
                   What is Vesti?
                 </AccordionHeader>
-                <AccordionBody className="text-[#ffffff]">
+                <AccordionBody className="text-[#ffffff] font-fontLight">
                   With Vesti you are given the opportunity to do a short-term
                   investment for relocation and a long
                 </AccordionBody>
@@ -61,12 +61,12 @@ const FaqSection = () => {
                 icon={<Icon id={2} open={open} animate={customAnimation} />}
               >
                 <AccordionHeader
-                  className="text-[#ffffff]"
+                  className="text-[#ffffff] hover:text-vestigreen font-fontReg"
                   onClick={() => handleOpen(2)}
                 >
                   What can I do with Vesti?
                 </AccordionHeader>
-                <AccordionBody className="text-[#ffffff]">
+                <AccordionBody className="text-[#ffffff] font-fontLight">
                   We&apos;re not always in the position that we want to be at.
                   We&apos;re constantly growing. We&apos;re constantly making
                   mistakes. We&apos;re constantly trying to express ourselves
@@ -78,12 +78,12 @@ const FaqSection = () => {
                 icon={<Icon id={3} open={open} animate={customAnimation} />}
               >
                 <AccordionHeader
-                  className="text-[#ffffff]"
+                  className="text-[#ffffff] hover:text-vestigreen font-fontReg"
                   onClick={() => handleOpen(3)}
                 >
                   How do I pay for WES on Vesti?
                 </AccordionHeader>
-                <AccordionBody className="text-[#ffffff]">
+                <AccordionBody className="text-[#ffffff] font-fontLight">
                   We&apos;re not always in the position that we want to be at.
                   We&apos;re constantly growing. We&apos;re constantly making
                   mistakes. We&apos;re constantly trying to express ourselves
@@ -95,12 +95,12 @@ const FaqSection = () => {
                 icon={<Icon id={4} open={open} animate={customAnimation} />}
               >
                 <AccordionHeader
-                  className="text-[#ffffff]"
+                  className="text-[#ffffff] hover:text-vestigreen font-fontReg"
                   onClick={() => handleOpen(4)}
                 >
                   Does Vesti sell cryptocurrency?
                 </AccordionHeader>
-                <AccordionBody className="text-[#ffffff]">
+                <AccordionBody className="text-[#ffffff] font-fontLight">
                   We&apos;re not always in the position that we want to be at.
                   We&apos;re constantly growing. We&apos;re constantly making
                   mistakes. We&apos;re constantly trying to express ourselves
