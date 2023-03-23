@@ -49,11 +49,14 @@ const FaqSection = () => {
                   className="text-[#ffffff] hover:text-vestigreen fontReg"
                   onClick={() => handleOpen(1)}
                 >
-                  What is Vesti?
+                  What can I do with Vesti?
                 </AccordionHeader>
                 <AccordionBody className="text-[#ffffff] font-fontLight">
-                  With Vesti you are given the opportunity to do a short-term
-                  investment for relocation and a long
+                  With Vesti you get the opportunity to be financially stable in
+                  life, whether you choose to move abroad
+                  (temporarily/permanently) or stay back in Nigeria. On Vesti
+                  you can pay for difficult Immigration related payments
+                  (international Payments) in your local currency, seamlessly.
                 </AccordionBody>
               </Accordion>
               <Accordion
@@ -64,13 +67,13 @@ const FaqSection = () => {
                   className="text-[#ffffff] hover:text-vestigreen font-fontReg"
                   onClick={() => handleOpen(2)}
                 >
-                  What can I do with Vesti?
+                  Is my money secure with Vesti?
                 </AccordionHeader>
                 <AccordionBody className="text-[#ffffff] font-fontLight">
-                  We&apos;re not always in the position that we want to be at.
-                  We&apos;re constantly growing. We&apos;re constantly making
-                  mistakes. We&apos;re constantly trying to express ourselves
-                  and actualize our dreams.
+                  Yes, your money is secured on Vesti because they with
+                  integrity and the company is duly registered. Vesti uses bank
+                  level security, PIN authentication, and end to end encryption.
+                  Even the team at Vesti can’t see your password or Pin.
                 </AccordionBody>
               </Accordion>
               <Accordion
@@ -84,10 +87,10 @@ const FaqSection = () => {
                   How do I pay for WES on Vesti?
                 </AccordionHeader>
                 <AccordionBody className="text-[#ffffff] font-fontLight">
-                  We&apos;re not always in the position that we want to be at.
-                  We&apos;re constantly growing. We&apos;re constantly making
-                  mistakes. We&apos;re constantly trying to express ourselves
-                  and actualize our dreams.
+                  All you need to do is deposit money into your Naira or Dollar
+                  Wallet. You can deposit into your wallet by using your credit
+                  cards or debit cards or through Barter, USSD, Pay Pal and
+                  other methods. You can also read a more detailed instruction.
                 </AccordionBody>
               </Accordion>
               <Accordion
@@ -98,13 +101,14 @@ const FaqSection = () => {
                   className="text-[#ffffff] hover:text-vestigreen font-fontReg"
                   onClick={() => handleOpen(4)}
                 >
-                  Does Vesti sell cryptocurrency?
+                  Can I send dollar to someone with Vesti?
                 </AccordionHeader>
                 <AccordionBody className="text-[#ffffff] font-fontLight">
-                  We&apos;re not always in the position that we want to be at.
-                  We&apos;re constantly growing. We&apos;re constantly making
-                  mistakes. We&apos;re constantly trying to express ourselves
-                  and actualize our dreams.
+                  Yes, you can. There are two ways. You can withdraw from your
+                  dollar wallet (with appropriate charges ) into your
+                  domiciliary account. Also you can send money to the other
+                  person’s Vesti Wallet, and they can use on Vesti or outside
+                  Vesti (Withdraw to a Dollar account).
                 </AccordionBody>
               </Accordion>
             </Fragment>

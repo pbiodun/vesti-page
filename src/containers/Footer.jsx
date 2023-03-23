@@ -156,10 +156,10 @@ const Footer = () => {
                 Careers
               </Link>
               <Link
-                to="/#"
+                to="/news-room"
                 className="text-sm font-fontLight pb-2 hover:text-vestigreen hover:font-fontSemi"
               >
-                Vesti Blog
+                News Room
               </Link>
               <Link
                 to="/#"

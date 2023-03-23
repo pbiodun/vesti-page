@@ -19,8 +19,8 @@ const Faqs = () => {
               <span className="text-vestigreen">Frequently</span> Asked
               Questions
             </h1>
-            <p className="text-2xl font-fontLight">
-              Take a look at all the platforms that Vesti has been featured in
+            <p className="text-xl font-fontLight">
+              We answered questions so you don’t have to ask them
             </p>
           </div>
         </div>
