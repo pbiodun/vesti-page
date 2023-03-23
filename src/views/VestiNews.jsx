@@ -62,7 +62,9 @@ const VestiNews = () => {
                 {prev.desc}
               </p>
               <div className="flex items-center text-vestigreen font-fontReg hover:font-fontSemi cursor-pointer text-base">
-                <Link to={prev.link}>Continue Reading</Link>
+                <Link to={prev.link} target="_blank" rel="noopener noreferrer">
+                  Continue Reading
+                </Link>
                 <IoIosArrowRoundForward className="text-3xl" />
               </div>
             </div>
