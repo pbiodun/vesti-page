@@ -162,7 +162,7 @@ const Footer = () => {
                 News Room
               </Link>
               <Link
-                to="/#"
+                to="/team"
                 className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
               >
                 Team

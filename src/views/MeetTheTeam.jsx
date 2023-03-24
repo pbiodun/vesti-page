@@ -1,229 +1,49 @@
-import TeamMember1 from "../assets/images/teammember.png";
 import TwitterLogo1 from "../assets/logo-icons/twitter-logo1.svg";
 import LinkedinLogo1 from "../assets/logo-icons/linkedin-logo1.svg";
+import { People } from "../constant/TeamsDetail";
+import { Link } from "react-router-dom";
 
-const MeetTheTeam = () => {
+const MeetTheTeam = ({ link, count }) => {
   return (
     <div>
       <div className="container mx-auto lg:w-[90%] text-center">
-        <h1 className="text-[#14290A] text-4xl pb-3 font-fontReg">
-          Meet the Team
-        </h1>
-        <p className="text-[#2B5219] text-2xl leading-[35px] mx-auto lg:w-[65%] font-fontLight">
-          Vesti gives humans the power to move overseas to 110 Countries. We are
-          the future of legal migration and global migration.
-        </p>
         <div className="pt-12 pb-24">
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 pb-14 font-fontReg">
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
+            {People.slice(0, count).map((person) => (
+              <div className="flex flex-col items-center">
+                <div>
+                  <img src={person.headShot} alt="team-member" />
+                </div>
+                <div className="pb-3">
+                  <h3 className="text-[#14290A] font-fontReg text-xl">
+                    {person.fullName}
+                  </h3>
+                  <p className="text-[#14290A] font-fontLight text-sm">
+                    {person.designation}
+                  </p>
+                </div>
+                <div className="flex items-center">
+                  <Link to={person.socialLink1}>
+                    <img
+                      className="pr-3"
+                      src={LinkedinLogo1}
+                      alt="linkedin-logo"
+                    />
+                  </Link>
+                  <Link to={person.socialLink2}>
+                    <img src={TwitterLogo1} alt="twitter-logo" />
+                  </Link>
+                </div>
               </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-between">
-              <div>
-                <img src={TeamMember1} alt="team-member1" />
-              </div>
-              <div className="pb-3">
-                <h3 className="text-[#14290A] font-fontReg text-xl">
-                  Olusola Amusan
-                </h3>
-                <p className="text-[#14290A] font-fontLight text-sm">
-                  CEO/Co-Founder
-                </p>
-              </div>
-              <div className="flex items-center">
-                <img className="pr-3" src={LinkedinLogo1} alt="linkedin-logo" />
-                <img src={TwitterLogo1} alt="twitter-logo" />
-              </div>
-            </div>
+            ))}
           </div>
           <div>
-            <p className="text-[#67A948] text-xl cursor-pointer font-fontReg hover:text-headcol">
-              View more
-            </p>
+            <Link
+              to="/team"
+              className="text-[#67A948] text-xl cursor-pointer font-fontReg hover:text-headcol"
+            >
+              {link}
+            </Link>
           </div>
         </div>
       </div>

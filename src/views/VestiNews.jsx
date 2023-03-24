@@ -35,7 +35,13 @@ const VestiNews = () => {
               {latestNews.desc}
             </p>
             <div className="flex items-center text-vestigreen font-fontReg hover:font-fontSemi cursor-pointer text-xl lg:w-[50%]">
-              <Link to={latestNews.link}>Continue Reading</Link>
+              <Link
+                to={latestNews.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Continue Reading
+              </Link>
               <IoIosArrowRoundForward className="text-3xl" />
             </div>
           </div>

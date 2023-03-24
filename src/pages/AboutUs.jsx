@@ -16,19 +16,6 @@ const AboutUs = () => {
         <img src={CurlyL} alt="shape" className="absolute left-0" />
         <img src={CurlyR} alt="shape" className="absolute right-0" />
 
-        {/* <div className="">
-          <WebBanner
-            title={
-              <h1 className="text-4xl lg:text-4xl xl:text-5xl font-fontSemi pb-5 text-[#ffffff]">
-                We are <span className="text-[#67A948]">Vesti</span>
-              </h1>
-            }
-            details="Our goal is to accelerate and improve the movement and finances of people immigrating to the countries of their dreams"
-            buttonText="Get started in minutes"
-            image=""
-            imgWidth="45%"
-          />
-        </div> */}
         <div className="container mx-auto">
           <div className="flex flex-col gap-12 justify-center items-center">
             <div className="lg:w-[30%] w-80% z-30 text-center">
@@ -54,7 +41,16 @@ const AboutUs = () => {
       <About />
       <VestiValues />
       <WorkWithUs />
-      <MeetTheTeam />
+      <div className="container mx-auto lg:w-[90%] text-center">
+        <h1 className="text-[#14290A] text-4xl pb-3 font-fontReg">
+          Meet the Team
+        </h1>
+        <p className="text-[#2B5219] text-xl leading-[35px] mx-auto lg:w-[65%] font-fontLight">
+          Vesti gives humans the power to move overseas to 110 Countries. We are
+          the future of legal migration and global migration.
+        </p>
+      </div>
+      <MeetTheTeam link="View more" count="4" />
       <FaqSection />
       <DownloadApp />
     </>

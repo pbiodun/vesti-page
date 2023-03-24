@@ -1,6 +1,7 @@
 import FeaturedLogos from "../assets/logo-icons/feat-logos.png";
 import GlobalPageImage from "../assets/images/gpphone.png";
-import Button from "../components/Button";
+import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Showcase = () => {
   return (
@@ -18,14 +19,11 @@ const Showcase = () => {
               legal and financial services like bank accounts, debit and credit
               cards.
             </p>
-
-            <Button
-              link="https://app.wevesti.com/auth"
-              width="50%"
-              styles="mb-[70px] p-3"
-              CTA="Get started in minutes"
-            />
-
+            <Link to="https://app.wevesti.com/auth">
+              <Button className="capitalize p-4 mb-16 w-[60%] lg:w-[50%] bg-vestigreen hover:bg-headcol">
+                Get started in minutes
+              </Button>
+            </Link>
             <img src={FeaturedLogos} alt="featured" />
           </div>
           <div className="col-span-1">

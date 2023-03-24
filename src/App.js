@@ -23,6 +23,7 @@ import MigrationPost from "./pages/MigrationPost";
 import ErrorPage from "./pages/ErrorPage";
 import Faqs from "./pages/Faqs";
 import NewsRoom from "./pages/NewsRoom";
+import Team from "./pages/Team";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -41,6 +42,7 @@ function App() {
         <Route path="/wallets" element={<WalletsPage />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/tos" element={<Disclosures />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/aml" element={<Aml />} />
