@@ -22,8 +22,8 @@ const VestiGCard = () => {
             analytics and data mining, Vesti Cards are positioned to serve
             migrants in transit and those already settled.{" "}
           </p>
-          <div className="flex items-center text-[#67A948] text-xl font-fontReg ">
-            <Link>Request for card</Link>
+          <div className="flex items-center text-[#67A948] text-xl font-fontReg hover:text-headcol">
+            <Link to="https://app.wevesti.com/register">Request for card</Link>
             <BsArrowUpRight />
           </div>
         </div>

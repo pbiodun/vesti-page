@@ -30,12 +30,12 @@ const FaqSection = () => {
   return (
     <div className="bg-[#060E42] text-[#ffffff]">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-x-44 py-14">
+        <div className="grid lg:grid-cols-2 gap-x-44 gap-y-12 py-14">
           <div className="pt-3 col-span-1">
             <h1 className="text-3xl lg:w-[70%] font-fontSemi">
               Some of the things you may want to know
             </h1>
-            <p className="text-lg font-fontReg pt-3">
+            <p className="text-lg font-fontReg pt-6">
               We answered questions so you don’t have to ask them
             </p>
           </div>
@@ -98,7 +98,7 @@ const FaqSection = () => {
                 icon={<Icon id={4} open={open} animate={customAnimation} />}
               >
                 <AccordionHeader
-                  className="text-[#ffffff] hover:text-vestigreen font-fontReg"
+                  className="text-[#ffffff] hover:text-vestigreen font-fontReg text-left"
                   onClick={() => handleOpen(4)}
                 >
                   Can I send dollar to someone with Vesti?

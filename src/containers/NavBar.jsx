@@ -1,11 +1,10 @@
 import VestiLogo from "../assets/logo-icons/vesti-logo.png";
 import GlobeIcon from "../assets/logo-icons/globe.svg";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-// import {  } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TfiClose } from "react-icons/tfi";
 import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import { Button } from "@material-tailwind/react";
 import { useState } from "react";
 import NavLinks from "../components/NavLinks";
 import MobileNav from "../components/MobileNav";
@@ -45,12 +44,13 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Button
-                    link="https://app.wevesti.com/register"
-                    width="100%"
-                    styles="p-3 px-8"
-                    CTA="Create an account"
-                  />
+                  <div className="">
+                    <Link to="https://app.wevesti.com/register">
+                      <Button className="normal-case lg:w-[100%] bg-vestigreen hover:bg-headcol p-4 text-base">
+                        Create an account
+                      </Button>
+                    </Link>
+                  </div>
                 </li>
                 <li>
                   <div

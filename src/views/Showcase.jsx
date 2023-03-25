@@ -9,18 +9,18 @@ const Showcase = () => {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-20">
           <div className="col-span-1 pt-16">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold pb-5 w-[80%] font-fontBold !leading-[60px]">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold pb-5 lg:w-[80%] font-fontBold !leading-[40px] lg:!leading-[60px]">
               <span className="text-[#67A948]">Legal</span> and{" "}
               <span className="text-[#67A948]">financial</span> operating system
               for 1 billion Immigrants
             </h1>
-            <p className="text-lg font-light pb-12 w-[80%] font-fontLight">
+            <p className="text-lg font-light pb-12 lg:w-[80%] font-fontLight">
               Millions of people moving to new countries use Vesti for accessing
               legal and financial services like bank accounts, debit and credit
               cards.
             </p>
             <Link to="https://app.wevesti.com/auth">
-              <Button className="capitalize p-4 mb-16 w-[60%] lg:w-[50%] bg-vestigreen hover:bg-headcol">
+              <Button className="font-fontLight text-base capitalize p-5 mb-16 w-[90%] sm:w-[60%] lg:w-[50%] bg-vestigreen hover:bg-headcol">
                 Get started in minutes
               </Button>
             </Link>

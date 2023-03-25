@@ -7,7 +7,11 @@ const OpenAccount = () => {
   return (
     <div className="w-full bg-[#F7FFF3] py-20 relative">
       <div className="container mx-auto">
-        <img src={Vector} alt="shape" className="absolute top-0 left-0" />
+        <img
+          src={Vector}
+          alt="shape"
+          className="hidden md:block absolute top-0 left-0"
+        />
         <ToCreateCard
           title="How to open a free Vesti account"
           head1="Register in minutes"
@@ -26,7 +30,11 @@ const OpenAccount = () => {
             styles="p-4 text-[#fff] mb-5"
           />
         </div>
-        <img src={Vector1} alt="shape" className="absolute bottom-0 right-0" />
+        <img
+          src={Vector1}
+          alt="shape"
+          className="hidden md:block absolute bottom-0 right-0"
+        />
       </div>
     </div>
   );

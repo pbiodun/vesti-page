@@ -6,7 +6,8 @@ import Phone from "../assets/images/phone-notif1.png";
 import ToCreateCard from "../components/ToCreateCard";
 import Featured from "../views/Featured";
 import GetCard from "../views/GetCard";
-import Button from "../components/Button";
+import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const GlobalGengCard = () => {
   return (
@@ -34,12 +35,13 @@ const GlobalGengCard = () => {
           desc3="We have one of the best rates that you can count on."
           classname="mx-auto w-[70%] lg:w-[30%] flex flex-col justify-center items-center"
         />
-        <Button
-          CTA="Get started in minutes"
-          link="https://app.wevesti.com/register"
-          styles="p-3 mx-auto mb-10"
-          width="30%"
-        />
+        <div className="text-center pb-10">
+          <Link to="https://app.wevesti.com/register">
+            <Button className="capitalize lg:w-[30%] bg-vestigreen hover:bg-headcol p-5 text-base">
+              Get started in minutes
+            </Button>
+          </Link>
+        </div>
       </div>
       <Featured />
       <GetCard />

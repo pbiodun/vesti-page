@@ -1,19 +1,21 @@
-import Button from "../components/Button";
+import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const GetCard = () => {
   return (
     <div className="bg-[#060E42] text-[#ffffff]">
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center py-14">
-          <h1 className="text-4xl lg:text-5xl text-center w-[90%] sm:w-[50%] lg:w-[40%] pb-8 font-fontSemi">
+      <div className="container mx-auto py-20">
+        <div className="flex flex-col items-center">
+          <h1 className="text-4xl lg:text-5xl text-center w-[90%] sm:w-[50%] pb-8 lg:w-[35%] font-fontSemi">
             Get your Vesti Virtual Card
           </h1>
-          <Button
-            link=""
-            CTA="Create your card"
-            styles="p-3 text-lg"
-            width="30%"
-          />
+        </div>
+        <div className="text-center">
+          <Link to="https://app.wevesti.com/register">
+            <Button className="capitalize lg:w-[20%] bg-vestigreen hover:bg-headcol p-5 text-base">
+              Create your card
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

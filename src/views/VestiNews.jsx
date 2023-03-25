@@ -56,22 +56,35 @@ const VestiNews = () => {
         </p>
         <div className="pt-10 pb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {previousNews.slice(0, count).map((prev, i) => (
-            <div key={i} className="rounded-2xl col-span-1">
-              <img className="w-full" src={prev.img} alt="news-pics" />
-              <p className="text-[#3E3E59] text-base font-fontLight py-4">
-                {prev.date}
-              </p>
-              <h1 className="text-2xl text-headcol font-fontSemi pb-4">
-                {prev.title}
-              </h1>
-              <p className="font-fontReg text-[#2B5219] w-[90%] text-base pb-4">
-                {prev.desc}
-              </p>
-              <div className="flex items-center text-vestigreen font-fontReg hover:font-fontSemi cursor-pointer text-base">
-                <Link to={prev.link} target="_blank" rel="noopener noreferrer">
-                  Continue Reading
-                </Link>
-                <IoIosArrowRoundForward className="text-3xl" />
+            <div key={i}>
+              <div className="rounded-2xl col-span-1 bg-vestigreen mb-3">
+                <div className="py-[58px] px-[67px] flex flex-col justify-center items-center">
+                  <h1 className="text-5xl text-white font-fontBold">Vesti</h1>
+                  <h1 className="text-5xl text-white font-fontBold">
+                    Newsroom
+                  </h1>
+                  <p className="text-[#FBCB6A] text-base font-fontLight pt-4">
+                    {prev.date}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h1 className="text-2xl text-headcol font-fontSemi pb-4">
+                  {prev.title}
+                </h1>
+                <p className="font-fontReg text-[#2B5219] w-[90%] text-base pb-4">
+                  {prev.desc}
+                </p>
+                <div className="flex items-center text-vestigreen font-fontReg hover:font-fontSemi cursor-pointer text-base">
+                  <Link
+                    to={prev.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Continue Reading
+                  </Link>
+                  <IoIosArrowRoundForward className="text-3xl" />
+                </div>
               </div>
             </div>
           ))}
@@ -80,7 +93,7 @@ const VestiNews = () => {
       <div className="text-center">
         <Button
           onClick={LoadMore}
-          className="w-[25%] bg-vestigreen p-4 hover:bg-headcol capitalize text-base font-fontLight"
+          className="w-[70%] sm:w-[40%] lg:w-[25%] bg-vestigreen p-4 hover:bg-headcol capitalize text-base font-fontLight"
         >
           Load More
         </Button>
