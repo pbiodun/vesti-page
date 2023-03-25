@@ -16,6 +16,7 @@ module.exports = withMT({
     extend: {
       backgroundImage: {
         ImageName: "url('')",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       fontFamily: {
         sans: ["Syne", "sans-serif"],
