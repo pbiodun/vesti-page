@@ -34,7 +34,7 @@ const VestiNews = () => {
             <p className="pt-8 pb-12 text-3xl font-fontSemi">
               {latestNews.desc}
             </p>
-            <div className="flex items-center text-vestigreen font-fontReg hover:font-fontSemi cursor-pointer text-xl lg:w-[50%]">
+            <div className="flex items-center text-vestigreen hover:text-headcol font-fontReg hover:font-fontSemi cursor-pointer text-xl lg:w-[50%] w-[90%]">
               <Link
                 to={latestNews.link}
                 target="_blank"
@@ -63,7 +63,7 @@ const VestiNews = () => {
                   <h1 className="text-5xl text-white font-fontBold">
                     Newsroom
                   </h1>
-                  <p className="text-[#FBCB6A] text-base font-fontLight pt-4">
+                  <p className="text-[#FBCB6A] text-base font-fontReg pt-4">
                     {prev.date}
                   </p>
                 </div>
@@ -75,7 +75,7 @@ const VestiNews = () => {
                 <p className="font-fontReg text-[#2B5219] w-[90%] text-base pb-4">
                   {prev.desc}
                 </p>
-                <div className="flex items-center text-vestigreen font-fontReg hover:font-fontSemi cursor-pointer text-base">
+                <div className="w-[60%] lg:w-[55%] flex items-center text-vestigreen font-fontReg hover:font-fontSemi hover:text-headcol cursor-pointer text-base">
                   <Link
                     to={prev.link}
                     target="_blank"
