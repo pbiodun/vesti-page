@@ -3,7 +3,7 @@ import GhanaPhone from "../../assets/images/ghana-image.png";
 import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
 import DescriptionCard from "../../components/DescriptionCard";
 import FinServicsImg from "../../assets/images/ghana-image1.png";
-import VirtualCard from "../../assets/images/virtual-card.png";
+import VirtualCard from "../../assets/images/virtual-card-gh.png";
 // import Pathways from "../../views/Pathways";
 import OpenAccount from "../../views/OpenAccount";
 import Offerings from "../../views/Offerings";

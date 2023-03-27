@@ -6,7 +6,7 @@ import Offerings from "../../views/Offerings";
 import OpenAccount from "../../views/OpenAccount";
 import PathwaySlides from "../../views/PathwaySlides";
 import FeaturedLogos from "../../assets/logo-icons/feat-logos.png";
-import FinServicsImg from "../../assets/images/ghana-image1.png";
+import FinServicsImg from "../../assets/images/finsvcs1.png";
 import VirtualCard from "../../assets/images/virtual-card.png";
 import NigeriaImage from "../../assets/images/gpphone.png";
 import Typed from "react-typed";
