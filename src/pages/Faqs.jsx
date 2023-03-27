@@ -1,5 +1,5 @@
+import { Button } from "@material-tailwind/react";
 import BgPattern from "../assets/images/pattern-bg.svg";
-import Button from "../components/Button";
 import DownloadApp from "../views/DownloadApp";
 import FaqContent from "../views/FaqContent";
 
@@ -28,15 +28,17 @@ const Faqs = () => {
       <FaqContent />
       <div className="pb-24 pt-16">
         <div className="container w-[90%] mx-auto bg-secondary rounded-3xl text-[#ffffff] flex flex-col lg:flex-row items-center justify-center gap-x-24 gap-y-10 p-16">
-          <div className="font-fontReg text-3xl flex flex-col gap-y-3 lg:w-[70%] w-full lg:tracking-wide">
+          <div className="font-fontReg text-xl sm:text-3xl flex flex-col gap-y-3 lg:w-[70%] w-full lg:tracking-wide">
             <p>Can't find a question you need an answer to?</p>
             <p>
               Contact support at{" "}
               <span className="text-[#67A948]"> help@gmail.com</span>
             </p>
           </div>
-          <div className="font-fontLight text-lg text-center lg:w-[30%] w-full">
-            <Button link="" CTA="Contact Support" styles="p-4" width="100%" />
+          <div className="font-fontLight text-center lg:w-[30%] w-full">
+            <Button className="capitalize p-4 bg-vestigreen w-[100%] lg:w-[80%] text-base font-fontReg">
+              Contact Support
+            </Button>
           </div>
         </div>
       </div>
