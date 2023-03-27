@@ -23,15 +23,15 @@ const CountryDropdown = ({ hide }) => {
   return (
     <div className="">
       <div className="bg-[#F6F8FF] lg:w-[100px] min-h-[15vh] absolute top-[60px] right-0 rounded-sm p-[10px] border-solid border-1 border-headcol">
-        <div className="flex flex-col gap-6 text-headcol text-base font-fontLight">
+        <div className="flex flex-col gap-4 text-headcol text-base font-fontLight">
           {DATA.map((country, i) => (
             <div
               key={i}
               onClick={() => selectCountry(country)}
-              className="flex flex-row items-start gap-4 hover:bg-blue-gray-500"
+              className="flex flex-row items-center gap-4 cursor-pointer opacity-80 hover:opacity-100 hover:font-fontBold"
             >
               <img className="" src={country.img} alt="ng-flag" />
-              <p>{country.title}</p>
+              <p className="">{country.title}</p>
             </div>
           ))}
         </div>
