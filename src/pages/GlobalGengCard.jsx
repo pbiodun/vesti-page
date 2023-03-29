@@ -22,6 +22,7 @@ const GlobalGengCard = () => {
           details="Vesti gives humans the power to move overseas to 110 Countries."
           learnMore
           image={Phone}
+          link="https://app.wevesti.com/register"
         />
       </div>
       <div className="container mx-auto">

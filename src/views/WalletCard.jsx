@@ -16,7 +16,7 @@ const WalletCard = () => {
             h1Col="text-[#20082B]"
             pCol="text-[#3F1951]"
             image={FinServicsImg}
-            link="/"
+            link="/globalgeng-card"
           />
           <DescriptionCard
             title="Migration Services"

@@ -1,11 +1,13 @@
 import DashIcon from "../assets/logo-icons/dash-icon.svg";
 import AddIcon from "../assets/logo-icons/add-icon.svg";
+import { BsArrowUpRight } from "react-icons/bs";
 import { Fragment, useState } from "react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 function Icon({ id, open }) {
   return id === open ? (
@@ -35,9 +37,18 @@ const FaqSection = () => {
             <h1 className="text-3xl lg:w-[70%] font-fontSemi">
               Some of the things you may want to know
             </h1>
-            <p className="text-lg font-fontReg pt-6">
-              We answered questions so you don’t have to ask them
-            </p>
+            <div className="text-lg font-fontReg pt-6 flex items-end">
+              <div>
+                <Link
+                  className="hover:underline hover:text-vestigreen flex items-center"
+                  to="/faqs"
+                >
+                  Frequently asked questions
+                  <BsArrowUpRight />
+                </Link>
+              </div>
+              {/* &nbsp; so you don’t have to ask them */}
+            </div>
           </div>
           <div className="col-span-1">
             <Fragment>
@@ -73,7 +84,7 @@ const FaqSection = () => {
                   Yes, your money is secured on Vesti because they with
                   integrity and the company is duly registered. Vesti uses bank
                   level security, PIN authentication, and end to end encryption.
-                  Even the team at Vesti can’t see your password or Pin.
+                  Even the team at Vesti can’t see your password or PIN.
                 </AccordionBody>
               </Accordion>
               <Accordion

@@ -25,9 +25,9 @@ const NavLinks = ({ addStyle }) => {
         <li>
           <NavLink
             to="/about-us"
-            className={`pb-7 hover:text-vestigreen hover:font-fontSemi ${
+            className={`lg:pb-7 hover:text-vestigreen hover:font-fontSemi ${
               splitLocation[1] === "about-us" &&
-              `border-b-[6px] border-[#67A948]`
+              `lg:border-b-[6px] lg:border-[#67A948] text-vestigreen`
             }`}
             // className="hover:text-vestigreen hover:font-fontSemi"
           >
@@ -37,9 +37,9 @@ const NavLinks = ({ addStyle }) => {
         <li>
           <NavLink
             to="/migration-fries"
-            className={`pb-7 hover:text-vestigreen hover:font-fontSemi ${
+            className={`lg:pb-7 hover:text-vestigreen hover:font-fontSemi ${
               splitLocation[1] === "migration-fries" &&
-              `border-b-[6px] border-[#67A948]`
+              `lg:border-b-[6px] lg:border-[#67A948] text-vestigreen`
             }`}
             // className="hover:text-vestigreen hover:font-fontSemi"
           >

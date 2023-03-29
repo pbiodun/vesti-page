@@ -1,27 +1,45 @@
 import { Link } from "react-router-dom";
-import Button from "./Button";
 import NavLinks from "./NavLinks";
 import GlobeIcon from "../assets/logo-icons/globe.svg";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { Button } from "@material-tailwind/react";
+import CountryDropdown from "./CountryDropdown";
+import { useApp } from "../hooks/useApp";
+import { useState } from "react";
 
 const MobileNav = () => {
+  const { country } = useApp();
+
+  const [showCountry, setShowCountry] = useState(false);
+
+  const toggleCountry = () => {
+    setShowCountry(!showCountry);
+  };
+
   return (
     <>
-      <div className="w-full bg-white mx-auto">
-        <div className="text-secondary font-fontReg py-10">
-          <ul className="flex flex-col gap-y-5 items-center justify-center">
-            <li className="">
-              <div className="flex items-center">
-                <img
-                  className="w-[40px] pr-1"
-                  src={GlobeIcon}
-                  alt="globe-icon"
-                />
-                <IoIosArrowDown />
+      <div className="w-full h-[100vh] bg-white mx-auto">
+        <div className="text-secondary font-fontReg py-10 px-6">
+          <ul className="flex flex-col gap-y-5">
+            <li>
+              <div className="flex flex-col" onClick={toggleCountry}>
+                <div className="flex items-center">
+                  <img
+                    className="w-[35px] pr-1"
+                    src={`${!country.img ? GlobeIcon : country.img}`}
+                    alt="globe-icon"
+                  />
+                  {showCountry ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                </div>
+                <div>
+                  {showCountry ? (
+                    <CountryDropdown hide={() => setShowCountry(false)} />
+                  ) : null}
+                </div>
               </div>
             </li>
             <li>
-              <NavLinks addStyle="flex flex-col gap-y-5 justify-center items-center" />
+              <NavLinks addStyle="flex flex-col gap-y-5" />
             </li>
 
             <li>
@@ -32,13 +50,14 @@ const MobileNav = () => {
                 Sign In
               </Link>
             </li>
+            <li>
+              <Link to="https://app.wevesti.com/auth">
+                <Button className="bg-vestigreen normal-case p-3 w-[60%]">
+                  Create an account
+                </Button>
+              </Link>
+            </li>
           </ul>
-          <Button
-            link="https://app.wevesti.com/auth"
-            CTA="Create an account"
-            styles="p-2 mt-5 mx-auto text-sm"
-            width="50%"
-          />
         </div>
       </div>
     </>

@@ -22,13 +22,15 @@ const MigrationServiceHero = () => {
               Vesti <span className="text-[#67A948]">Migration Services</span>
             </h1>
             <p className="lg:w-[94%] text-lg font-fontLight pb-12 text-[#ffffff]">
-              Vesti empowers immigrants to take control of their financial lives
-              and achieve financial independence. From migration loans to
-              migration advice, we have the tools and resources to help ease the
+              Vesti empowers immigrants to take control of their journey to a
+              new country. From automated workflows and community support, to
+              expert advice, we have the tools and resources to help ease the
               burden of the migration process.
             </p>
             <div className="bg-[#67A948] sm:w-[60%] lg:w-[50%] font-fontReg text-center hover:bg-headcol p-4 rounded-xl mb-[70px] text-[#ffffff]">
-              <Link to="">Get started in minutes</Link>
+              <Link to="https://app.wevesti.com/auth">
+                Get started in minutes
+              </Link>
             </div>
           </div>
           <div className="lg:w-[50%] z-30 relative">

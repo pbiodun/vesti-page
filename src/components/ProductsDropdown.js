@@ -5,6 +5,7 @@ import Transaction from "../assets/logo-icons/transaction-2.png";
 import Mortgage from "../assets/logo-icons/mortgage.png";
 import Speedometer from "../assets/logo-icons/speedometer.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const SERVICE = { FINANCIAL: "Financial", MIGRATION: "Migration" };
 
@@ -47,11 +48,13 @@ const ProductsDropdown = () => {
             onClick={() => setService(SERVICE.MIGRATION)}
           >
             <h1 className="font-fontSemi text-base text-[#060E42]">
-              Migration Services
+              <Link className="hover:underline" to="/migration-services">
+                Migration Services
+              </Link>
             </h1>
             <p className="font-fontLight text-xs text-[#16216B]">
               Millions of people moving to new countries use Vesti for accessing
-              financial services like bank accounts, debit and credit cards.
+              automated workflows, community support and expert advice
             </p>
             <div
               className={
@@ -69,29 +72,33 @@ const ProductsDropdown = () => {
         <div className="bg-white rounded-lg w-[65%] p-6">
           {service === SERVICE.FINANCIAL ? (
             <div className="flex flex-col gap-8">
-              <div className="flex gap-4 opacity-50 hover:opacity-100">
+              <div className="flex gap-4 opacity-80 hover:opacity-100">
                 <div className="">
                   <img className="" src={CreditCard} alt="creditcard" />
                 </div>
                 <div>
                   <h1 className="text-[#16216B] font-fontReg text-base pb-1">
-                    Vesti Cards
+                    <Link className="hover:underline" to="globalgeng-card">
+                      Vesti Cards
+                    </Link>
                   </h1>
                   <p className="text-[#303D94] font-fontLight text-xs">
-                    The latest industry news, updates and info
+                    Reliable Debit and Credit card for everyday use
                   </p>
                 </div>
               </div>
-              <div className="flex gap-4 opacity-50 hover:opacity-100">
+              <div className="flex gap-4 opacity-80 hover:opacity-100">
                 <div className="">
                   <img className="" src={Wallet} alt="wallet" />
                 </div>
                 <div>
                   <h1 className="text-[#16216B] font-fontReg text-base pb-1">
-                    Vesti Wallets
+                    <Link className="hover:underline" to="/wallets">
+                      Vesti Wallets
+                    </Link>
                   </h1>
                   <p className="text-[#303D94] font-fontLight text-xs">
-                    Learn how our customers are making big changes.
+                    Powerful wallets that go with you everywhere
                   </p>
                 </div>
               </div>
@@ -102,7 +109,7 @@ const ProductsDropdown = () => {
 
           {service === SERVICE.MIGRATION ? (
             <div className="flex flex-col gap-8">
-              <div className="flex gap-4 opacity-50 hover:opacity-100">
+              <div className="flex gap-4 opacity-80 hover:opacity-100">
                 <div className="">
                   <img className="" src={Travel} alt="travel-icon" />
                 </div>
@@ -115,20 +122,20 @@ const ProductsDropdown = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-4 opacity-50 hover:opacity-100">
+              <div className="flex gap-4 opacity-80 hover:opacity-100">
                 <div className="">
                   <img className="" src={Transaction} alt="transaction-icon" />
                 </div>
                 <div>
                   <h1 className="text-[#16216B] font-fontReg text-base pb-1">
-                    Migration Fees
+                    Migration Fees Payment
                   </h1>
                   <p className="text-[#303D94] font-fontLight text-xs">
                     Learn how our customers are making big changes.
                   </p>
                 </div>
               </div>
-              <div className="flex gap-4 opacity-50 hover:opacity-100">
+              <div className="flex gap-4 opacity-80 hover:opacity-100">
                 <div className="">
                   <img className="" src={Mortgage} alt="mortgage-icon" />
                 </div>
@@ -141,7 +148,7 @@ const ProductsDropdown = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-4 opacity-50 hover:opacity-100">
+              <div className="flex gap-4 opacity-80 hover:opacity-100">
                 <div className="">
                   <img className="" src={Speedometer} alt="speedometer-icon" />
                 </div>

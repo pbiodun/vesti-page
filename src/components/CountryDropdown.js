@@ -22,7 +22,7 @@ const CountryDropdown = ({ hide }) => {
 
   return (
     <div className="">
-      <div className="bg-[#F6F8FF] lg:w-[100px] min-h-[15vh] absolute top-[60px] right-0 rounded-sm p-[10px] border-solid border-1 border-headcol">
+      <div className="bg-[#F6F8FF] lg:w-[100px] min-h-[15vh] lg:absolute lg:top-[60px] lg:right-0 rounded-sm p-[10px] border-solid border-1 border-headcol">
         <div className="flex flex-col gap-4 text-headcol text-base font-fontLight">
           {DATA.map((country, i) => (
             <div

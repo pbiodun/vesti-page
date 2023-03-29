@@ -16,6 +16,7 @@ const NigeriaHome = () => {
     <>
       <div className="bg-secondary w-full pt-28">
         <WebBanner
+          link="https://app.wevesti.com/register"
           title={
             <h1 className="text-[#fff] font-fontSemi text-5xl w-[77%] pb-5 !leading-[60px]">
               The Neobank for <span className="text-[#67A948]">Nigerians</span>{" "}
@@ -32,7 +33,6 @@ const NigeriaHome = () => {
           }
           details="Millions of people moving to new countries use Vesti for accessing legal and financial services like bank accounts, debit and credit cards."
           buttonText="Get started in minutes"
-          link="#"
           image={NigeriaImage}
           imgWidth="50%"
           featured={
@@ -52,7 +52,7 @@ const NigeriaHome = () => {
             h1Col="text-[#20082B]"
             pCol="text-[#3F1951]"
             image={FinServicsImg}
-            link="/"
+            link="/globalgeng-card"
           />
           <DescriptionCard
             title="Migration Services"

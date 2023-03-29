@@ -23,8 +23,8 @@ const AboutUs = () => {
                 We are <span className="text-[#67A948]">Vesti</span>
               </h1>
               <p className="text-base font-fontLight text-[#ffffff]">
-                Our goal is to accelerate and improve the movement and finances
-                of people immigrating to the countries of their dreams
+                Our Mission is to be the go-to legal and financial services
+                solution provider for the next 1 Billion Immigrants
               </p>
             </div>
             <div className="z-30 lg:container">
@@ -47,7 +47,8 @@ const AboutUs = () => {
         </h1>
         <p className="text-[#2B5219] text-xl leading-[35px] mx-auto lg:w-[65%] font-fontLight">
           Vesti gives humans the power to move overseas to 110 Countries. We are
-          the future of legal migration and global migration.
+          the future of legal and financial technology that powers global
+          migration
         </p>
       </div>
       <MeetTheTeam link="View more" count="4" />

@@ -27,7 +27,7 @@ const Offerings = () => {
       <div className="container mx-auto lg:w-[80%]">
         <div className="text-center pb-10">
           <h1 className="text-[#14290A] text-4xl font-fontReg">
-            International fee payments{" "}
+            Migration fee payments{" "}
             <span className="text-[#67A948]">simplified!</span>
           </h1>
           <p className="text-[#2B5219] text-[22px] font-fontReg">

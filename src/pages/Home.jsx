@@ -47,11 +47,11 @@ const Home = () => {
       <Testimonials
         title={
           <>
-            <h1 className="text-3xl text-headcol font-semibold text-center">
+            <h1 className="text-3xl text-headcol font-fontSemi text-center">
               What our users are <span className="text-vestigreen">saying</span>
             </h1>
-            <p className="text-center text-[#2B5219] text-lg font-medium">
-              Think lifting a feather is effortless? Try payment with Vesti.
+            <p className="text-center text-[#2B5219] text-lg font-fontReg">
+              Few out of 1000+ stories of Vesti Users
             </p>
           </>
         }

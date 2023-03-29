@@ -24,7 +24,7 @@ const WalletsPage = () => {
           }
           details="Talking about convenience? This is the card for you! It is a Physical Debit Card that can be used at anytime and anywhere in the world."
           buttonText="Get started in minutes"
-          link="#"
+          link="https://app.wevesti.com/register"
           image={WalletPhone}
           imgWidth="60%"
         />
@@ -37,6 +37,7 @@ const WalletsPage = () => {
           details="Vesti gives humans the power to move overseas to 110 Countries."
           learnMore
           image={Phone}
+          link="https://app.wevesti.com/register"
         />
       </div>
       {/* <div className="container grid lg:grid-cols-2 mx-auto gap-10 pb-24">

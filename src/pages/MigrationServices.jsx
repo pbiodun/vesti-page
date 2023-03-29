@@ -34,7 +34,7 @@ const MigrationServices = () => {
           </p>
 
           <h1 className="font-fontReg lg:w-[85%] text-[#14290A] text-xl pb-3 ">
-            Migration Fees
+            Migration Fees Payment
           </h1>
           <p className="pb-6 text-base text-[#2B5219] font-fontLight">
             We offer comprehensive support to help you navigate and pay for fees
@@ -50,7 +50,7 @@ const MigrationServices = () => {
           </p>
 
           <h1 className="font-fontReg lg:w-[85%] text-[#14290A] text-xl pb-3 ">
-            Migration Advice
+            Credit Score
           </h1>
           <p className="text-base text-[#2B5219] font-fontLight">
             Our team of experts can guide you through the complex process of
@@ -113,10 +113,10 @@ const MigrationServices = () => {
           title={
             <>
               <h1 className="text-[#14290A] text-4xl pb-4">
-                Read japa <span className="text-[#67A948]">stories</span>
+                Read JAPA <span className="text-[#67A948]">stories</span>
               </h1>
               <p className="text-[#2B5219] text-lg font-fontReg">
-                Read japa stories and testimonials from our selected users
+                Read JAPA stories and testimonials from our selected users
               </p>
             </>
           }

@@ -33,7 +33,7 @@ const GhanaHome = () => {
           }
           details="Millions of people moving to new countries use Vesti for accessing legal and financial services like bank accounts, debit and credit cards."
           buttonText="Get started in minutes"
-          link="#"
+          link="https://app.wevesti.com/register"
           image={GhanaPhone}
           imgWidth="50%"
           featured={
@@ -53,7 +53,7 @@ const GhanaHome = () => {
             h1Col="text-[#20082B]"
             pCol="text-[#3F1951]"
             image={FinServicsImg}
-            link="/"
+            link="/globalgeng-card"
           />
           <DescriptionCard
             title="Migration Services"

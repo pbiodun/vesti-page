@@ -9,7 +9,7 @@ export const FAQS = [
     index: 2,
     number: "02.",
     title: "Is my money secure with Vesti?",
-    body: "Yes, your money is secured on Vesti because they with integrity and the company is duly registered. Vesti uses bank level security, PIN authentication, and end to end encryption. Even the team at Vesti can’t see your password or Pin.",
+    body: "Yes, your money is secured on Vesti because they with integrity and the company is duly registered. Vesti uses bank level security, PIN authentication, and end to end encryption. Even the team at Vesti can’t see your password or PIN.",
   },
   {
     index: 3,

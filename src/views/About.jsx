@@ -15,11 +15,9 @@ const About = () => {
               What is Vesti?
             </h1>
             <p className="text-[#2B5219] text-xl font-fontLight">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-              unde porro eos? Beatae facilis laudantium eaque ab atque a sit
-              perferendis, reprehenderit cupiditate cumque dolores alias! Quos
-              dolore nostrum maiores. Cumque tenetur adipisci vitae? Ducimus
-              dicta quisquam ad repudiandae illum?
+              Vesti is the preferred provider of legal and financial services
+              for humans going global, from when they think of emigrating, when
+              they arrive in a new country, and every minute after
             </p>
           </div>
         </div>
@@ -29,11 +27,8 @@ const About = () => {
               Our Mission
             </h1>
             <p className="text-[#2B5219] text-xl font-fontLight">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-              unde porro eos? Beatae facilis laudantium eaque ab atque a sit
-              perferendis, reprehenderit cupiditate cumque dolores alias! Quos
-              dolore nostrum maiores. Cumque tenetur adipisci vitae? Ducimus
-              dicta quisquam ad repudiandae illum?
+              Our Mission is to be the go-to legal and financial services
+              solution provider for the next 1 Billion Immigrants
             </p>
           </div>
           <div className="lg:w-[45%]">

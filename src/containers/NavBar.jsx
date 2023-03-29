@@ -62,7 +62,6 @@ const NavBar = () => {
                       src={`${!country.img ? GlobeIcon : country.img}`}
                       alt="globe-icon"
                     />
-                    {/* <p>{country.title}</p> */}
                     {showCountry ? <IoIosArrowUp /> : <IoIosArrowDown />}
                     {showCountry ? (
                       <CountryDropdown hide={() => setShowCountry(false)} />
