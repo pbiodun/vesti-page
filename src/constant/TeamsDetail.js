@@ -9,6 +9,7 @@ import TeamMember7 from "../assets/images/teammember7.png";
 import TeamMember8 from "../assets/images/teammember8.png";
 import TeamMember9 from "../assets/images/teammember9.png";
 import TeamMember10 from "../assets/images/teammember10.png";
+// import TeamMember11 from "../assets/images/teammember11.png";
 
 export const People = [
   {
@@ -16,35 +17,35 @@ export const People = [
     fullName: "Olusola Amusan",
     designation: "CEO/Co-Founder",
     socialLink1: "https://www.linkedin.com/in/olusolaamusan",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/olusolamusan",
   },
   {
     headShot: TeamMember1,
     fullName: "Bimbola Amusan",
     designation: "COO/Co-Founder",
     socialLink1: "https://www.linkedin.com/in/abimbola-amusan-jd-116653aa",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/bimboamusanesq",
   },
   {
     headShot: TeamMember5,
     fullName: "Ayomiposi Adewale",
     designation: "Engineering Lead",
     socialLink1: "https://www.linkedin.com/in/ayomiposi-a-a02416110/",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/waleofblanco",
   },
   {
     headShot: TeamMember3,
     fullName: "Catherine Akhigbe",
     designation: "Product Lead",
     socialLink1: "http://www.linkedin.com/in/omonzua",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/Akhigbecatarina",
   },
   {
     headShot: TeamMember4,
     fullName: "Damola Oni",
     designation: "Legal Affairs Manager",
     socialLink1: "https://www.linkedin.com/in/adedamola-oni-886b7b145",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/Damite2ky",
   },
   {
     headShot: TeamMember2,
@@ -65,7 +66,7 @@ export const People = [
     fullName: "Ifeoluwa Ariyo-Agbaje",
     designation: "Communications Lead",
     socialLink1: "http://www.linkedin.com/in/agbajegoriite",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/agbajegoriite",
   },
   {
     headShot: TeamMember8,
@@ -80,13 +81,20 @@ export const People = [
     designation: "Business Development Lead",
     socialLink1:
       "https://www.linkedin.com/in/folorunsho-ojulari-mica-mba-91621218a",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/ojulariFolorun1",
   },
   {
     headShot: TeamMember10,
     fullName: "Oyewale Okeyode",
     designation: "Deputy Operations Lead",
     socialLink1: "https://www.linkedin.com/in/oyewale-okeyode-05925348",
-    socialLink2: "",
+    socialLink2: "http://www.twitter.com/waxingtech",
   },
+  // {
+  //   headShot: TeamMember11,
+  //   fullName: "Opeyemi Balogun",
+  //   designation: "Customer Success Lead",
+  //   socialLink1: "",
+  //   socialLink2: "",
+  // },
 ];

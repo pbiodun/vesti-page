@@ -13,11 +13,12 @@ const DATA = [
   { title: "MX", img: MexicoFlag },
 ];
 
-const CountryDropdown = ({ hide }) => {
+const CountryDropdown = ({ hide, setOpen }) => {
   const { setCountry } = useApp();
   const selectCountry = (country) => {
     setCountry(country);
     hide();
+    setOpen();
   };
 
   return (

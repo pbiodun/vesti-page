@@ -9,7 +9,10 @@ const Testimonials = ({ title, link }) => {
         {/* Comments and Testimonies */}
         <div className="pt-12 pb-20 grid lg:grid-cols-3 md:grid-cols-2 gap-7 font-fontLight">
           {Testimony.map((testi, i) => (
-            <div key={i} className="border rounded-xl px-7 py-5 bg-[#F7FFF3]">
+            <div
+              key={i}
+              className="border h-72 rounded-xl px-7 py-5 bg-[#F7FFF3]"
+            >
               <div className="flex pb-3">
                 <div>
                   <img src={Image1} alt="person" />

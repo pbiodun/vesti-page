@@ -44,11 +44,8 @@ const About = () => {
               Our Vision
             </h1>
             <p className="text-[#2B5219] text-xl font-fontLight">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
-              unde porro eos? Beatae facilis laudantium eaque ab atque a sit
-              perferendis, reprehenderit cupiditate cumque dolores alias! Quos
-              dolore nostrum maiores. Cumque tenetur adipisci vitae? Ducimus
-              dicta quisquam ad repudiandae illum?
+              Our Vision is to be the go to financial services platform for the
+              next half a billion immigrants everywhere
             </p>
           </div>
         </div>

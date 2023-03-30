@@ -7,7 +7,7 @@ import CountryDropdown from "./CountryDropdown";
 import { useApp } from "../hooks/useApp";
 import { useState } from "react";
 
-const MobileNav = () => {
+const MobileNav = ({ setOpen }) => {
   const { country } = useApp();
 
   const [showCountry, setShowCountry] = useState(false);
@@ -33,7 +33,10 @@ const MobileNav = () => {
                 </div>
                 <div>
                   {showCountry ? (
-                    <CountryDropdown hide={() => setShowCountry(false)} />
+                    <CountryDropdown
+                      setOpen={setOpen}
+                      hide={() => setShowCountry(false)}
+                    />
                   ) : null}
                 </div>
               </div>

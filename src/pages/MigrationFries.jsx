@@ -130,16 +130,16 @@ const MigrationFries = () => {
         title={
           <>
             <h1 className="text-3xl text-headcol font-semibold text-center">
-              Read japa <span className="text-vestigreen">stories</span>
+              Read JAPA <span className="text-vestigreen">stories</span>
             </h1>
             <p className="text-center text-[#2B5219] text-lg font-fontLight">
-              Read japa stories and testimonials from our selected users
+              Read JAPA stories and testimonials from our selected users
             </p>
           </>
         }
         link={
           <div className="flex items-center text-vestigreen font-fontReg hover:text-headcol">
-            <Link to="#">Read more stories</Link>
+            <Link to="/testimonials">Read more stories</Link>
             <BsArrowUpRight />
           </div>
         }

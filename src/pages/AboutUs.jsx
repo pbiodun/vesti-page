@@ -9,7 +9,7 @@ import DownloadApp from "../views/DownloadApp";
 
 const AboutUs = () => {
   const src =
-    "https://res.cloudinary.com/dco1l9izr/video/upload/v1678541158/Vesti%20video/New_User_Welcome_Video_Email_and_In-app_cthdue.mp4";
+    "https://res.cloudinary.com/dco1l9izr/video/upload/v1680163733/Vesti%20video/New_Welcome_Video_vctjrp.mp4";
   return (
     <>
       <div className="bg-secondary pb-16 w-full pt-24 lg:pt-36 lg:pb-32 relative overflow-hidden">

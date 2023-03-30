@@ -122,7 +122,7 @@ const MigrationServices = () => {
           }
         />
         <div className="flex items-center pb-12 font-fontReg text-[#67A948] text-xl">
-          <Link to="#" className="pr-2">
+          <Link to="/testimonials" className="pr-2">
             Read more stories
           </Link>
           <BsArrowUpRight />
