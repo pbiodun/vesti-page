@@ -13,9 +13,10 @@ const GlobalGCard = () => {
               Mastercard
             </h1>
             <p className="text-lg pb-12 lg:w-[90%] md:w-[80%] font-fontLight">
-              Talking about convenience? This is the card for you! It is a
-              Physical Debit Card that can be used at anytime and anywhere in
-              the world.
+              Get all the benefits of our variety of cards - spend online, at
+              major airports in-stores, and abroad while saving on currency
+              conversion fees, with the extra layer of security of the our
+              digital cards.
             </p>
             <div className="pb-10">
               <Link to="https://app.wevesti.com/bank">

@@ -16,46 +16,52 @@ const WalletsBenefit = () => {
         </div>
 
         {/* Offerings Listed in Cards */}
-        <div className="grid lg:grid-cols-3 lg:gap-y-10 gap-7">
-          <div className="flex">
-            <div>
-              <img src={Convenient} alt="convenient" />
-            </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
-              <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
-                Widely Accepted
-              </h3>
-              <p className="text-[#2B5219] font-fontLight text-base">
-                The Vesti Virtual Card is accepted on over 100 platforms.
-              </p>
-            </div>
-          </div>
-          <div className="flex">
-            <div>
-              <img src={Speed} alt="speed" />
-            </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
-              <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
-                Fast Transactions
-              </h3>
-              <p className="text-[#2B5219] font-fontLight text-base">
-                You don't have to wait hours hours to confirm your transactions.
-              </p>
-            </div>
-          </div>
-          <div className="flex">
-            <div>
-              <img src={Rates} alt="rates" />
-            </div>
-            <div className="pl-5 md:pl-3 w-[90%]">
-              <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
-                Fair Rates
-              </h3>
-              <p className="text-[#2B5219] font-fontLight text-base">
-                We have the most affordable rates on the market.
-              </p>
-            </div>
-          </div>
+        <FinBenefits />
+      </div>
+    </div>
+  );
+};
+
+export const FinBenefits = () => {
+  return (
+    <div className="grid lg:grid-cols-3 lg:gap-y-10 gap-7">
+      <div className="flex">
+        <div>
+          <img src={Convenient} alt="convenient" />
+        </div>
+        <div className="pl-5 md:pl-3 w-[90%]">
+          <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
+            Widely Accepted
+          </h3>
+          <p className="text-[#2B5219] font-fontLight text-base">
+            The Vesti Virtual Card is accepted on over 100 platforms.
+          </p>
+        </div>
+      </div>
+      <div className="flex">
+        <div>
+          <img src={Speed} alt="speed" />
+        </div>
+        <div className="pl-5 md:pl-3 w-[90%]">
+          <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
+            Fast Transactions
+          </h3>
+          <p className="text-[#2B5219] font-fontLight text-base">
+            You don't have to wait hours hours to confirm your transactions.
+          </p>
+        </div>
+      </div>
+      <div className="flex">
+        <div>
+          <img src={Rates} alt="rates" />
+        </div>
+        <div className="pl-5 md:pl-3 w-[90%]">
+          <h3 className="text-[#14290A] font-fontReg text-lg pb-1">
+            Fair Rates
+          </h3>
+          <p className="text-[#2B5219] font-fontLight text-base">
+            We have the most affordable rates on the market.
+          </p>
         </div>
       </div>
     </div>

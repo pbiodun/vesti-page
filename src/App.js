@@ -25,6 +25,7 @@ import Faqs from "./pages/Faqs";
 import NewsRoom from "./pages/NewsRoom";
 import Team from "./pages/Team";
 import TestimonialPage from "./pages/TestimonialPage";
+import FinancialServices from "./pages/FinancialServices";
 
 // function Home() {
 //   const { t, i18n } = useTranslation("common");
@@ -49,6 +50,7 @@ function App() {
         <Route path="/aml" element={<Aml />} />
         <Route path="/migration-fries" element={<MigrationFries />} />
         <Route path="/migration-services" element={<MigrationServices />} />
+        <Route path="/financial-services" element={<FinancialServices />} />
         <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/faqs" element={<Faqs />} />
         <Route path="/news-room" element={<NewsRoom />} />

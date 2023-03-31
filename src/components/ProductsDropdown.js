@@ -6,6 +6,7 @@ import Mortgage from "../assets/logo-icons/mortgage.png";
 import Speedometer from "../assets/logo-icons/speedometer.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const SERVICE = { FINANCIAL: "Financial", MIGRATION: "Migration" };
 
@@ -83,7 +84,8 @@ const ProductsDropdown = () => {
                     </Link>
                   </h1>
                   <p className="text-[#303D94] font-fontLight text-xs">
-                    Reliable Debit and Credit card for everyday use
+                    Ranges from Dreamers’ card (soon), Globalgeng Naira and
+                    Dollar Card, Founders card
                   </p>
                 </div>
               </div>
@@ -158,6 +160,24 @@ const ProductsDropdown = () => {
                   </h1>
                   <p className="text-[#303D94] font-fontLight text-xs">
                     Learn how our customers are making big changes.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-8">
+                {/* <div className="">
+                  <img
+                    className=""
+                    src={}
+                    alt="speedometer-icon"
+                  />
+                </div> */}
+                <AiOutlineLoading3Quarters />
+                <div>
+                  <h1 className="text-[#303D94] font-fontReg text-base pb-1">
+                    MLab
+                  </h1>
+                  <p className="text-[#303D94] font-fontLight text-xs">
+                    Coming Soon
                   </p>
                 </div>
               </div>
