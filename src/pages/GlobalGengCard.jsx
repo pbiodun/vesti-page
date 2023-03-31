@@ -37,7 +37,7 @@ const GlobalGengCard = () => {
           classname="mx-auto w-[70%] lg:w-[30%] flex flex-col justify-center items-center"
         />
         <div className="text-center pb-10">
-          <Link to="https://app.wevesti.com/register">
+          <Link to="https://app.wevesti.com/bank">
             <Button className="capitalize lg:w-[30%] bg-vestigreen hover:bg-headcol p-5 text-base">
               Get started in minutes
             </Button>

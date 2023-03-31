@@ -23,8 +23,9 @@ const AboutUs = () => {
                 We are <span className="text-[#67A948]">Vesti</span>
               </h1>
               <p className="text-base font-fontLight text-[#ffffff]">
-                Our Mission is to be the go-to legal and financial services
-                solution provider for the next 1 Billion Immigrants
+                Millions of people moving to new countries use Vesti for
+                accessing legal and financial services like bank accounts, debit
+                and credit cards.
               </p>
             </div>
             <div className="z-30 lg:container">

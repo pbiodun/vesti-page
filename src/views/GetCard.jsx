@@ -11,7 +11,7 @@ const GetCard = () => {
           </h1>
         </div>
         <div className="text-center">
-          <Link to="https://app.wevesti.com/register">
+          <Link to="https://app.wevesti.com/bank">
             <Button className="capitalize lg:w-[20%] bg-vestigreen hover:bg-headcol p-5 text-base">
               Create your card
             </Button>

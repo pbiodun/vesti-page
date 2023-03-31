@@ -51,7 +51,7 @@ const FaqContent = () => {
                     {faq.title}
                   </p>
                 </AccordionHeader>
-                <AccordionBody className="text-[#8B8C8C] font-fontLight text-sm px-7  py-2">
+                <AccordionBody className="text-[#8B8C8C] font-fontLight text-sm px-7 py-2 text-left">
                   {faq.body}
                 </AccordionBody>
               </Accordion>

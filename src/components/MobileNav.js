@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import NavLinks from "./NavLinks";
 import GlobeIcon from "../assets/logo-icons/globe.svg";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
@@ -7,7 +7,7 @@ import CountryDropdown from "./CountryDropdown";
 import { useApp } from "../hooks/useApp";
 import { useState } from "react";
 
-const MobileNav = ({ setOpen }) => {
+const MobileNav = ({ open, setOpen }) => {
   const { country } = useApp();
 
   const [showCountry, setShowCountry] = useState(false);
@@ -42,23 +42,27 @@ const MobileNav = ({ setOpen }) => {
               </div>
             </li>
             <li>
-              <NavLinks addStyle="flex flex-col gap-y-5" />
+              <NavLinks
+                open={open}
+                setOpen={setOpen}
+                addStyle="flex flex-col gap-y-5"
+              />
             </li>
 
             <li>
-              <Link
+              <NavLink
                 to="https://app.wevesti.com/auth"
                 className="hover:text-vestigreen hover:font-fontLight"
               >
                 Sign In
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="https://app.wevesti.com/auth">
+              <NavLink to="https://app.wevesti.com/auth">
                 <Button className="bg-vestigreen normal-case p-3 w-[60%]">
                   Create an account
                 </Button>
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

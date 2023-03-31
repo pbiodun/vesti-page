@@ -6,7 +6,7 @@ const Disclosures = () => {
     <div>
       <VestiDocs
         title="Terms of Service"
-        date="Last Updated: July 25, 2020"
+        date="Last Updated: Sept 25, 2022"
         link1="TERMS OF SERVICE"
         link2="PRIVACY POLICY"
         link3="AML"
@@ -31,7 +31,7 @@ const Disclosures = () => {
               All references in this Terms and Conditions of Use Policy to “you”
               or “your” shall refer to the users of VESTI’s website and portals.
             </p>
-            <h1 className="text-2xl font-font-fontReg">
+            <h1 className="text-2xl font-fontReg">
               2. Exclusion of Warranties and Limitations of Liability
             </h1>
             <p className="py-10 font-fontLight">
@@ -52,7 +52,7 @@ const Disclosures = () => {
               limitation of certain damages; accordingly, the above limitations
               or exclusions may not apply to you.
             </p>
-            <h1 className="text-2xl pb-5 font-font-fontReg">
+            <h1 className="text-2xl pb-5 font-fontReg">
               3. General Use of Website and Portal
             </h1>
             <ol className="list-decimal text-sm pl-5 font-fontLight">
@@ -147,7 +147,7 @@ const Disclosures = () => {
                 VESTI account with or without notice.
               </li>
             </ol>
-            <h1 className="text-2xl font-font-fontReg">
+            <h1 className="text-2xl font-fontReg">
               4. Comments, communications, and other content
             </h1>
             <p className="py-10 font-fontLight">
@@ -176,7 +176,7 @@ const Disclosures = () => {
               liability for any Commenting content posted by you or any third-
               party.
             </p>
-            <h1 className="text-2xl font-font-fontReg">5. Links</h1>
+            <h1 className="text-2xl font-fontReg">5. Links</h1>
             <p className="py-10 font-fontLight">
               VESTI’s website and portals may be linked to other websites not
               maintained by us. We do not control and are not responsible for
@@ -185,7 +185,7 @@ const Disclosures = () => {
               not imply approval of or endorsement by us of the websites or the
               content thereof.
             </p>
-            <h1 className="text-2xl font-font-fontReg">
+            <h1 className="text-2xl font-fontReg">
               6. Ownership, Copyright and Trademark
             </h1>
             <p className="py-10 font-fontLight">
@@ -201,7 +201,7 @@ const Disclosures = () => {
               Nothing on this site should be construed as granting any license
               or right to such content or software.
             </p>
-            <h1 className="text-2xl font-font-fontReg">
+            <h1 className="text-2xl font-fontReg">
               7. Copyright and Trademark Complaints
             </h1>
             <p className="py-10 font-fontLight">
@@ -210,9 +210,7 @@ const Disclosures = () => {
               infringement on VESTI’s website or portals, please notify us
               immediately on info@wevesti.com
             </p>
-            <h1 className="text-2xl font-font-fontReg">
-              8. Site Technologies{" "}
-            </h1>
+            <h1 className="text-2xl font-fontReg">8. Site Technologies </h1>
             <p className="py-10 font-fontLight">
               VESTI does not provide the technologies used to build the website
               or portals, and therefore, neither recommends nor endorses the
@@ -223,7 +221,7 @@ const Disclosures = () => {
               copyrights, patents, domain names, or other intellectual property
               interests of third-parties.{" "}
             </p>
-            <h1 className="text-2xl font-font-fontReg">9. Applicable Laws</h1>
+            <h1 className="text-2xl font-fontReg">9. Applicable Laws</h1>
             <p className="py-10 font-fontLight">
               By visiting VESTI’s website or portals, you agree that the laws of
               Nigeria and the United States without regard to principles of
@@ -231,9 +229,7 @@ const Disclosures = () => {
               Policy and any dispute of any sort that might arise between you
               and VESTI regarding such Policy.
             </p>
-            <h1 className="text-2xl font-font-fontReg">
-              10. Changes to the Terms
-            </h1>
+            <h1 className="text-2xl font-fontReg">10. Changes to the Terms</h1>
             <p className="py-10 font-fontLight">
               We reserve the right, at any time, to modify, alter, or update the
               terms and conditions of this Terms and Conditions of Use Policy

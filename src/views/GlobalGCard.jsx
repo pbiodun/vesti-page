@@ -18,7 +18,7 @@ const GlobalGCard = () => {
               the world.
             </p>
             <div className="pb-10">
-              <Link to="https://app.wevesti.com/register">
+              <Link to="https://app.wevesti.com/bank">
                 <Button className="capitalize w-[80%] sm:w-[60%] lg:w-[50%] bg-vestigreen hover:bg-headcol p-5 text-base">
                   Create your card
                 </Button>

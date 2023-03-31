@@ -4,7 +4,7 @@ import ProductsDropdown from "./ProductsDropdown";
 import { useState } from "react";
 
 const NavLinks = ({ addStyle, open, setOpen }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const location = useLocation();
   //destructuring pathname from location
   const { pathname } = location;
@@ -30,40 +30,40 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
           <div className={`pl-6 lg:hidden ${show ? "visible" : "hidden"}`}>
             <ul className="flex flex-col gap-y-2">
               <li>
-                <Link
+                <NavLink
                   onClick={() => setOpen()}
                   to="/globalgeng-card"
                   className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   GlobalGeng Card
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={() => setOpen()}
                   to="/virtual-card"
                   className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   Virtual Dollar Card
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={() => setOpen()}
                   to="/wallets"
                   className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   Vesti Wallets
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={() => setOpen()}
                   to="/migration-services"
                   className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   Migration Services
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -73,8 +73,8 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
         </li>
         <li>
           <NavLink
-            onClick={() => setOpen()}
-            to="/about-us"
+            onClick={() => setOpen(false)}
+            to="about-us"
             className={`lg:pb-8 hover:text-vestigreen hover:font-fontSemi ${
               splitLocation[1] === "about-us" &&
               `lg:border-b-[6px] lg:border-[#67A948] text-vestigreen`
@@ -86,7 +86,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
         </li>
         <li>
           <NavLink
-            onClick={() => setOpen()}
+            onClick={() => setOpen(false)}
             to="/migration-fries"
             className={`lg:pb-8 hover:text-vestigreen hover:font-fontSemi ${
               splitLocation[1] === "migration-fries" &&

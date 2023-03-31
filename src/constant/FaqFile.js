@@ -3,7 +3,7 @@ export const FAQS = [
     index: 1,
     number: "01.",
     title: "What can I do with Vesti?",
-    body: "With Vesti you get the opportunity to be financially stable in life, whether you choose to move abroad (temporarily/permanently) or stay back in Nigeria. On Vesti you can pay for difficult Immigration related payments (international Payments) in your local currency, seamlessly.",
+    body: "With Vesti you get the opportunity to be financially stable in life, whether you choose to move abroad (temporarily/permanently) or stay back at home. On Vesti you can pay for difficult Immigration related payments (international Payments) in your local currency, seamlessly.",
   },
   {
     index: 2,

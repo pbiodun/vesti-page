@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 const VestiExtras = (props) => {
   const { title, date, categories = [] } = props;
   const [params] = useSearchParams();
-  const category = params.get("category") || "ALL";
+  const category = params.get("category") || "JOBS";
 
   const isActive = (cat) => {
     return cat === category ? "border-b-8 border-[#67A948]" : "";

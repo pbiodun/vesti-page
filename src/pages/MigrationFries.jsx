@@ -13,7 +13,7 @@ import { useEffect, useMemo, useState } from "react";
 import MigrationCard from "../components/MigrationCard";
 
 const categoryLookup = {
-  SCHOLARSHIPS: [6, 17],
+  SCHOLARSHIPS: [6, 13],
   JOBS: [6, 18],
   NEWS: [6, 13],
 };
@@ -23,13 +23,12 @@ const MigrationFries = () => {
   const [loading, setLoading] = useState(true);
 
   const [params] = useSearchParams();
-  const category = params.get("category") || "ALL";
+  const category = params.get("category") || "JOBS"; /*|| "ALL"*/
 
   const filteredPosts = useMemo(() => {
-    if (category === "ALL") {
-      return posts;
-    }
-
+    // if (category === "ALL") {
+    //   return posts;
+    // }
     return posts.filter((post) =>
       post.categories.every((item) => categoryLookup[category].includes(item))
     );
@@ -58,14 +57,15 @@ const MigrationFries = () => {
       <VestiExtras
         title="Migration Fries"
         date="Want to move overseas in 2023 ? easily see opportunities and read how to start your migration journey."
-        categories={["ALL", "JOBS", "NEWS", "SCHOLARSHIPS"]}
+        categories={[/*"ALL",*/ "JOBS", "NEWS", "SCHOLARSHIPS"]}
       />
 
       <div>
         <Mfries
           title={
             <h1 className="text-[#14290A] text-2xl font-fontReg pb-2">
-              Migration Fries <span className="text-[#67A948]">All</span>
+              Migration Fries
+              {/* <span className="text-[#67A948]">All</span> */}
             </h1>
           }
           heading="Think lifting a feather is effortless? Try payment with Vesti."
@@ -112,7 +112,8 @@ const MigrationFries = () => {
               </p>
             </div>
             <h1 className="text-white text-4xl w-[360px]">
-              Your Comfort is Guaranteed With The Vesti GlobalGeng Card
+              Get a Card and Wallet that makes you happy to spend in store and
+              online
             </h1>
             <p className="text-base font-fontLight text-white pt-6 w-[90%]">
               Vesti gives humans the power to move overseas to 110 Countries.

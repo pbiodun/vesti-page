@@ -85,7 +85,7 @@ const NavBar = () => {
             open ? "visible" : "hidden"
           }`}
         >
-          <MobileNav setOpen={setOpen} />
+          <MobileNav open={open} setOpen={setOpen} />
         </div>
         {/* End of the Mobile Nav */}
       </nav>

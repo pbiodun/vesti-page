@@ -65,8 +65,8 @@ const FaqSection = () => {
                 <AccordionBody className="text-[#ffffff] font-fontLight">
                   With Vesti you get the opportunity to be financially stable in
                   life, whether you choose to move abroad
-                  (temporarily/permanently) or stay back in Nigeria. On Vesti
-                  you can pay for difficult Immigration related payments
+                  (temporarily/permanently) or stay back at home. On Vesti you
+                  can pay for difficult Immigration related payments
                   (international Payments) in your local currency, seamlessly.
                 </AccordionBody>
               </Accordion>
