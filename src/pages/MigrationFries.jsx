@@ -57,7 +57,7 @@ const MigrationFries = () => {
       <VestiExtras
         title="Migration Fries"
         date="Want to move overseas in 2023 ? easily see opportunities and read how to start your migration journey."
-        categories={[/*"ALL",*/ "JOBS", "NEWS", "SCHOLARSHIPS"]}
+        categories={["JOBS", "NEWS", "SCHOLARSHIPS"]}
       />
 
       <div>
