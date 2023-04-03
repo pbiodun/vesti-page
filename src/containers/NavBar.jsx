@@ -32,7 +32,11 @@ const NavBar = () => {
           </div>
           <div className="hidden lg:flex items-center lg:gap-10">
             {/* NavLinks */}
-            <NavLinks addStyle="flex" open={open} setOpen={setOpen} />
+            <NavLinks
+              addStyle="flex flex-col lg:flex-row"
+              open={open}
+              setOpen={setOpen}
+            />
             <div className="">
               <ul className="flex items-center text-base font-fontReg lg:gap-10">
                 <li>

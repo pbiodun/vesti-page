@@ -9,13 +9,13 @@ const CreateCard = () => {
     <div className="w-full">
       <div className="container mx-auto pb-24">
         <div className="container flex flex-col justify-center items-center">
-          <div className="mx-auto w-[50%] lg:w-[30%]">
+          <div className="mx-auto w-[60%] lg:w-[30%]">
             <h1 className="text-2xl lg:text-3xl  text-center text-headcol font-fontReg">
               Create Your Card
             </h1>
             <img src={DoubleStrip} alt="dashes" />
           </div>
-          <div className="grid lg:grid-cols-3 py-12 items-center justify-between">
+          <div className="grid lg:grid-cols-3 py-12 items-center justify-between gap-10">
             <div className="flex">
               <div>
                 <img src={Person} alt="person-icon" />

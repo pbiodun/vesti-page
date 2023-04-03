@@ -26,9 +26,12 @@ const ProductsDropdown = () => {
             } p-5 relative rounded-md`}
             onClick={() => setService(SERVICE.FINANCIAL)}
           >
-            <h1 className="font-fontSemi text-base text-[#060E42]">
+            <Link
+              to="/financial-services"
+              className="hover:underline font-fontReg hover:font-fontSemi text-base text-[#060E42]"
+            >
               Financial Services
-            </h1>
+            </Link>
             <p className="font-fontLight text-xs text-[#16216B]">
               Millions of people moving to new countries use Vesti for accessing
               financial services like bank accounts, debit and credit cards.
@@ -48,7 +51,7 @@ const ProductsDropdown = () => {
             } p-5 relative`}
             onClick={() => setService(SERVICE.MIGRATION)}
           >
-            <h1 className="font-fontSemi text-base text-[#060E42]">
+            <h1 className="font-fontReg hover:font-fontSemi text-base text-[#060E42]">
               <Link className="hover:underline" to="/migration-services">
                 Migration Services
               </Link>
@@ -79,7 +82,7 @@ const ProductsDropdown = () => {
                 </div>
                 <div>
                   <h1 className="text-[#16216B] font-fontReg text-base pb-1">
-                    <Link className="hover:underline" to="globalgeng-card">
+                    <Link className="hover:underline" to="cards">
                       Vesti Cards
                     </Link>
                   </h1>

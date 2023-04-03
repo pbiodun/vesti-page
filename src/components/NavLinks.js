@@ -18,7 +18,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
 
   return (
     <>
-      <ul className={`${addStyle} lg:gap-10 font-fontReg text-base`}>
+      <ul className={`${addStyle} lg:gap-10 gap-y-20 font-fontReg text-base`}>
         <li className="group">
           <NavLink
             onClick={toggleProducts}
@@ -28,7 +28,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
             <IoIosArrowDown />
           </NavLink>
           <div className={`pl-6 lg:hidden ${show ? "visible" : "hidden"}`}>
-            <ul className="flex flex-col gap-y-2">
+            <ul className="flex flex-col gap-y-4">
               <li>
                 <NavLink
                   onClick={() => setOpen()}
@@ -42,7 +42,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
                 <NavLink
                   onClick={() => setOpen()}
                   to="/virtual-card"
-                  className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                  className="text-base font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   Virtual Dollar Card
                 </NavLink>
@@ -51,7 +51,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
                 <NavLink
                   onClick={() => setOpen()}
                   to="/wallets"
-                  className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                  className="text-base font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   Vesti Wallets
                 </NavLink>
@@ -60,21 +60,21 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
                 <NavLink
                   onClick={() => setOpen()}
                   to="/migration-services"
-                  className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                  className="text-base font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   Migration Services
                 </NavLink>
               </li>
             </ul>
           </div>
-          <div className="lg:hidden lg:group-hover:block absolute">
+          <div className="absolute lg:translate-y-[-600%] lg:group-hover:translate-y-0 lg:transition lg:delay-500 lg:ease-in-out">
             <ProductsDropdown setOpen={setOpen} />
           </div>
         </li>
         <li>
           <NavLink
             onClick={() => setOpen(false)}
-            to="about-us"
+            to="/about-us"
             className={`lg:pb-8 hover:text-vestigreen hover:font-fontSemi ${
               splitLocation[1] === "about-us" &&
               `lg:border-b-[6px] lg:border-[#67A948] text-vestigreen`
@@ -103,3 +103,5 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
 };
 
 export default NavLinks;
+
+// lg:hidden lg:group-hover:block

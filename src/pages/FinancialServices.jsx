@@ -1,5 +1,8 @@
 import WebBanner from "../components/WebBanner";
 import WalletCard from "../assets/images/phones.png";
+import Multicurrency from "../assets/images/multi-wallet.png";
+import VirtualDollar from "../assets/images/virtual-dollar.png";
+import NairaCard from "../assets/images/naira-card.png";
 import { FinBenefits } from "../views/WalletsBenefit";
 import DownloadApp from "../views/DownloadApp";
 import FaqSection from "../views/FaqSection";
@@ -41,7 +44,7 @@ const FinancialServices = () => {
         link=""
         wrapperStyle="pb-24 lg:flex-row"
         imgStyle="bg-[#FBF3FF]"
-        photo={WalletCard}
+        photo={Multicurrency}
         hContent="Vesti's Multicurrency Wallet"
         pContent="We Introduced the Vesti Card to cater to the need of migrants everywhere. Commercial banking prioritizes mainstream services like grocery shopping, auto loans, and known merchants, using advanced analytics and data mining, Vesti Cards are positioned to serve migrants in transit and those already settled."
       />
@@ -49,7 +52,7 @@ const FinancialServices = () => {
         link=""
         wrapperStyle="pb-24 lg:flex-row-reverse"
         imgStyle="bg-[#F8FEF5]"
-        photo={WalletCard}
+        photo={VirtualDollar}
         hContent="Vesti's GlobalGeng Virtual Dollar Card"
         pContent="We Introduced the Vesti Card to cater to the need of migrants everywhere. Commercial banking prioritizes mainstream services like grocery shopping, auto loans, and known merchants, using advanced analytics and data mining, Vesti Cards are positioned to serve migrants in transit and those already settled."
       />
@@ -57,7 +60,7 @@ const FinancialServices = () => {
         link=""
         wrapperStyle="pb-24 lg:flex-row"
         imgStyle="bg-[#E7EAFF]"
-        photo={WalletCard}
+        photo={NairaCard}
         hContent="Vesti's GlobalGeng Physical Naira Card"
         pContent="We Introduced the Vesti Card to cater to the need of migrants everywhere. Commercial banking prioritizes mainstream services like grocery shopping, auto loans, and known merchants, using advanced analytics and data mining, Vesti Cards are positioned to serve migrants in transit and those already settled."
       />

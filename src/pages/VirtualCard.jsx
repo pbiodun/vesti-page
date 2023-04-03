@@ -3,7 +3,7 @@ import CardBenefit from "../views/CardBenefit";
 import NewCardAd from "../views/NewCardAd";
 import VirtualVisaCard from "../views/VirtualVisaCard";
 import Phone1 from "../assets/images/Phoneheight.png";
-import Phone2 from "../assets/images/Phoneheight1.png";
+import Phone2 from "../assets/images/mycards-image.png";
 import CreateCard from "../views/CreateCard";
 import AppsDownload from "../views/AppsDownload";
 import Featured from "../views/Featured";
@@ -28,7 +28,7 @@ const VirtualCard = () => {
           />
           <DescriptionCard
             title="User Controls"
-            desc="Mistakenley put up your details on an unsafe platform? Don’t worry! You can easily delete your card and create a new one."
+            desc="Mistakenly put up your details on an unsafe platform? Don’t worry! You can easily delete your card and create a new one."
             classname="bg-[#E7EAFE]"
             textCol="#303D94"
             h1Col="text-[#060E42]"
