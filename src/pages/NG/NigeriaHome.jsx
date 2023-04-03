@@ -14,11 +14,11 @@ import Typed from "react-typed";
 const NigeriaHome = () => {
   return (
     <>
-      <div className="bg-secondary w-full pt-28">
+      <div className="bg-secondary w-full pt-36 lg:pt-28">
         <WebBanner
           link="https://app.wevesti.com/register"
           title={
-            <h1 className="text-[#fff] font-fontSemi text-5xl w-[77%] pb-5 !leading-[60px]">
+            <h1 className="text-[#fff] font-fontSemi text-5xl w-[100%] lg:w-[77%] pb-5 !leading-[60px]">
               The Neobank for <span className="text-[#67A948]">Nigerians</span>{" "}
               moving to the{" "}
               <span className="text-[#67A948]">

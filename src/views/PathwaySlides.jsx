@@ -55,7 +55,7 @@ const PathwaySlides = () => {
         </div>
 
         <div className="col-span-1">
-          <div className="bg-[#F7FFF3] relative mt-auto h-full rounded-2xl overflow-hidden">
+          <div className="bg-[#F7FFF3] relative mt-auto h-[70%] sm:h-[80%] lg:h-full rounded-2xl overflow-hidden">
             <img
               src={GetStartedDescription[activeTrx].image}
               className="absolute left-[15%] bottom-0 flex w-[70%] sm:w-[50%] sm:left-[25%] md:w-[40%] md:left-[30%] lg:left-[20%] lg:w-[60%]"

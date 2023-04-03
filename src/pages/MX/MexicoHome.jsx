@@ -14,10 +14,10 @@ import PathwaySlides from "../../views/PathwaySlides";
 const MexicoHome = () => {
   return (
     <>
-      <div className="bg-secondary w-full pt-28">
+      <div className="bg-secondary w-full pt-36 lg:pt-28">
         <WebBanner
           title={
-            <h1 className="text-[#fff] font-fontSemi text-5xl w-[100%] pb-5 !leading-[60px]">
+            <h1 className="text-[#fff] font-fontSemi text-5xl w-[100%] lg:w-[77%] pb-5 !leading-[60px]">
               El Neobanco para <span className="text-[#67A948]">Mexicanos</span>{" "}
               que se mudan a los{" "}
               <span className="text-[#67A948]">UEstados Unidos</span>
