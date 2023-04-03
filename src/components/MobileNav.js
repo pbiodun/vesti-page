@@ -20,7 +20,7 @@ const MobileNav = ({ open, setOpen }) => {
     <>
       <div className="w-full h-[100vh] bg-white mx-auto">
         <div className="text-secondary font-fontReg py-10 px-6">
-          <ul className="flex flex-col gap-y-20">
+          <ul className="flex flex-col gap-y-10">
             <li>
               <div className="flex flex-col" onClick={toggleCountry}>
                 <div className="flex items-center">

@@ -18,7 +18,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
 
   return (
     <>
-      <ul className={`${addStyle} lg:gap-10 gap-y-20 font-fontReg text-base`}>
+      <ul className={`${addStyle} lg:gap-10 gap-y-10 font-fontReg text-base`}>
         <li className="group">
           <NavLink
             onClick={toggleProducts}
