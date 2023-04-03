@@ -18,7 +18,7 @@ const WebBanner = ({
             <p className="lg:w-[90%] text-lg font-fontLight pb-12 text-[#ffffff]">
               {details}
             </p>
-            <div className="bg-[#67A948] w-[50%] font-fontReg text-center hover:bg-headcol p-4 rounded-xl mb-[70px] text-[#ffffff]">
+            <div className="bg-[#67A948] w-[80%] sm:w-[55%] font-fontReg text-center hover:bg-headcol p-5 rounded-xl mb-[70px] text-[#ffffff]">
               <Link to={link}>{buttonText}</Link>
             </div>
             {featured}
