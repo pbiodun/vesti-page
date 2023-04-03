@@ -33,7 +33,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
                 <NavLink
                   onClick={() => setOpen()}
                   to="/globalgeng-card"
-                  className="text-sm font-fontLight hover:text-vestigreen hover:font-fontSemi"
+                  className="text-base font-fontLight hover:text-vestigreen hover:font-fontSemi"
                 >
                   GlobalGeng Card
                 </NavLink>
