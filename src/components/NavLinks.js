@@ -67,7 +67,7 @@ const NavLinks = ({ addStyle, open, setOpen }) => {
               </li>
             </ul>
           </div>
-          <div className="absolute lg:translate-y-[-600%] lg:group-hover:translate-y-0 lg:transition lg:delay-500 lg:ease-in-out">
+          <div className="absolute lg:translate-y-[-800%] lg:group-hover:translate-y-0 lg:transition lg:delay-500 lg:ease-in-out">
             <ProductsDropdown setOpen={setOpen} />
           </div>
         </li>
